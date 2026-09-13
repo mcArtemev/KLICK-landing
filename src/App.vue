@@ -1,5 +1,5 @@
 <template>
-    <div id="top" class="landing-page">
+    <div id="top" class="landing-page landing-page--workshop">
         <header class="site-header" :class="{ 'site-header--scrolled' : isScrolled }">
             <div class="shell site-header__inner">
                 <BrandLogo />
@@ -26,7 +26,7 @@
                 <div class="hero-ink-splat" aria-hidden="true"><span></span><span></span><span></span></div>
                 <div class="shell hero__content">
                     <div class="hero__copy">
-                        <div class="eyebrow"><IconSparkles :size="15" /> Рабочее пространство преподавателя</div>
+                        <div class="eyebrow"><IconSparkles :size="15" /> Творческая мастерская преподавателя</div>
                         <h1 aria-label="Преподавание — в один Klick">
                             <span class="hero__title-main">Преподавание</span>
                             <span class="hero__title-signature"><i>в один</i><img src="/logo.svg" alt="Klick"></span>
@@ -53,6 +53,9 @@
                     </div>
 
                     <div class="hero__visual">
+                        <div class="workshop-sticker workshop-sticker--lesson" aria-hidden="true">урок<br><b>12:30</b></div>
+                        <div class="workshop-sticker workshop-sticker--done" aria-hidden="true"><IconCheck :size="18" /> готово!</div>
+                        <div class="workshop-pencil" aria-hidden="true"></div>
                         <a class="demo-gateway" :href="demoUrl" aria-label="Открыть демо-пространство Klick">
                             <span class="demo-gateway__drop demo-gateway__drop--one"></span>
                             <span class="demo-gateway__drop demo-gateway__drop--two"></span>
