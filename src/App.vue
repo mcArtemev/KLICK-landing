@@ -27,13 +27,13 @@
                 <div class="hero-ink-splat" aria-hidden="true"><span></span><span></span><span></span></div>
                 <div class="shell hero__content">
                     <div class="hero__copy">
-                        <div class="eyebrow"><IconSparkles :size="15" /> Творческая мастерская преподавателя</div>
-                        <h1 aria-label="Преподавание — в один Klick">
+                        <div class="eyebrow"><IconSparkles :size="15" /> Мастерская преподавателя</div>
+                        <h1 aria-label="Преподавание — в один клик">
                             <span class="hero__title-main">Преподавание</span>
                             <span class="hero__title-signature"><i>в один</i><img src="/logo.svg" alt="Klick"></span>
                         </h1>
                         <p class="hero__lead">
-                            Расписание, ученики, задания, учебные планы, материалы и оплаты — в одном рабочем пространстве.
+                            Все для учебы и обучения — в одном рабочем пространстве.
                         </p>
                         <p class="hero__annotation" aria-hidden="true">одна линия от первого урока до результата ↗</p>
                         <div class="hero__actions">
@@ -48,13 +48,13 @@
                         </div>
                         <ul class="hero__proof" aria-label="Ключевые преимущества">
                             <li><IconCheck :size="14" /> Быстрый старт</li>
-                            <li><IconCheck :size="14" /> Кабинет ученика</li>
+                            <li><IconCheck :size="14" /> Личное рабочее пространство</li>
                             <li><IconCheck :size="14" /> Всё связано между собой</li>
                         </ul>
                     </div>
 
                     <div class="hero__visual">
-                        <div class="workshop-sticker workshop-sticker--lesson" aria-hidden="true">урок<br><b>12:30</b></div>
+                        <div class="workshop-sticker workshop-sticker--lesson" aria-hidden="true">версия<br><b>0.1.0</b></div>
                         <div class="workshop-sticker workshop-sticker--done" aria-hidden="true"><IconCheck :size="18" /> готово!</div>
                         <div class="workshop-pencil" aria-hidden="true"></div>
                         <a class="demo-gateway" :href="demoUrl" aria-label="Открыть демо-пространство Klick">
@@ -67,8 +67,8 @@
                                 <h2>Настоящий Klick.<br>Уже с готовыми данными.</h2>
                                 <p>Расписание, ученики, задания и оплаты заполнены моками — исследуйте платформу в своём темпе.</p>
                                 <ul>
+                                    <li><IconCheck :size="14" /> Без регистрации</li>
                                     <li><IconCheck :size="14" /> Без настройки</li>
-                                    <li><IconCheck :size="14" /> Без риска</li>
                                     <li><IconCheck :size="14" /> Все основные сценарии</li>
                                 </ul>
                             </div>
@@ -83,11 +83,15 @@
                     <div>
                         <span><IconCalendarDays :size="17" /> Календарь</span>
                         <i></i>
+                        <span><IconFileCheckCorner :size="17" /> Домашние задания</span>
+                        <i></i>
+                        <span><IconClipboardCheck :size="17" /> Тесты</span>
+                        <i></i>
                         <span><IconMessageSquareText :size="17" /> Чаты</span>
                         <i></i>
                         <span><IconVideo :size="17" /> Видеозвонки </span>
                         <i></i>
-                        <span><IconVideo :size="17" /> Интерактивная доска </span>
+                        <span><IconPresentation :size="17" /> Интерактивная доска </span>
                         <i></i>
                         <span><IconFolderOpen :size="17" /> Материалы</span>
                     </div>
@@ -106,7 +110,7 @@
                             <h2>Все сервисы в одном пространстве.</h2>
                         </div>
                         <p>
-                            Каждый модуль продолжает предыдущий: урок появляется в календаре, материалы остаются у ученика, а выполненная работа сразу ждёт проверки.
+                            Каждый модуль продолжает предыдущий. <br> Урок появляется в календаре, материалы остаются у ученика, а выполненная работа сразу ждёт проверки.
                         </p>
                     </div>
 
@@ -212,7 +216,9 @@
         Presentation as IconPresentation,
         ShieldCheck as IconShieldCheck,
         Sparkles as IconSparkles,
-        WandSparkles as IconWandSparkles
+        WandSparkles as IconWandSparkles,
+        FileCheckCorner as IconFileCheckCorner,
+        ClipboardCheck as IconClipboardCheck
     } from '@lucide/vue';
     import { onBeforeUnmount, onMounted, ref } from 'vue';
 

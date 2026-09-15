@@ -282,7 +282,6 @@ svg {
 }
 
 .hero__lead {
-    max-width: 510px;
     margin: 0;
     color: var(--stone-600);
     font-size: 16px;
@@ -294,6 +293,7 @@ svg {
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 34px;
+    justify-content: space-between;
 }
 
 .hero__proof {
@@ -5813,7 +5813,7 @@ svg {
 .hero__proof svg { color: #ffc35d; }
 
 .hero__annotation {
-    margin: 16px 0 -14px 116px;
+    margin: 0 0 10px 400px;
     color: #ffc35d;
     font-family: Caveat, cursive;
     font-size: 20px;
@@ -6085,7 +6085,6 @@ svg {
         margin-inline: auto;
     }
 
-    .hero__actions,
     .hero__proof {
         justify-content: center;
     }
@@ -6746,8 +6745,8 @@ svg {
 }
 
 .landing-page--workshop .workshop-sticker--done {
-    left: -6%;
-    bottom: 11%;
+    left: -12%;
+    bottom: 7%;
     display: flex;
     gap: 8px;
     align-items: center;
