@@ -6,7 +6,8 @@
 
                 <nav class="desktop-nav" aria-label="Основная навигация">
                     <a href="#possibilities">Возможности</a>
-                    <a href="#workflow">Как это работает</a>
+                    <a href="#connections">Почему Klick</a>
+                    <a href="#lesson-journey">Как это работает</a>
                     <a href="#student-space">Для ученика</a>
                     <a href="#development">Что дальше</a>
                     <a :href="demoUrl">Демо</a>
@@ -95,6 +96,8 @@
                 </div>
             </section>
 
+            <IntegrationTangle />
+
             <section id="possibilities" class="section-pad features-section">
                 <div class="shell">
                     <div class="section-heading">
@@ -111,76 +114,9 @@
                 </div>
             </section>
 
-            <section id="workflow" class="section-pad workflow-section">
-                <div class="shell workflow-shell">
-                    <div class="workflow-copy">
-                        <span class="section-kicker">От плана до результата</span>
-                        <h2>Весь путь ученика остаётся перед глазами</h2>
-                        <p>
-                            Klick связывает организацию занятий и само обучение. Ничего не приходится переносить вручную между календарём, папками и таблицами.
-                        </p>
-                        <a class="text-link" :href="appUrl">Попробовать рабочий процесс <IconArrowRight :size="17" /></a>
-                    </div>
+            <LessonJourney />
 
-                    <ol class="workflow-list">
-                        <li v-for="(step, index) in workflow" :key="step.title">
-                            <span class="workflow-list__number">{{ index + 1 }}</span>
-                            <div>
-                                <h3>{{ step.title }}</h3>
-                                <p>{{ step.text }}</p>
-                            </div>
-                            <span class="workflow-list__icon"><component :is="step.icon" :size="20" /></span>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-
-            <section id="student-space" class="section-pad student-section">
-                <div class="shell student-shell">
-                    <div class="student-preview" aria-label="Пример личного кабинета ученика">
-                        <div class="student-preview__top">
-                            <span class="student-preview__logo"><img src="/logo.svg" alt=""></span>
-                            <span>Главная</span><span>Календарь</span><span>Домашние задания</span>
-                            <i><IconBell :size="16" /></i>
-                        </div>
-                        <div class="student-preview__body">
-                            <header><small>Добрый день, Александр!</small><b>Что сегодня в плане</b></header>
-                            <div class="student-preview__grid">
-                                <article class="student-next-lesson">
-                                    <span>Следующий урок</span>
-                                    <strong>Сегодня, 12:30</strong>
-                                    <p>Английский язык · Анна Смирнова</p>
-                                    <button type="button">Подключиться к уроку</button>
-                                </article>
-                                <article class="student-task-card">
-                                    <span>Домашнее задание</span>
-                                    <strong>Упражнения на Present Perfect</strong>
-                                    <p>Срок: завтра, 20:00</p>
-                                    <div><i></i><em>Прикреплено 2 файла</em></div>
-                                </article>
-                            </div>
-                            <div class="student-plan-card">
-                                <span><b>Учебный план · Английский B1</b><small>Текущая тема: Present Perfect</small></span>
-                                <em>68%</em>
-                                <i><span></span></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="student-copy">
-                        <span class="section-kicker">Один ритм для двоих</span>
-                        <h2>Ученику тоже понятно, что делать дальше</h2>
-                        <p>
-                            В личном кабинете — ближайший урок, задания, тесты, материалы, учебный план и комментарии преподавателя. Без поиска нужной ссылки в переписке.
-                        </p>
-                        <ul>
-                            <li><IconCircleCheck :size="18" /><span><b>Ничего не теряется</b><small>Файлы и обратная связь остаются рядом с работой.</small></span></li>
-                            <li><IconCircleCheck :size="18" /><span><b>Виден прогресс</b><small>Темы, тесты и статусы заданий собраны в одном месте.</small></span></li>
-                            <li><IconCircleCheck :size="18" /><span><b>Меньше лишних вопросов</b><small>Сроки и следующие действия всегда перед глазами.</small></span></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+            <RoleWorkspace />
 
             <section class="section-pad principles-section">
                 <div class="shell">
@@ -200,6 +136,22 @@
                 </div>
             </section>
 
+            <ValueCalculator />
+
+            <section class="section-pad start-section">
+                <div class="shell">
+                    <div class="start-heading">
+                        <span class="section-kicker">Перейти проще, чем кажется</span>
+                        <h2>Не нужно переносить<br>всю работу за один день</h2>
+                        <p>Начните с расписания и учеников. Подключайте остальные инструменты тогда, когда они действительно понадобятся.</p>
+                    </div>
+                    <ol class="start-steps">
+                        <li v-for="(step,index) in startSteps" :key="step.title"><span>{{index+1}}</span><div><small>{{step.note}}</small><h3>{{step.title}}</h3><p>{{step.text}}</p></div></li>
+                    </ol>
+                    <div class="trust-note"><span class="trust-pin"></span><div><b>Ваши материалы и работы учеников не становятся публичными</b><p>Klick показывает каждой роли только нужные ей данные. Развитие платформы остаётся прозрачным, а поддержку можно попросить прямо из рабочего пространства.</p></div><a class="button button--ghost" :href="demoUrl">Сначала открыть демо <IconPlay :size="16" /></a></div>
+                </div>
+            </section>
+
             <FutureRoadmap />
 
             <section class="final-cta section-pad">
@@ -209,10 +161,13 @@
                     <span class="eyebrow eyebrow--dark"><IconSparkles :size="15" /> Меньше рутины между уроками</span>
                     <h2>Соберите преподавание<br>в одном Klick</h2>
                     <p>Начните с расписания и учеников. Остальные инструменты уже будут рядом, когда понадобятся.</p>
-                    <a class="button button--accent button--large" :href="appUrl">
-                        Открыть Klick
+                    <div class="final-actions">
+                    <a class="button button--accent button--large" :href="demoUrl">
+                        Открыть демо
                         <IconArrowRight :size="18" />
                     </a>
+                    <a class="button button--ghost button--large" :href="appUrl">Начать работу</a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -225,7 +180,8 @@
                 </div>
                 <nav aria-label="Навигация в подвале">
                     <a href="#possibilities">Возможности</a>
-                    <a href="#workflow">Как это работает</a>
+                    <a href="#lesson-journey">Как это работает</a>
+                    <a href="#connections">Почему Klick</a>
                     <a href="#student-space">Для ученика</a>
                     <a href="#development">Что дальше</a>
                     <a :href="demoUrl">Демо</a>
@@ -248,9 +204,7 @@
         BookOpen as IconBookOpen,
         CalendarDays as IconCalendarDays,
         Check as IconCheck,
-        CircleCheck as IconCircleCheck,
         FolderOpen as IconFolderOpen,
-        GraduationCap as IconGraduationCap,
         Layers3 as IconLayers3,
         MessageSquareText as IconMessageSquareText,
         Play as IconPlay,
@@ -258,7 +212,6 @@
         Presentation as IconPresentation,
         ShieldCheck as IconShieldCheck,
         Sparkles as IconSparkles,
-        WalletCards as IconWalletCards,
         WandSparkles as IconWandSparkles
     } from '@lucide/vue';
     import { onBeforeUnmount, onMounted, ref } from 'vue';
@@ -266,6 +219,10 @@
     import BrandLogo from './components/BrandLogo.vue';
     import CapabilityShowcase from './components/CapabilityShowcase.vue';
     import FutureRoadmap from './components/FutureRoadmap.vue';
+    import IntegrationTangle from './components/IntegrationTangle.vue';
+    import LessonJourney from './components/LessonJourney.vue';
+    import RoleWorkspace from './components/RoleWorkspace.vue';
+    import ValueCalculator from './components/ValueCalculator.vue';
     const appUrl = import.meta.env.VITE_APP_URL || 'http://localhost:5173/auth/sign';
     const demoUrl = import.meta.env.VITE_DEMO_URL || `${appUrl}${appUrl.includes('?') ? '&' : '?'}demo=true`;
     const currentYear = new Date().getFullYear();
@@ -280,17 +237,18 @@
 
     onBeforeUnmount(() => window.removeEventListener('scroll', updateHeader));
 
-    const workflow = [
-        { title : 'Запланируйте урок', text : 'Выберите ученика, время и условия занятия.', icon : IconCalendarDays },
-        { title : 'Проведите занятие', text : 'Всё нужное — материалы, план и история ученика — уже рядом.', icon : IconGraduationCap },
-        { title : 'Назначьте практику', text : 'Домашнее задание или тест отправятся в кабинет ученика.', icon : IconBookOpen },
-        { title : 'Дайте обратную связь', text : 'Проверьте файлы, оставьте комментарии и зафиксируйте результат.', icon : IconMessageSquareText },
-        { title : 'Закройте организационные вопросы', text : 'Отметьте занятие и сохраните оплату в истории.', icon : IconWalletCards }
-    ];
-
     const principles = [
         { title : 'Понятно с первого дня', text : 'Знакомые сценарии и спокойный интерфейс без перегруженных панелей.', icon : IconWandSparkles },
         { title : 'Связано по смыслу', text : 'Данные ученика продолжают путь из календаря в задания, план и оплаты.', icon : IconLayers3 },
-        { title : 'Разные роли — общий контекст', text : 'Преподаватель управляет процессом, ученик видит только то, что нужно ему.', icon : IconShieldCheck }
+        { title : 'Контекст следует за вами', text : 'После возврата сохраняются фильтры, открытые панели и место, где вы работали.', icon : IconPresentation },
+        { title : 'Действия находятся рядом', text : 'Перенос, проверка, материал или оплата доступны там, где возникла задача.', icon : IconCalendarDays },
+        { title : 'Разные роли — общий процесс', text : 'Преподаватель управляет, а ученик видит ясный маршрут и следующий шаг.', icon : IconShieldCheck },
+        { title : 'Можно начинать постепенно', text : 'Сначала расписание и ученики, затем остальные инструменты по необходимости.', icon : IconBookOpen }
+    ];
+
+    const startSteps = [
+        { note : '10 минут', title : 'Создайте профиль', text : 'Добавьте предметы, условия занятий и доступное время.' },
+        { note : 'без сложного импорта', title : 'Добавьте учеников', text : 'Соберите ближайшее расписание и основной учебный контекст.' },
+        { note : 'в своём темпе', title : 'Подключайте инструменты', text : 'Задания, планы, материалы и оплаты появятся тогда, когда понадобятся.' }
     ];
 </script>

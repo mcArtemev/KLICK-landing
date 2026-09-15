@@ -1,8 +1,24 @@
 <template>
     <div class="capability-showcase">
+        <div class="capability-groups" role="tablist" aria-label="Группы возможностей Klick">
+            <button
+                v-for="group in capabilityGroups"
+                :key="group.id"
+                type="button"
+                role="tab"
+                :aria-selected="activeGroup === group.id"
+                :class="{ 'capability-group--active' : activeGroup === group.id }"
+                @click="selectGroup(group.id)"
+            >
+                <span>{{ group.marker }}</span>
+                <b>{{ group.title }}</b>
+                <small>{{ group.subtitle }}</small>
+            </button>
+        </div>
+
         <div class="capability-tabs" role="tablist" aria-label="Дополнительные возможности Klick">
             <button
-                v-for="item in capabilities"
+                v-for="item in filteredCapabilities"
                 :key="item.id"
                 type="button"
                 role="tab"
@@ -396,5 +412,21 @@
     ] as const;
 
     const activeId = ref<(typeof capabilities)[number]['id']>('calendar');
+    const capabilityGroups = [
+        { id : 'organize', marker : '01', title : 'Организация', subtitle : 'Расписание и ученики', items : ['calendar', 'student-profile', 'notifications'] },
+        { id : 'teach', marker : '02', title : 'Обучение', subtitle : 'Планы и материалы', items : ['learning-plan', 'materials', 'whiteboard'] },
+        { id : 'practice', marker : '03', title : 'Практика', subtitle : 'Задания и проверка', items : ['homework', 'homework-review', 'tests', 'test-builder'] },
+        { id : 'connect', marker : '04', title : 'Общение и финансы', subtitle : 'Урок и оплата', items : ['video-calls', 'messenger', 'payments'] }
+    ] as const;
+    const activeGroup = ref<(typeof capabilityGroups)[number]['id']>('organize');
+    const filteredCapabilities = computed(() => {
+        const ids = capabilityGroups.find(group => group.id === activeGroup.value)?.items ?? capabilityGroups[0].items;
+        return capabilities.filter(item => (ids as readonly string[]).includes(item.id));
+    });
     const activeCapability = computed(() => capabilities.find(item => item.id === activeId.value) ?? capabilities[0]);
+    const selectGroup = (groupId : (typeof capabilityGroups)[number]['id']) => {
+        activeGroup.value = groupId;
+        const firstId = capabilityGroups.find(group => group.id === groupId)?.items[0] ?? 'calendar';
+        activeId.value = firstId as (typeof capabilities)[number]['id'];
+    };
 </script>
