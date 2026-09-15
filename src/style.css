@@ -6493,14 +6493,14 @@ svg {
    -------------------------------------------------------------------------- */
 
 .landing-page--workshop {
-    --workshop-ink: #37312d;
-    --workshop-orange: #d79a50;
-    --workshop-yellow: #eadca7;
-    --workshop-blue: #b9d0d6;
-    --workshop-clay: #d8c3ae;
-    --workshop-green: #bad0bf;
+    --workshop-ink: #211c1a;
+    --workshop-orange: #ff9d00;
+    --workshop-yellow: #ffd84d;
+    --workshop-blue: #75caff;
+    --workshop-lilac: #b7a5ff;
+    --workshop-green: #79d7a7;
     color: var(--workshop-ink);
-    background: #f7f3ea;
+    background: #fffaf0;
 }
 
 .landing-page--workshop .shell {
@@ -6509,7 +6509,7 @@ svg {
 
 .landing-page--workshop .site-header {
     color: var(--workshop-ink);
-    background: rgba(247, 243, 234, 0.88);
+    background: rgba(255, 250, 240, 0.84);
     border-bottom: 2px solid var(--workshop-ink);
     backdrop-filter: blur(16px);
 }
@@ -6521,7 +6521,7 @@ svg {
     bottom: -8px;
     width: 76px;
     height: 15px;
-    background: rgba(234, 220, 167, 0.82);
+    background: rgba(255, 216, 77, 0.8);
     transform: rotate(-2deg);
 }
 
@@ -6562,7 +6562,7 @@ svg {
     padding-top: 124px;
     overflow: hidden;
     color: var(--workshop-ink);
-    background-color: #cbdde0;
+    background-color: #bfe5ff;
     background-image:
         linear-gradient(rgba(33, 28, 26, 0.07) 1px, transparent 1px),
         linear-gradient(90deg, rgba(33, 28, 26, 0.07) 1px, transparent 1px);
@@ -6602,7 +6602,7 @@ svg {
 
 .landing-page--workshop .hero__copy {
     padding: clamp(26px, 3vw, 52px);
-    background: #fbf9f3;
+    background: #fffdf7;
     border: 2px solid var(--workshop-ink);
     border-radius: 28px 18px 30px 16px;
     box-shadow: 10px 12px 0 rgba(33, 28, 26, 0.95);
@@ -6617,7 +6617,7 @@ svg {
     left: 50%;
     width: 104px;
     height: 32px;
-    background: rgba(216, 195, 174, 0.78);
+    background: rgba(183, 165, 255, 0.72);
     border-left: 1px solid rgba(33, 28, 26, 0.18);
     border-right: 1px solid rgba(33, 28, 26, 0.18);
     transform: translateX(-50%) rotate(2deg);
@@ -6625,7 +6625,7 @@ svg {
 
 .landing-page--workshop .eyebrow {
     color: var(--workshop-ink);
-    background: var(--workshop-clay);
+    background: var(--workshop-lilac);
     border: 2px solid var(--workshop-ink);
     border-radius: 9px 14px 8px 12px;
     transform: rotate(-1deg);
@@ -6651,7 +6651,7 @@ svg {
 }
 
 .landing-page--workshop .hero__annotation {
-    color: #80624d;
+    color: #6752c8;
     transform: rotate(-2deg);
 }
 
@@ -6662,7 +6662,7 @@ svg {
 }
 
 .landing-page--workshop .hero__proof svg {
-    color: #5f8069;
+    color: #24865b;
 }
 
 .landing-page--workshop .hero-orb,
@@ -6677,7 +6677,7 @@ svg {
 .landing-page--workshop .demo-gateway {
     z-index: 2;
     color: var(--workshop-ink);
-    background: #fbf9f3;
+    background: #fffdf7;
     border: 2px solid var(--workshop-ink);
     border-radius: 24px 40px 22px 35px;
     box-shadow: 13px 15px 0 var(--workshop-orange);
@@ -6686,7 +6686,7 @@ svg {
 
 .landing-page--workshop .demo-gateway::before {
     left: 68%;
-    background: rgba(234, 220, 167, 0.82);
+    background: rgba(255, 216, 77, 0.78);
     transform: translateX(-50%) rotate(-3deg);
 }
 
@@ -6717,7 +6717,7 @@ svg {
 }
 
 .landing-page--workshop .demo-gateway__drop--one {
-    background: var(--workshop-clay);
+    background: var(--workshop-lilac);
 }
 
 .landing-page--workshop .demo-gateway__drop--two {
@@ -6739,7 +6739,7 @@ svg {
 .landing-page--workshop .workshop-sticker--lesson {
     top: 8%;
     right: -3%;
-    background: var(--workshop-clay);
+    background: var(--workshop-lilac);
     transform: rotate(7deg);
 }
 
@@ -6777,7 +6777,7 @@ svg {
 
 .landing-page--workshop .context-strip {
     color: var(--workshop-ink);
-    background: var(--workshop-clay);
+    background: var(--workshop-lilac);
     border-color: var(--workshop-ink);
 }
 
@@ -6788,7 +6788,7 @@ svg {
 }
 
 .landing-page--workshop .features-section {
-    background-color: #f7f3ea;
+    background-color: #fffaf0;
     background-image: radial-gradient(rgba(33, 28, 26, 0.12) 1px, transparent 1px);
     background-size: 22px 22px;
 }
@@ -6824,7 +6824,7 @@ svg {
 .landing-page--workshop .capability-tab,
 .landing-page--workshop .development-tab {
     color: var(--workshop-ink);
-    background: #fbfaf6;
+    background: #fff;
     border: 2px solid var(--workshop-ink);
     border-radius: 14px 20px 13px 18px;
     box-shadow: 4px 4px 0 var(--workshop-ink);
@@ -6832,19 +6832,19 @@ svg {
 
 .landing-page--workshop .capability-tab:nth-child(3n + 1),
 .landing-page--workshop .development-tab:nth-child(3n + 1) {
-    background: #eee2b8;
+    background: #fff3a8;
     transform: rotate(-0.5deg);
 }
 
 .landing-page--workshop .capability-tab:nth-child(3n + 2),
 .landing-page--workshop .development-tab:nth-child(3n + 2) {
-    background: #d8e7ea;
+    background: #dff2ff;
     transform: rotate(0.4deg);
 }
 
 .landing-page--workshop .capability-tab:nth-child(3n),
 .landing-page--workshop .development-tab:nth-child(3n) {
-    background: #e6ddd2;
+    background: #e5dfff;
 }
 
 .landing-page--workshop .capability-tab--active,
@@ -6856,7 +6856,7 @@ svg {
 
 .landing-page--workshop .capability-detail,
 .landing-page--workshop .development-detail {
-    background: #fbf9f3;
+    background: #fffdf7;
     border: 2px solid var(--workshop-ink);
     border-radius: 26px 18px 30px 16px;
     box-shadow: 9px 10px 0 var(--workshop-blue);
@@ -6885,11 +6885,11 @@ svg {
 }
 
 .landing-page--workshop .workflow-list__number {
-    color: #80624d;
+    color: #6752c8;
 }
 
 .landing-page--workshop .student-section {
-    background: #dce5df;
+    background: #e8e3ff;
     border-bottom: 2px solid var(--workshop-ink);
 }
 
@@ -6904,27 +6904,27 @@ svg {
 
 .landing-page--workshop .principles-grid article {
     color: var(--workshop-ink);
-    background: #fbf9f3;
+    background: #fffdf7;
     border: 2px solid var(--workshop-ink);
     border-radius: 20px 30px 18px 26px;
     box-shadow: 6px 7px 0 var(--workshop-ink);
 }
 
 .landing-page--workshop .future-section {
-    background-color: #d8e7ea;
+    background-color: #dff2ff;
     background-image: linear-gradient(rgba(33, 28, 26, 0.07) 1px, transparent 1px);
     background-size: 100% 30px;
 }
 
 .landing-page--workshop .roadmap-section {
     color: var(--workshop-ink);
-    background: #d9c9b9;
+    background: #cfc4ff;
     border-block: 2px solid var(--workshop-ink);
 }
 
 .landing-page--workshop .roadmap-card {
     color: var(--workshop-ink);
-    background: #fbf9f3;
+    background: #fffdf7;
     border: 2px solid var(--workshop-ink);
     border-radius: 30px 18px 28px 16px;
     box-shadow: 11px 12px 0 var(--workshop-ink);
