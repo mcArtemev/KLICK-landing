@@ -28,9 +28,9 @@
                 <div class="shell hero__content">
                     <div class="hero__copy">
                         <div class="eyebrow"><IconSparkles :size="15" /> Мастерская преподавателя</div>
-                        <h1 aria-label="Преподавание — в один клик">
+                        <h1 aria-label="Преподавание в один клик">
                             <span class="hero__title-main">Преподавание</span>
-                            <span class="hero__title-signature"><i>в один</i><img src="/logo.svg" alt="Klick"></span>
+                            <span class="hero__title-signature"><i>в один</i><b>клик</b></span>
                         </h1>
                         <p class="hero__lead">
                             Все для учебы и обучения — в одном рабочем пространстве.

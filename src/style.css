@@ -5800,10 +5800,11 @@ svg {
     white-space: nowrap;
 }
 
-.hero__title-signature img {
-    width: clamp(118px, 9.5vw, 162px);
-    max-height: 76px;
-    object-fit: contain;
+.hero__title-signature b {
+    font: 700 1.16em/0.85 Caveat, cursive;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+    transform: rotate(-2deg);
 }
 
 .hero__lead { color: #d6d3d1; }
@@ -6640,13 +6641,10 @@ svg {
 }
 
 .landing-page--workshop .hero__title-signature i,
+.landing-page--workshop .hero__title-signature b,
 .landing-page--workshop .hero__lead,
 .landing-page--workshop .hero__proof {
     color: var(--workshop-ink);
-}
-
-.landing-page--workshop .hero__title-signature img {
-    filter: brightness(0) saturate(100%);
 }
 
 .landing-page--workshop .hero__annotation {
@@ -6959,11 +6957,12 @@ svg {
 
 @media (max-width: 1100px) {
     .landing-page--workshop .hero__content {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .landing-page--workshop .hero__copy,
     .landing-page--workshop .hero__visual {
+        min-width: 0;
         width: 100%;
     }
 }
@@ -6988,8 +6987,8 @@ svg {
         gap: 10px;
     }
 
-    .landing-page--workshop .hero__title-signature img {
-        width: clamp(94px, 28vw, 122px);
+    .landing-page--workshop .hero__title-signature b {
+        font-size: 1.05em;
     }
 
     .landing-page--workshop .workshop-pencil,
