@@ -6596,8 +6596,8 @@ svg {
 .landing-page--workshop .hero__content {
     position: relative;
     z-index: 2;
-    grid-template-columns: minmax(400px, 0.82fr) minmax(570px, 1.18fr);
-    gap: clamp(70px, 7vw, 140px);
+    grid-template-columns: minmax(540px, 1.16fr) minmax(420px, 0.84fr);
+    gap: clamp(44px, 4vw, 72px);
 }
 
 .landing-page--workshop .hero__copy {
@@ -6672,6 +6672,8 @@ svg {
 
 .landing-page--workshop .hero__visual {
     position: relative;
+    width: 92%;
+    justify-self: end;
 }
 
 .landing-page--workshop .demo-gateway {
@@ -6697,7 +6699,7 @@ svg {
 
 .landing-page--workshop .demo-gateway__body h2 {
     color: var(--workshop-ink);
-    font-size: clamp(44px, 4.3vw, 70px);
+    font-size: clamp(38px, 3.5vw, 64px);
 }
 
 .landing-page--workshop .demo-gateway__body p,
