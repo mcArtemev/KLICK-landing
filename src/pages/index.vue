@@ -236,16 +236,16 @@
     } from '@lucide/vue';
     import { onBeforeUnmount, onMounted, ref } from 'vue';
 
-    import BrandLogo from './components/BrandLogo.vue';
-    import BrandMark from './components/BrandMark.vue';
-    import CapabilityShowcase from './components/CapabilityShowcase.vue';
-    import FutureRoadmap from './components/FutureRoadmap.vue';
-    import IntegrationTangle from './components/IntegrationTangle.vue';
-    import LessonJourney from './components/LessonJourney.vue';
-    import RoleWorkspace from './components/RoleWorkspace.vue';
-    import ValueCalculator from './components/ValueCalculator.vue';
-    const appUrl = import.meta.env.VITE_APP_URL || 'http://localhost:5173/auth/sign';
-    const demoUrl = import.meta.env.VITE_DEMO_URL || `${appUrl}${appUrl.includes('?') ? '&' : '?'}demo=true`;
+    import BrandLogo from '~/components/BrandLogo.vue';
+    import BrandMark from '~/components/BrandMark.vue';
+    import CapabilityShowcase from '~/components/CapabilityShowcase.vue';
+    import FutureRoadmap from '~/components/FutureRoadmap.vue';
+    import IntegrationTangle from '~/components/IntegrationTangle.vue';
+    import LessonJourney from '~/components/LessonJourney.vue';
+    import RoleWorkspace from '~/components/RoleWorkspace.vue';
+    import ValueCalculator from '~/components/ValueCalculator.vue';
+
+    const { appUrl, demoUrl } = useRuntimeConfig().public;
     const currentYear = new Date().getFullYear();
     const isScrolled = ref(false);
 
