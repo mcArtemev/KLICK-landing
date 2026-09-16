@@ -177,24 +177,38 @@
         </main>
 
         <footer class="site-footer">
+            <span class="site-footer__thread" aria-hidden="true"></span>
+            <span class="site-footer__scribble" aria-hidden="true">всё для урока — рядом ↗</span>
             <div class="shell site-footer__main">
-                <div>
+                <div class="site-footer__brand-card">
+                    <span class="site-footer__pin" aria-hidden="true"></span>
                     <BrandLogo />
                     <p>Рабочее пространство для репетиторов и онлайн-преподавателей.</p>
+                    <small>Преподавание — в один клик</small>
                 </div>
-                <nav aria-label="Навигация в подвале">
-                    <a href="#possibilities">Возможности</a>
-                    <a href="#lesson-journey">Как это работает</a>
-                    <a href="#connections">Почему Klick</a>
-                    <a href="#student-space">Для ученика</a>
-                    <a href="#development">Что дальше</a>
-                    <a :href="demoUrl">Демо</a>
-                    <a :href="appUrl">Войти</a>
-                </nav>
+
+                <div class="site-footer__map">
+                    <span>Карта мастерской</span>
+                    <nav aria-label="Навигация в подвале">
+                        <a href="#possibilities"><small>01</small> Возможности</a>
+                        <a href="#lesson-journey"><small>02</small> Как это работает</a>
+                        <a href="#connections"><small>03</small> Почему Klick</a>
+                        <a href="#student-space"><small>04</small> Для ученика</a>
+                        <a href="#development"><small>05</small> Что дальше</a>
+                    </nav>
+                </div>
+
+                <div class="site-footer__demo-card">
+                    <span>Можно начать с демо</span>
+                    <h3>Загляните внутрь Klick</h3>
+                    <p>Основные сценарии уже заполнены мок-данными — можно спокойно всё посмотреть.</p>
+                    <a :href="demoUrl">Открыть демо <IconArrowUpRight :size="17" /></a>
+                </div>
             </div>
             <div class="shell site-footer__bottom">
                 <span>© {{ currentYear }} Klick</span>
-                <span>Преподавание — в один клик</span>
+                <span>Сделано для тех, кто учит</span>
+                <a href="#top">Наверх <span aria-hidden="true">↑</span></a>
             </div>
         </footer>
     </div>
