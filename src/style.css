@@ -7262,6 +7262,16 @@ svg {
         font-size: 1.05em;
     }
 
+    .landing-page--workshop .hero__annotation {
+        width: fit-content;
+        max-width: 100%;
+        margin: 14px auto 0;
+        font-size: 19px;
+        line-height: 1.15;
+        text-align: center;
+        transform: rotate(-1deg);
+    }
+
     .landing-page--workshop .workshop-pencil,
     .landing-page--workshop .workshop-sticker {
         display: none;
