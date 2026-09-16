@@ -207,7 +207,7 @@
             </div>
             <div class="shell site-footer__bottom">
                 <span>© {{ currentYear }} Klick</span>
-                <span>Сделано для тех, кто учит</span>
+                <span>Сделано для тех, кто учит и обучается</span>
                 <a href="#top">Наверх <span aria-hidden="true">↑</span></a>
             </div>
         </footer>
