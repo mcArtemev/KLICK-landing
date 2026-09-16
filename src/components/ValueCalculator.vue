@@ -210,9 +210,9 @@
     .rhythm-picker button:nth-child(3) { transform: rotate(1deg); }
     .rhythm-picker button:hover { transform: translateY(-3px) rotate(0); }
     .rhythm-picker button.active { background: var(--workshop-lilac); box-shadow: 7px 8px 0 var(--workshop-ink); transform: translateY(-5px) rotate(-1deg); }
-    .rhythm-picker span { overflow: hidden; font-size: 11px; font-weight: 800; text-overflow: ellipsis; }
+    .rhythm-picker span { overflow: hidden; font-size: 12px; font-weight: 800; text-overflow: ellipsis; }
     .rhythm-picker b { font-size: 30px; line-height: 1; }
-    .rhythm-picker small { color: #756e67; font-size: 8px; }
+    .rhythm-picker small { color: #756e67; font-size: 10px; }
 
     .calculation-note {
         margin-top: 32px;
@@ -225,7 +225,7 @@
     }
 
     .calculation-note b { font-size: 13px; }
-    .calculation-note p { margin: 8px 0 0; color: #625b55; font-size: 11px; line-height: 1.55; }
+    .calculation-note p { margin: 8px 0 0; color: #625b55; font-size: 12px; line-height: 1.55; }
 
     .value-note {
         display: block;
@@ -266,9 +266,9 @@
     }
 
     .time-stage > header div { display: flex; flex-direction: column; gap: 5px; }
-    .time-stage > header small { font-size: 9px; font-weight: 800; letter-spacing: 0.12em; }
+    .time-stage > header small { font-size: 11px; font-weight: 800; letter-spacing: 0.1em; }
     .time-stage > header b { font-size: 19px; }
-    .time-stage > header button { padding: 8px 11px; color: var(--workshop-ink); border: 2px solid var(--workshop-ink); border-radius: 99px; background: #fff3a8; cursor: pointer; font-size: 9px; font-weight: 800; }
+    .time-stage > header button { padding: 8px 11px; color: var(--workshop-ink); border: 2px solid var(--workshop-ink); border-radius: 99px; background: #fff3a8; cursor: pointer; font-size: 10px; font-weight: 800; }
 
     .workflow-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin-top: 23px; }
     .workflow-steps > button { display: grid; min-height: 126px; grid-template-columns: 38px 1fr auto; gap: 10px; align-items: start; padding: 16px 14px; color: var(--workshop-ink); border: 2px solid var(--workshop-ink); border-radius: 13px 18px 12px 16px; background: #f2eee8; cursor: pointer; text-align: left; opacity: 0.56; transition: opacity 150ms ease, background-color 150ms ease, transform 150ms ease; }
@@ -278,17 +278,17 @@
     .workflow-steps > button > i { display: grid; width: 36px; height: 36px; place-items: center; border: 2px solid var(--workshop-ink); border-radius: 11px 15px 10px 13px; background: var(--workshop-lilac); font-style: normal; }
     .workflow-steps > button.risk > i { background: var(--workshop-orange); }
     .workflow-steps > button > span { display: flex; min-width: 0; flex-direction: column; gap: 6px; }
-    .workflow-steps > button > span b { font-size: 13px; line-height: 1.2; }
-    .workflow-steps > button > span small { color: #756e67; font-size: 10px; line-height: 1.4; }
+    .workflow-steps > button > span b { font-size: 14px; line-height: 1.2; }
+    .workflow-steps > button > span small { color: #756e67; font-size: 11px; line-height: 1.4; }
     .workflow-steps > button > em { display: flex; align-items: flex-end; flex-direction: column; gap: 5px; font-style: normal; text-align: right; }
-    .workflow-steps > button > em strong { white-space: nowrap; font-size: 12px; }
-    .workflow-steps > button > em small { color: #877f77; font-size: 8px; white-space: nowrap; }
+    .workflow-steps > button > em strong { white-space: nowrap; font-size: 13px; }
+    .workflow-steps > button > em small { color: #877f77; font-size: 10px; white-space: nowrap; }
 
     .route-summary { position: relative; display: grid; gap: 13px; margin-top: 24px; padding: 21px; border: 2px solid var(--workshop-ink); border-radius: 16px 22px 14px 19px; background: #fff; }
     .route-summary > div { display: grid; grid-template-columns: 1fr auto; gap: 5px 15px; align-items: center; }
     .route-summary span { display: flex; flex-direction: column; }
     .route-summary b { font-size: 14px; }
-    .route-summary small { color: #837b74; font-size: 10px; }
+    .route-summary small { color: #837b74; font-size: 11px; }
     .route-summary strong { font-size: 15px; }
     .route-summary div > i { grid-column: 1 / 3; height: 14px; overflow: hidden; border: 2px solid var(--workshop-ink); border-radius: 99px; background: #f1ede7; }
     .route-summary div > i em { display: block; width: 100%; height: 100%; border-radius: inherit; background: var(--workshop-orange); transition: width 320ms cubic-bezier(0.2, 0.8, 0.2, 1); }
@@ -298,17 +298,17 @@
     .result-slot { display: grid; min-height: 252px; align-items: start; }
     .calculation-result { margin-top: 33px; padding: 22px 25px; border: 2px solid var(--workshop-ink); border-radius: 17px 12px 20px 14px; background: #ffd84d; box-shadow: 5px 6px 0 var(--workshop-ink); }
     .formula { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-bottom: 15px; }
-    .formula span { padding: 5px 8px; border: 1px solid var(--workshop-ink); border-radius: 99px; background: #fffdf7; font-size: 9px; font-weight: 800; }
+    .formula span { padding: 5px 8px; border: 1px solid var(--workshop-ink); border-radius: 99px; background: #fffdf7; font-size: 10px; font-weight: 800; }
     .formula > i { font: 700 19px Caveat, cursive; }
-    .calculation-result > small { font-size: 9px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+    .calculation-result > small { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
     .calculation-result > strong { display: flex; align-items: baseline; gap: 8px; margin: 5px 0; font-size: clamp(48px, 5vw, 70px); line-height: 0.95; letter-spacing: -0.06em; }
     .calculation-result > strong i { font: 700 28px Caveat, cursive; letter-spacing: 0; }
     .calculation-result > strong em { font-size: 21px; font-style: normal; letter-spacing: -0.03em; }
-    .calculation-result > p { margin: 11px 0 0; color: rgb(33 28 26 / 0.72); font-size: 12px; line-height: 1.5; }
+    .calculation-result > p { margin: 11px 0 0; color: rgb(33 28 26 / 0.72); font-size: 13px; line-height: 1.5; }
 
     .time-stage > footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 18px; color: #817970; }
     .time-stage > footer span { font: 700 17px Caveat, cursive; }
-    .time-stage > footer small { max-width: 350px; font-size: 8px; line-height: 1.4; text-align: right; }
+    .time-stage > footer small { max-width: 380px; font-size: 10px; line-height: 1.45; text-align: right; }
 
     .time-pop-enter-active,
     .time-pop-leave-active { transition: opacity 150ms ease, transform 150ms ease; }
