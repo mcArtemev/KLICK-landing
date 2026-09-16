@@ -1,0 +1,23 @@
+{
+    "name": "klick-landing",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+        "dev": "nuxt dev --host=127.0.0.1",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview --host=127.0.0.1",
+        "typecheck": "nuxt typecheck"
+    },
+    "dependencies": {
+        "@lucide/vue": "^1.20.0",
+        "nuxt": "^4.1.2",
+        "vue": "^3.5.33"
+    },
+    "devDependencies": {
+        "@types/node": "^25.9.3",
+        "typescript": "^5.9.3",
+        "vue-tsc": "^3.2.5"
+    }
+}
