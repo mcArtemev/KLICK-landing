@@ -5,8 +5,8 @@
                 <BrandLogo />
 
                 <nav class="desktop-nav" aria-label="Основная навигация">
-                    <a href="#possibilities">Возможности</a>
                     <a href="#connections">Почему Klick</a>
+                    <a href="#possibilities">Возможности</a>
                     <a href="#lesson-journey">Как это работает</a>
                     <a href="#student-space">Для ученика</a>
                     <a href="#development">Что дальше</a>
