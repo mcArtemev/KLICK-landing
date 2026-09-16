@@ -108,15 +108,41 @@ svg {
 }
 
 .brand-logo {
+    position: relative;
     display: inline-flex;
     align-items: center;
     flex: none;
 }
 
-.brand-logo img {
-    width: 79px;
-    height: 35px;
-    object-fit: contain;
+.brand-mark {
+    position: relative;
+    display: inline-block;
+    color: #f59e0b;
+    font: 700 42px/0.82 Caveat, cursive;
+    letter-spacing: -0.055em;
+    transform: rotate(-2deg);
+}
+
+.brand-mark::before,
+.brand-mark::after {
+    position: absolute;
+    border-radius: 50%;
+    background: currentcolor;
+    content: '';
+}
+
+.brand-mark::before {
+    top: -7px;
+    left: 59%;
+    width: 7px;
+    height: 7px;
+}
+
+.brand-mark::after {
+    top: -14px;
+    left: 70%;
+    width: 9px;
+    height: 9px;
 }
 
 .desktop-nav {
@@ -5877,7 +5903,7 @@ svg {
     padding: 39px 46px 34px;
 }
 
-.demo-gateway__body > img { width: 92px; height: 43px; object-fit: contain; }
+.demo-gateway__brand { display: block; width: fit-content; font-size: 52px; }
 
 .demo-gateway__label {
     display: inline-block;
@@ -5982,8 +6008,9 @@ svg {
     right: -7%;
     width: 520px;
     height: 220px;
-    background: url('/logo.svg') center / contain no-repeat;
-    content: '';
+    color: var(--brand-orange);
+    content: 'klick';
+    font: 700 220px/0.8 Caveat, cursive;
     opacity: 0.055;
     transform: rotate(-8deg);
 }
@@ -6045,7 +6072,7 @@ svg {
 .development-detail { border: 2px solid var(--brand-ink); background: #fffdf7; box-shadow: 10px 10px 0 var(--brand-ink); }
 
 .roadmap-section { background: var(--brand-ink); }
-.roadmap-section::before { position: absolute; top: 4%; left: -10%; width: 480px; height: 200px; background: url('/logo.svg') center / contain no-repeat; content: ''; opacity: 0.12; transform: rotate(11deg); }
+.roadmap-section::before { position: absolute; top: 4%; left: -10%; width: 480px; height: 200px; color: #ffc35d; content: 'klick'; font: 700 220px/0.8 Caveat, cursive; opacity: 0.12; transform: rotate(11deg); }
 .roadmap-card { border: 0; background: transparent; color: white; box-shadow: none; }
 .roadmap-card::before { display: none; }
 .roadmap-card__heading h3,
@@ -6704,10 +6731,6 @@ svg {
     color: rgba(33, 28, 26, 0.68);
 }
 
-.landing-page--workshop .demo-gateway__body > img {
-    filter: none;
-}
-
 .landing-page--workshop .demo-gateway__label {
     color: var(--workshop-ink);
     background: var(--workshop-green);
@@ -7037,9 +7060,8 @@ svg {
     transform: rotate(-1.5deg);
 }
 
-.landing-page--workshop .site-footer__brand-card .brand-logo img {
-    width: 118px;
-    height: auto;
+.landing-page--workshop .site-footer__brand-card .brand-mark {
+    font-size: 64px;
 }
 
 .landing-page--workshop .site-footer__brand-card > p {

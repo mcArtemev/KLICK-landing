@@ -62,7 +62,7 @@
                             <span class="demo-gateway__drop demo-gateway__drop--two"></span>
                             <header><span>Демо-пространство</span><IconArrowUpRight :size="19" /></header>
                             <div class="demo-gateway__body">
-                                <img src="/logo.svg" alt="">
+                                <BrandMark class="demo-gateway__brand" />
                                 <span class="demo-gateway__label">Можно нажимать всё</span>
                                 <h2>Настоящий Klick.<br>Уже с готовыми данными.</h2>
                                 <p>Расписание, ученики, задания и оплаты заполнены моками — исследуйте платформу в своём темпе.</p>
@@ -237,6 +237,7 @@
     import { onBeforeUnmount, onMounted, ref } from 'vue';
 
     import BrandLogo from './components/BrandLogo.vue';
+    import BrandMark from './components/BrandMark.vue';
     import CapabilityShowcase from './components/CapabilityShowcase.vue';
     import FutureRoadmap from './components/FutureRoadmap.vue';
     import IntegrationTangle from './components/IntegrationTangle.vue';
