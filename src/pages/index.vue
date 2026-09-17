@@ -57,12 +57,15 @@
                         <div class="workshop-sticker workshop-sticker--lesson" aria-hidden="true">версия<br><b>0.1.0</b></div>
                         <div class="workshop-sticker workshop-sticker--done" aria-hidden="true"><IconCheck :size="18" /> готово!</div>
                         <div class="workshop-pencil" aria-hidden="true"></div>
-                        <a class="demo-gateway" :href="demoUrl" aria-label="Открыть демо-пространство Klick">
+                        <article class="demo-gateway">
                             <span class="demo-gateway__drop demo-gateway__drop--one"></span>
                             <span class="demo-gateway__drop demo-gateway__drop--two"></span>
                             <header><span>Демо-пространство</span><IconArrowUpRight :size="19" /></header>
                             <div class="demo-gateway__body">
-                                <BrandMark class="demo-gateway__brand" />
+                                <div class="demo-gateway__brand" aria-label="Klick demo">
+                                    <BrandMark />
+                                    <span aria-hidden="true">demo</span>
+                                </div>
                                 <span class="demo-gateway__label">Можно нажимать всё</span>
                                 <h2>Настоящий Klick.<br>Уже с готовыми данными.</h2>
                                 <p>Расписание, ученики, задания и оплаты заполнены моками — исследуйте платформу в своём темпе.</p>
@@ -72,8 +75,11 @@
                                     <li><IconCheck :size="14" /> Все основные сценарии</li>
                                 </ul>
                             </div>
-                            <footer><span>Войти в кабинет преподавателя</span><i><IconArrowRight :size="18" /></i></footer>
-                        </a>
+                            <footer>
+                                <span>Войти в кабинет преподавателя</span>
+                                <a :href="demoUrl" aria-label="Открыть демо Klick"><IconArrowRight :size="18" /></a>
+                            </footer>
+                        </article>
                     </div>
                 </div>
             </section>
