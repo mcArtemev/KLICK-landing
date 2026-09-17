@@ -76,28 +76,6 @@
                         </a>
                     </div>
                 </div>
-
-                <div class="context-strip" aria-label="Что заменяет Klick">
-                    <div class="shell context-strip__inner">
-                    <p>Вместо вкладок, таблиц и переписок — <strong>одно пространство Klick</strong></p>
-                    <div>
-                        <span><IconCalendarDays :size="17" /> Календарь</span>
-                        <i></i>
-                        <span><IconFileCheckCorner :size="17" /> Домашние задания</span>
-                        <i></i>
-                        <span><IconClipboardCheck :size="17" /> Тесты</span>
-                        <i></i>
-                        <span><IconMessageSquareText :size="17" /> Чаты</span>
-                        <i></i>
-                        <span><IconVideo :size="17" /> Видеозвонки </span>
-                        <i></i>
-                        <span><IconPresentation :size="17" /> Интерактивная доска </span>
-                        <i></i>
-                        <span><IconFolderOpen :size="17" /> Материалы</span>
-                    </div>
-                    
-                    </div>
-                </div>
             </section>
 
             <IntegrationTangle />

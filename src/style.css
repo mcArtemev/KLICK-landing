@@ -6541,17 +6541,6 @@ svg {
     backdrop-filter: blur(16px);
 }
 
-.landing-page--workshop .site-header__inner::before {
-    content: "";
-    position: absolute;
-    left: 48%;
-    bottom: -8px;
-    width: 76px;
-    height: 15px;
-    background: rgba(255, 216, 77, 0.8);
-    transform: rotate(-2deg);
-}
-
 .landing-page--workshop .desktop-nav a,
 .landing-page--workshop .site-header:not(.site-header--scrolled) .desktop-nav a {
     color: var(--workshop-ink);
@@ -7204,7 +7193,6 @@ svg {
     padding-block: 0;
     color: var(--workshop-ink);
     border: 0;
-    border-radius: 18px 18px 0 0;
     background: var(--workshop-yellow);
     font-size: 11px;
     font-weight: 750;

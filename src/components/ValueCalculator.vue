@@ -103,10 +103,10 @@
     ] as const;
 
     const tasks = [
-        { id: 'video', title: 'Видеозвонок', description: 'Войти, создать комнату, отправить ссылку', minutes: 4, klickMinutes: 1, frequency: 1, frequencyLabel: 'каждый урок', icon: Video },
-        { id: 'board', title: 'Интерактивная доска', description: 'Войти, открыть доску, дать ученику доступ', minutes: 4, klickMinutes: 1, frequency: 0.7, frequencyLabel: 'часто', icon: Presentation },
+        { id: 'video', title: 'Видеозвонок', description: 'Войти, создать комнату, отправить ссылку', minutes: 2, klickMinutes: 1, frequency: 1, frequencyLabel: 'каждый урок', icon: Video },
+        { id: 'board', title: 'Интерактивная доска', description: 'Войти, открыть доску, дать ученику доступ', minutes: 2, klickMinutes: 1, frequency: 0.7, frequencyLabel: 'часто', icon: Presentation },
         { id: 'materials', title: 'Снимок и файл', description: 'Сохранить, найти и отправить материалы', minutes: 3, klickMinutes: 1, frequency: 0.8, frequencyLabel: 'почти каждый урок', icon: FileUp },
-        { id: 'test', title: 'Тест или практика', description: 'Найти или собрать, объяснить и отправить', minutes: 7, klickMinutes: 3, frequency: 0.45, frequencyLabel: 'примерно через урок', icon: ClipboardCheck },
+        { id: 'test', title: 'Тест или практика', description: 'Найти или собрать, объяснить и отправить', minutes: 5, klickMinutes: 3, frequency: 0.45, frequencyLabel: 'примерно через урок', icon: ClipboardCheck },
         { id: 'reminder', title: 'Напоминание', description: 'Найти и повторно переслать нужную ссылку', minutes: 3, klickMinutes: 0, frequency: 0.35, frequencyLabel: 'по необходимости', icon: MessageCircle },
         { id: 'limits', title: 'Если что-то не работает', description: 'Повторный вход, лимит звонка или размера файла', minutes: 5, klickMinutes: 1, frequency: 0.15, frequencyLabel: 'иногда', icon: TriangleAlert }
     ] as const;
