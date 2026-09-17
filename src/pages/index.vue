@@ -55,20 +55,20 @@
 
                     <div class="hero__visual">
                         <div class="workshop-sticker workshop-sticker--lesson" aria-hidden="true">версия<br><b>0.1.0</b></div>
-                        <div class="workshop-sticker workshop-sticker--done" aria-hidden="true"><IconCheck :size="18" /> готово!</div>
+                        
                         <div class="workshop-pencil" aria-hidden="true"></div>
                         <article class="demo-gateway">
                             <span class="demo-gateway__drop demo-gateway__drop--one"></span>
                             <span class="demo-gateway__drop demo-gateway__drop--two"></span>
-                            <header><span>Демо-пространство</span><IconArrowUpRight :size="19" /></header>
+                            <header><span>Демо-пространство</span></header>
                             <div class="demo-gateway__body">
                                 <div class="demo-gateway__brand" aria-label="Klick demo">
                                     <BrandMark />
                                     <span aria-hidden="true">demo</span>
                                 </div>
                                 <span class="demo-gateway__label">Можно нажимать всё</span>
-                                <h2>Настоящий Klick.<br>Уже с готовыми данными.</h2>
-                                <p>Расписание, ученики, задания и оплаты заполнены моками — исследуйте платформу в своём темпе.</p>
+                                <h2>Платформа Klick,<br>но уже с готовыми данными.</h2>
+                                <p>Все инструменты платформы настроены и заполнены тестовыми данными  — исследуйте платформу в своём темпе.</p>
                                 <ul>
                                     <li><IconCheck :size="14" /> Без регистрации</li>
                                     <li><IconCheck :size="14" /> Без настройки</li>
@@ -76,7 +76,7 @@
                                 </ul>
                             </div>
                             <footer>
-                                <span>Войти в кабинет преподавателя</span>
+                                <span>Перейти в демо-пространство Klick </span>
                                 <a :href="demoUrl" aria-label="Открыть демо Klick"><IconArrowRight :size="18" /></a>
                             </footer>
                         </article>
@@ -140,7 +140,7 @@
                 </div>
             </section>
 
-            <FutureRoadmap />
+            <!-- <FutureRoadmap /> -->
 
             <section class="final-cta section-pad">
                 <div class="shell final-cta__card">

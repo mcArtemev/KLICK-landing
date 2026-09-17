@@ -75,7 +75,7 @@
                                 <i>×</i>
                                 <span>{{ savedMinutesPerLesson }} мин</span>
                             </div>
-                            <small>Ориентир на месяц</small>
+                            <small>сэкономлено за месяц</small>
                             <strong><i>≈</i> {{ savedHours }} <em>{{ savedHourLabel }}</em></strong>
                             <p v-if="savedHours">Это примерно {{ freeEvenings }} {{ eveningLabel }} или {{ focusBlocks }} {{ focusBlockLabel }} по два часа без сервисной рутины.</p>
                             <p v-else>Выберите хотя бы один знакомый шаг — и здесь появится ваш ориентир.</p>
