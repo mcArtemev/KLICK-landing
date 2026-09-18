@@ -1,53 +1,79 @@
 <template>
     <div class="capability-showcase">
-        <div class="capability-groups" role="tablist" aria-label="Группы возможностей Klick">
-            <button
-                v-for="group in capabilityGroups"
-                :key="group.id"
-                type="button"
-                role="tab"
-                :aria-selected="activeGroup === group.id"
-                :class="{ 'capability-group--active' : activeGroup === group.id }"
-                @click="selectGroup(group.id)"
-            >
-                <span>{{ group.marker }}</span>
-                <b>{{ group.title }}</b>
-                <small>{{ group.subtitle }}</small>
-            </button>
-        </div>
+        <aside class="capability-browser" aria-label="Навигация по возможностям Klick">
+            <header class="capability-browser__heading">
+                <span>13 модулей</span>
+                <b>Всё необходимое — внутри</b>
+                <small>Откройте направление и выберите инструмент</small>
+            </header>
 
-        <div class="capability-tabs" role="tablist" aria-label="Дополнительные возможности Klick">
-            <button
-                v-for="item in filteredCapabilities"
-                :key="item.id"
-                type="button"
-                role="tab"
-                class="capability-tab"
-                :class="{ 'capability-tab--active' : activeId === item.id }"
-                :aria-selected="activeId === item.id"
-                :aria-controls="`capability-${item.id}`"
-                @click="activeId = item.id"
-            >
-                <span class="capability-tab__icon"><component :is="item.icon" :size="20" /></span>
-                <span><b>{{ item.title }}</b><small>{{ item.text }}</small></span>
-                <IconChevronRight class="capability-tab__arrow" :size="17" />
-            </button>
-        </div>
+            <div class="capability-groups">
+                <button
+                    v-for="group in capabilityGroups"
+                    :key="group.id"
+                    type="button"
+                    class="capability-group"
+                    :class="{ 'capability-group--active' : activeGroup === group.id }"
+                    :aria-pressed="activeGroup === group.id"
+                    aria-controls="capability-group-modules"
+                    @click="selectGroup(group.id)"
+                >
+                    <span class="capability-group__marker">{{ group.marker }}</span>
+                    <span class="capability-group__copy">
+                        <b>{{ group.title }}</b>
+                        <small>{{ group.subtitle }}</small>
+                    </span>
+                    <span class="capability-group__open">
+                        {{ moduleLabel(group.items.length) }}
+                        <IconChevronRight :size="16" />
+                    </span>
+                </button>
+            </div>
 
-        <Transition name="capability-fade" mode="out-in">
-            <article
-                :id="`capability-${activeCapability.id}`"
-                :key="activeCapability.id"
-                class="capability-detail"
-                role="tabpanel"
-            >
+            <div class="capability-folder__tray">
+                <header>
+                    <span>{{ activeGroupData.marker }}</span>
+                    <div><small>Инструменты направления</small><b>{{ activeGroupData.title }}</b></div>
+                </header>
+                <div
+                    id="capability-group-modules"
+                    class="capability-folder__modules"
+                    role="tablist"
+                    :aria-label="`Модули направления ${activeGroupData.title}`"
+                >
+                    <button
+                        v-for="item in filteredCapabilities"
+                        :key="item.id"
+                        type="button"
+                        role="tab"
+                        class="capability-module"
+                        :class="{ 'capability-module--active' : activeId === item.id }"
+                        :aria-selected="activeId === item.id"
+                        :aria-controls="`capability-${item.id}`"
+                        @click="activeId = item.id"
+                    >
+                        <span><component :is="item.icon" :size="18" /></span>
+                        <b>{{ item.title }}</b>
+                        <IconChevronRight :size="15" />
+                    </button>
+                </div>
+            </div>
+
+            <p class="capability-browser__note">Один контекст связывает все инструменты</p>
+        </aside>
+
+        <article
+            :id="`capability-${activeCapability.id}`"
+            class="capability-detail"
+            role="tabpanel"
+        >
                 <div class="capability-detail__copy">
                     <span class="section-kicker">{{ activeCapability.kicker }}</span>
                     <h3>{{ activeCapability.heading }}</h3>
                     <p>{{ activeCapability.description }}</p>
                     <ul>
                         <li v-for="point in activeCapability.points" :key="point">
-                            <IconCheck :size="15" /> {{ point }}
+                            <span class="trust-pin" aria-hidden="true"></span> {{ point }}
                         </li>
                     </ul>
                 </div>
@@ -227,8 +253,7 @@
                         </section>
                     </div>
                 </div>
-            </article>
-        </Transition>
+        </article>
     </div>
 </template>
 
@@ -240,7 +265,6 @@
         Camera as IconCamera,
         CalendarCheck as IconCalendarCheck,
         CalendarDays as IconCalendarDays,
-        Check as IconCheck,
         ChevronRight as IconChevronRight,
         ClipboardCheck as IconClipboardCheck,
         FileCheck2 as IconFileCheck2,
@@ -274,7 +298,7 @@
             kicker      : 'Календарь, который знает контекст',
             heading     : 'Расписание связано с учениками и оплатами',
             description : 'Уроки, переносы, статусы и быстрый переход к ученику — без ручной сверки расписания.',
-            points      : ['День, неделя и месяц', 'Переносы с проверкой свободного времени', 'Переход к ученику, оплате и условиям урока'],
+            points      : ['Переносы с проверкой свободного времени', 'Переход к ученику, оплате и условиям урока'],
             windowTitle : 'Календарь · неделя'
         },
         {
@@ -419,12 +443,16 @@
         { id : 'connect', marker : '04', title : 'Общение и финансы', subtitle : 'Урок и оплата', items : ['video-calls', 'messenger', 'payments'] }
     ] as const;
     const activeGroup = ref<(typeof capabilityGroups)[number]['id']>('organize');
+    const activeGroupData = computed(() => capabilityGroups.find(group => group.id === activeGroup.value) ?? capabilityGroups[0]);
     const filteredCapabilities = computed(() => {
-        const ids = capabilityGroups.find(group => group.id === activeGroup.value)?.items ?? capabilityGroups[0].items;
+        const ids = activeGroupData.value.items;
         return capabilities.filter(item => (ids as readonly string[]).includes(item.id));
     });
     const activeCapability = computed(() => capabilities.find(item => item.id === activeId.value) ?? capabilities[0]);
+    const moduleLabel = (count : number) => `${count} модуля`;
     const selectGroup = (groupId : (typeof capabilityGroups)[number]['id']) => {
+        if (activeGroup.value === groupId) return;
+
         activeGroup.value = groupId;
         const firstId = capabilityGroups.find(group => group.id === groupId)?.items[0] ?? 'calendar';
         activeId.value = firstId as (typeof capabilities)[number]['id'];

@@ -26,6 +26,7 @@
     --accent-700: #b45309;
     --shadow-soft: 0 10px 35px -22px rgb(28 25 23 / 0.24), 0 2px 10px -5px rgb(28 25 23 / 0.08);
     --shadow-card: 0 22px 70px -34px rgb(28 25 23 / 0.25), 0 4px 18px -10px rgb(28 25 23 / 0.12);
+    --site-header-height: 76px;
 }
 
 * {
@@ -34,7 +35,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 88px;
+    scroll-padding-top: var(--site-header-height);
 }
 
 body {
@@ -6844,6 +6845,42 @@ svg {
     letter-spacing: -0.055em;
 }
 
+.landing-page--workshop .section-heading > p {
+    position: relative;
+    padding: 20px 22px;
+    color: rgb(33 28 26 / 0.76);
+    border: 2px solid var(--workshop-ink);
+    border-radius: 14px 19px 13px 17px;
+    background: rgb(255 253 247 / 0.82);
+    box-shadow: 5px 6px 0 var(--workshop-ink);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.landing-page--workshop .section-heading > p::before {
+    position: absolute;
+    top: -8px;
+    left: 26px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid var(--workshop-ink);
+    border-radius: 50%;
+    background: var(--workshop-green);
+    content: '';
+}
+
+.landing-page--workshop .trust-pin {
+    position: static;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    flex: 0 0 auto;
+    border: 2px solid var(--workshop-ink);
+    border-radius: 50%;
+    background: var(--workshop-green);
+    box-shadow: none;
+}
+
 .landing-page--workshop .capability-showcase,
 .landing-page--workshop .development-showcase {
     gap: 24px;
@@ -7373,54 +7410,180 @@ svg {
    Conversion story built around one continuous teaching context.
    -------------------------------------------------------------------------- */
 
+.landing-page--workshop .capability-showcase {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 22px;
+    align-items: stretch;
+    overflow-anchor: none;
+}
+
+.landing-page--workshop .features-section { overflow-anchor: none; }
+
+.landing-page--workshop .capability-browser {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    border: 2px solid var(--workshop-ink);
+    border-radius: 24px 18px 27px 20px;
+    background: #fffdf7;
+    box-shadow: 7px 8px 0 var(--workshop-ink);
+}
+
+.landing-page--workshop .capability-browser__heading {
+    display: grid;
+    gap: 3px;
+    padding: 18px 19px 16px;
+    border-bottom: 2px solid var(--workshop-ink);
+    background: var(--workshop-yellow);
+}
+
+.landing-page--workshop .capability-browser__heading > span {
+    width: fit-content;
+    border: 1.5px solid var(--workshop-ink);
+    border-radius: 99px;
+    background: #fffdf7;
+    padding: 3px 8px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.landing-page--workshop .capability-browser__heading b { margin-top: 5px; font-size: 18px; }
+.landing-page--workshop .capability-browser__heading small { color: rgb(33 28 26 / 0.64); font-size: 11px; line-height: 1.4; }
+
 .landing-page--workshop .capability-groups {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
-    margin-bottom: 28px;
+    gap: 5px;
+    padding: 10px;
 }
 
-.landing-page--workshop .capability-groups button {
-    position: relative;
+.landing-page--workshop .capability-group {
     display: grid;
-    min-height: 112px;
-    grid-template-columns: 34px 1fr;
-    align-content: center;
-    gap: 5px 10px;
-    padding: 17px;
+    width: 100%;
+    min-height: 57px;
+    grid-template-columns: 34px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 9px;
+    border: 1.5px solid transparent;
+    border-radius: 12px 16px 11px 14px;
+    background: transparent;
+    padding: 9px 11px;
     color: var(--workshop-ink);
+    font: inherit;
     text-align: left;
-    border: 2px solid var(--workshop-ink);
-    border-radius: 16px 22px 14px 20px;
-    background: #fffdf7;
-    box-shadow: 4px 4px 0 var(--workshop-ink);
     cursor: pointer;
-    transition: 0.18s ease;
+    transition: border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
 
-.landing-page--workshop .capability-groups button:nth-child(2) { background: #dff2ff; transform: rotate(0.4deg); }
-.landing-page--workshop .capability-groups button:nth-child(3) { background: #e5dfff; transform: rotate(-0.4deg); }
-.landing-page--workshop .capability-groups button:nth-child(4) { background: #dff5e8; transform: rotate(0.5deg); }
-
-.landing-page--workshop .capability-groups button:hover,
-.landing-page--workshop .capability-groups .capability-group--active {
-    background: var(--workshop-yellow);
-    box-shadow: 7px 7px 0 var(--workshop-ink);
-    transform: translateY(-4px) rotate(0deg);
+.landing-page--workshop .capability-group:hover { background: #f7f2e8; }
+.landing-page--workshop .capability-group--active {
+    border-color: var(--workshop-ink);
+    background: var(--workshop-lilac);
+    box-shadow: 3px 3px 0 var(--workshop-ink);
 }
 
-.landing-page--workshop .capability-groups button > span {
-    grid-row: 1 / 3;
+.landing-page--workshop .capability-group__marker {
     color: #6752c8;
     font: 700 24px/1 Caveat, cursive;
+    text-align: center;
 }
 
-.landing-page--workshop .capability-groups button b { font-size: 14px; }
-.landing-page--workshop .capability-groups button small { color: rgb(33 28 26 / 0.62); font-size: 10px; }
-
-.landing-page--workshop .capability-tabs {
+.landing-page--workshop .capability-group__copy {
+    display: flex;
     min-width: 0;
+    flex-direction: column;
+    gap: 1px;
 }
+
+.landing-page--workshop .capability-group__copy b { font-size: 14px; line-height: 1.2; }
+.landing-page--workshop .capability-group__copy small { overflow: hidden; color: rgb(33 28 26 / 0.58); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+
+.landing-page--workshop .capability-group__open {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    color: rgb(33 28 26 / 0.58);
+    font-size: 9px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.landing-page--workshop .capability-group__open svg { transition: transform 160ms ease; }
+.landing-page--workshop .capability-group--active .capability-group__open { color: var(--workshop-ink); }
+.landing-page--workshop .capability-group--active .capability-group__open svg { transform: rotate(90deg); }
+
+.landing-page--workshop .capability-folder__tray {
+    min-height: 276px;
+    margin: 0 10px 8px;
+    border: 1.5px solid var(--workshop-ink);
+    border-radius: 14px 18px 12px 16px;
+    background: #f8f3ff;
+    padding: 9px;
+}
+
+.landing-page--workshop .capability-folder__tray > header {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+    gap: 8px;
+    padding: 3px 4px 8px;
+    border-bottom: 1.5px dashed rgb(33 28 26 / 0.28);
+}
+
+.landing-page--workshop .capability-folder__tray > header > span {
+    color: #6752c8;
+    font: 700 25px/1 Caveat, cursive;
+    text-align: center;
+}
+
+.landing-page--workshop .capability-folder__tray > header div { display: flex; flex-direction: column; }
+.landing-page--workshop .capability-folder__tray > header small { color: rgb(33 28 26 / 0.55); font-size: 8px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.landing-page--workshop .capability-folder__tray > header b { margin-top: 1px; font-size: 13px; }
+
+.landing-page--workshop .capability-folder__modules {
+    display: grid;
+    gap: 5px;
+    padding-top: 7px;
+}
+
+.landing-page--workshop .capability-module {
+    display: grid;
+    min-height: 42px;
+    grid-template-columns: 29px minmax(0, 1fr) 15px;
+    align-items: center;
+    gap: 7px;
+    border: 1.5px solid transparent;
+    border-radius: 9px 13px 9px 11px;
+    background: transparent;
+    padding: 6px 8px;
+    color: var(--workshop-ink);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.landing-page--workshop .capability-module:hover { border-color: rgb(33 28 26 / 0.28); background: white; }
+.landing-page--workshop .capability-module--active { border-color: var(--workshop-ink); background: var(--workshop-yellow); }
+.landing-page--workshop .capability-module > span { display: grid; width: 29px; height: 29px; place-items: center; border-radius: 8px; background: white; }
+.landing-page--workshop .capability-module b { overflow: hidden; font-size: 10.5px; line-height: 1.25; text-overflow: ellipsis; }
+.landing-page--workshop .capability-module > svg { color: rgb(33 28 26 / 0.46); }
+.landing-page--workshop .capability-module--active > svg { color: var(--workshop-ink); }
+
+.landing-page--workshop .capability-browser__note {
+    margin: auto 14px 13px;
+    border-top: 1.5px dashed rgb(33 28 26 / 0.28);
+    padding: 10px 4px 0;
+    color: #6752c8;
+    font: 700 17px/1.15 Caveat, cursive;
+}
+
+.landing-page--workshop .capability-showcase > .capability-detail { margin-top: 0; }
 
 .landing-page--workshop .principles-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -7511,14 +7674,18 @@ svg {
 
 .landing-page--workshop .start-steps li > span {
     z-index: 2;
-    display: grid;
+    display: flex;
     width: 54px;
     height: 54px;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
     border: 2px solid var(--workshop-ink);
     border-radius: 50%;
     background: var(--workshop-yellow);
-    font: 700 27px Caveat, cursive;
+    font-family: Inter, ui-sans-serif, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
 }
 
 .landing-page--workshop .start-steps small { color: #6752c8; font-size: 9px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -7541,7 +7708,7 @@ svg {
     transform: rotate(-0.4deg);
 }
 
-.landing-page--workshop .trust-pin {
+.landing-page--workshop .trust-note > .trust-pin {
     position: absolute;
     top: 10px;
     left: 50%;
@@ -7550,7 +7717,7 @@ svg {
     border: 2px solid var(--workshop-ink);
     border-radius: 50%;
     background: var(--workshop-green);
-    box-shadow: 0 4px 0 var(--workshop-ink);
+    transform: translateX(-50%);
 }
 
 .landing-page--workshop .trust-note b { font-size: 15px; }
@@ -7558,16 +7725,81 @@ svg {
 .landing-page--workshop .final-actions { display: flex; justify-content: center; gap: 15px; }
 .landing-page--workshop .final-cta .button--ghost { color: var(--workshop-ink); background: #fffdf7; border-color: var(--workshop-ink); }
 
+/* Full-screen chapter rhythm. The fixed header is excluded from the available canvas. */
+.landing-page--workshop main > section:not(.hero) {
+    display: flex;
+    min-height: calc(100svh - var(--site-header-height));
+    align-items: center;
+}
+
+.landing-page--workshop main > section.section-pad:not(.hero) {
+    padding-block: clamp(44px, 5vh, 62px);
+}
+
+@media (min-width: 901px) {
+    .landing-page--workshop main > section.tangle-section.section-pad { padding-block: 30px; }
+    .landing-page--workshop main > section.journey-section.section-pad { padding-block: 44px; }
+
+    .landing-page--workshop main > .features-section {
+        padding-block: 24px;
+    }
+
+    .landing-page--workshop .features-section .section-heading {
+        margin-bottom: 18px;
+    }
+
+    .landing-page--workshop .features-section .section-heading h2 {
+        font-size: clamp(36px, 3.2vw, 52px);
+    }
+
+    .landing-page--workshop .features-section .section-heading > p {
+        padding: 14px 18px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .landing-page--workshop .features-section .capability-showcase {
+        margin-top: 0;
+    }
+
+    .landing-page--workshop .features-section .capability-detail {
+        height: 550px;
+        min-height: 550px;
+        max-height: 550px;
+        gap: 40px;
+        padding: 34px;
+    }
+
+    .landing-page--workshop .features-section .capability-detail__preview {
+        height: 470px;
+        min-height: 470px;
+        max-height: 470px;
+    }
+
+    .landing-page--workshop .features-section .capability-detail__copy h3 {
+        font-size: clamp(29px, 2.5vw, 38px);
+    }
+
+    .landing-page--workshop .features-section .capability-detail__copy > p { font-size: 15px; }
+    .landing-page--workshop .features-section .capability-detail__copy li { font-size: 13px; }
+
+    .landing-page--workshop .features-section .capability-detail__copy ul {
+        gap: 7px;
+        margin-top: 14px;
+    }
+}
+
 @media (max-width: 900px) {
-    .landing-page--workshop .capability-groups,
+    .landing-page--workshop .capability-showcase { grid-template-columns: 1fr; }
+    .landing-page--workshop .capability-browser { overflow: visible; }
     .landing-page--workshop .principles-grid { grid-template-columns: 1fr 1fr; }
     .landing-page--workshop .start-steps { grid-template-columns: 1fr; }
     .landing-page--workshop .start-steps::before { display: none; }
 }
 
 @media (max-width: 580px) {
-    .landing-page--workshop .capability-groups,
     .landing-page--workshop .principles-grid { grid-template-columns: 1fr; }
+    .landing-page--workshop .capability-browser__heading { padding: 15px; }
     .landing-page--workshop .trust-note { grid-template-columns: 1fr; padding: 28px 22px; }
     .landing-page--workshop .final-actions { flex-direction: column; }
 }
