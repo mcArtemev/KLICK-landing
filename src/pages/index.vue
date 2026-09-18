@@ -9,7 +9,7 @@
                     <a href="#possibilities">Возможности</a>
                     <a href="#lesson-journey">Как это работает</a>
                     <a href="#student-space">Для ученика</a>
-                    <a href="#development">Что дальше</a>
+                    <!-- <a href="#start">Что дальше</a> -->
                     <a :href="demoUrl">Демо</a>
                 </nav>
 
@@ -21,7 +21,7 @@
         </header>
 
         <main>
-            <section class="hero section-pad">
+            <section id="hero" class="hero section-pad">
                 <div class="hero-orb hero-orb--left"></div>
                 <div class="hero-orb hero-orb--right"></div>
                 <div class="hero-ink-splat" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -47,55 +47,39 @@
                             </a>
                         </div>
                         <ul class="hero__proof" aria-label="Ключевые преимущества">
-                            <li><IconCheck :size="14" /> Быстрый старт</li>
-                            <li><IconCheck :size="14" /> Личное рабочее пространство</li>
-                            <li><IconCheck :size="14" /> Всё связано между собой</li>
+                            <li><span class="trust-pin" aria-hidden="true"></span> Быстрый старт</li>
+                            <li><span class="trust-pin" aria-hidden="true"></span> Личное рабочее пространство</li>
+                            <li><span class="trust-pin" aria-hidden="true"></span> Всё связано между собой</li>
                         </ul>
                     </div>
 
                     <div class="hero__visual">
                         <div class="workshop-sticker workshop-sticker--lesson" aria-hidden="true">версия<br><b>0.1.0</b></div>
-                        <div class="workshop-sticker workshop-sticker--done" aria-hidden="true"><IconCheck :size="18" /> готово!</div>
+                        
                         <div class="workshop-pencil" aria-hidden="true"></div>
-                        <a class="demo-gateway" :href="demoUrl" aria-label="Открыть демо-пространство Klick">
+                        <article class="demo-gateway">
                             <span class="demo-gateway__drop demo-gateway__drop--one"></span>
                             <span class="demo-gateway__drop demo-gateway__drop--two"></span>
-                            <header><span>Демо-пространство</span><IconArrowUpRight :size="19" /></header>
+                            <header><span>Демо-пространство</span></header>
                             <div class="demo-gateway__body">
-                                <BrandMark class="demo-gateway__brand" />
+                                <div class="demo-gateway__brand" aria-label="Klick demo">
+                                    <BrandMark />
+                                    <span aria-hidden="true">demo</span>
+                                </div>
                                 <span class="demo-gateway__label">Можно нажимать всё</span>
-                                <h2>Настоящий Klick.<br>Уже с готовыми данными.</h2>
-                                <p>Расписание, ученики, задания и оплаты заполнены моками — исследуйте платформу в своём темпе.</p>
+                                <h2>Платформа Klick,<br>но уже с готовыми данными.</h2>
+                                <p>Все инструменты платформы настроены и заполнены тестовыми данными  — исследуйте платформу в своём темпе.</p>
                                 <ul>
-                                    <li><IconCheck :size="14" /> Без регистрации</li>
-                                    <li><IconCheck :size="14" /> Без настройки</li>
-                                    <li><IconCheck :size="14" /> Все основные сценарии</li>
+                                    <li><span class="trust-pin" aria-hidden="true"></span> Без регистрации</li>
+                                    <li><span class="trust-pin" aria-hidden="true"></span> Без настройки</li>
+                                    <li><span class="trust-pin" aria-hidden="true"></span> Все основные сценарии</li>
                                 </ul>
                             </div>
-                            <footer><span>Войти в кабинет преподавателя</span><i><IconArrowRight :size="18" /></i></footer>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="context-strip" aria-label="Что заменяет Klick">
-                    <div class="shell context-strip__inner">
-                    <p>Вместо вкладок, таблиц и переписок — <strong>одно пространство Klick</strong></p>
-                    <div>
-                        <span><IconCalendarDays :size="17" /> Календарь</span>
-                        <i></i>
-                        <span><IconFileCheckCorner :size="17" /> Домашние задания</span>
-                        <i></i>
-                        <span><IconClipboardCheck :size="17" /> Тесты</span>
-                        <i></i>
-                        <span><IconMessageSquareText :size="17" /> Чаты</span>
-                        <i></i>
-                        <span><IconVideo :size="17" /> Видеозвонки </span>
-                        <i></i>
-                        <span><IconPresentation :size="17" /> Интерактивная доска </span>
-                        <i></i>
-                        <span><IconFolderOpen :size="17" /> Материалы</span>
-                    </div>
-                    
+                            <footer>
+                                <span>Перейти в демо-пространство Klick </span>
+                                <a :href="demoUrl" aria-label="Открыть демо Klick"><IconArrowRight :size="18" /></a>
+                            </footer>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -122,7 +106,7 @@
 
             <RoleWorkspace />
 
-            <section class="section-pad principles-section">
+            <section id="system" class="section-pad principles-section">
                 <div class="shell">
                     <div class="section-heading section-heading--center">
                         <div>
@@ -142,7 +126,7 @@
 
             <ValueCalculator />
 
-            <section class="section-pad start-section">
+            <section id="start" class="section-pad start-section">
                 <div class="shell">
                     <div class="start-heading">
                         <span class="section-kicker">Перейти проще, чем кажется</span>
@@ -152,13 +136,13 @@
                     <ol class="start-steps">
                         <li v-for="(step,index) in startSteps" :key="step.title"><span>{{index+1}}</span><div><small>{{step.note}}</small><h3>{{step.title}}</h3><p>{{step.text}}</p></div></li>
                     </ol>
-                    <div class="trust-note"><span class="trust-pin"></span><div><b>Ваши материалы и работы учеников не становятся публичными</b><p>Klick показывает каждой роли только нужные ей данные. Развитие платформы остаётся прозрачным, а поддержку можно попросить прямо из рабочего пространства.</p></div><a class="button button--ghost" :href="demoUrl">Сначала открыть демо <IconPlay :size="16" /></a></div>
+                    <div class="trust-note"><span class="trust-pin"></span><div><b>Ваши материалы и работы учеников не становятся публичными</b><p>Klick показывает каждой пользователю только нужные ему данные. Развитие платформы остаётся прозрачным, а поддержку можно попросить прямо из рабочего пространства.</p></div><a class="button button--ghost" :href="demoUrl">Сначала открыть демо <IconPlay :size="16" /></a></div>
                 </div>
             </section>
 
-            <FutureRoadmap />
+            <!-- <FutureRoadmap /> -->
 
-            <section class="final-cta section-pad">
+            <section id="final" class="final-cta section-pad">
                 <div class="shell final-cta__card">
                     <div class="final-cta__spark final-cta__spark--one"></div>
                     <div class="final-cta__spark final-cta__spark--two"></div>
@@ -190,11 +174,11 @@
                 <div class="site-footer__map">
                     <span>Карта мастерской</span>
                     <nav aria-label="Навигация в подвале">
-                        <a href="#possibilities"><small>01</small> Возможности</a>
-                        <a href="#lesson-journey"><small>02</small> Как это работает</a>
-                        <a href="#connections"><small>03</small> Почему Klick</a>
+                        <a href="#connections"><small>01</small> Почему Klick</a>
+                        <a href="#possibilities"><small>02</small> Возможности</a>
+                        <a href="#lesson-journey"><small>03</small> Как это работает</a>
                         <a href="#student-space"><small>04</small> Для ученика</a>
-                        <a href="#development"><small>05</small> Что дальше</a>
+                        <!-- <a href="#start"><small>05</small> Что дальше</a> -->
                     </nav>
                 </div>
 
@@ -221,7 +205,6 @@
         Bell as IconBell,
         BookOpen as IconBookOpen,
         CalendarDays as IconCalendarDays,
-        Check as IconCheck,
         FolderOpen as IconFolderOpen,
         Layers3 as IconLayers3,
         MessageSquareText as IconMessageSquareText,

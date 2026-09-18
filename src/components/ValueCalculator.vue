@@ -1,5 +1,5 @@
 <template>
-    <section class="value-section section-pad">
+    <section id="time-savings" class="value-section section-pad">
         <div class="shell value-grid">
             <div class="value-copy">
                 <span class="section-kicker">Сколько стоит переключение между сервисами</span>
@@ -75,7 +75,7 @@
                                 <i>×</i>
                                 <span>{{ savedMinutesPerLesson }} мин</span>
                             </div>
-                            <small>Ориентир на месяц</small>
+                            <small>сэкономлено за месяц</small>
                             <strong><i>≈</i> {{ savedHours }} <em>{{ savedHourLabel }}</em></strong>
                             <p v-if="savedHours">Это примерно {{ freeEvenings }} {{ eveningLabel }} или {{ focusBlocks }} {{ focusBlockLabel }} по два часа без сервисной рутины.</p>
                             <p v-else>Выберите хотя бы один знакомый шаг — и здесь появится ваш ориентир.</p>
@@ -103,10 +103,10 @@
     ] as const;
 
     const tasks = [
-        { id: 'video', title: 'Видеозвонок', description: 'Войти, создать комнату, отправить ссылку', minutes: 4, klickMinutes: 1, frequency: 1, frequencyLabel: 'каждый урок', icon: Video },
-        { id: 'board', title: 'Интерактивная доска', description: 'Войти, открыть доску, дать ученику доступ', minutes: 4, klickMinutes: 1, frequency: 0.7, frequencyLabel: 'часто', icon: Presentation },
+        { id: 'video', title: 'Видеозвонок', description: 'Войти, создать комнату, отправить ссылку', minutes: 2, klickMinutes: 1, frequency: 1, frequencyLabel: 'каждый урок', icon: Video },
+        { id: 'board', title: 'Интерактивная доска', description: 'Войти, открыть доску, дать ученику доступ', minutes: 2, klickMinutes: 1, frequency: 0.7, frequencyLabel: 'часто', icon: Presentation },
         { id: 'materials', title: 'Снимок и файл', description: 'Сохранить, найти и отправить материалы', minutes: 3, klickMinutes: 1, frequency: 0.8, frequencyLabel: 'почти каждый урок', icon: FileUp },
-        { id: 'test', title: 'Тест или практика', description: 'Найти или собрать, объяснить и отправить', minutes: 7, klickMinutes: 3, frequency: 0.45, frequencyLabel: 'примерно через урок', icon: ClipboardCheck },
+        { id: 'test', title: 'Тест или практика', description: 'Найти или собрать, объяснить и отправить', minutes: 5, klickMinutes: 3, frequency: 0.45, frequencyLabel: 'примерно через урок', icon: ClipboardCheck },
         { id: 'reminder', title: 'Напоминание', description: 'Найти и повторно переслать нужную ссылку', minutes: 3, klickMinutes: 0, frequency: 0.35, frequencyLabel: 'по необходимости', icon: MessageCircle },
         { id: 'limits', title: 'Если что-то не работает', description: 'Повторный вход, лимит звонка или размера файла', minutes: 5, klickMinutes: 1, frequency: 0.15, frequencyLabel: 'иногда', icon: TriangleAlert }
     ] as const;
@@ -199,7 +199,7 @@
         color: var(--workshop-ink);
         border: 2px solid var(--workshop-ink);
         border-radius: 15px 21px 13px 18px;
-        background: #fffdf7;
+        background: rgb(255 253 247 / 0.68);
         box-shadow: 4px 5px 0 var(--workshop-ink);
         cursor: pointer;
         text-align: left;
@@ -209,7 +209,7 @@
     .rhythm-picker button:nth-child(2) { transform: rotate(-1deg); }
     .rhythm-picker button:nth-child(3) { transform: rotate(1deg); }
     .rhythm-picker button:hover { transform: translateY(-3px) rotate(0); }
-    .rhythm-picker button.active { background: var(--workshop-lilac); box-shadow: 7px 8px 0 var(--workshop-ink); transform: translateY(-5px) rotate(-1deg); }
+    .rhythm-picker button.active { background: rgb(229 223 255 / 0.58); box-shadow: 7px 8px 0 var(--workshop-ink); transform: translateY(-5px); }
     .rhythm-picker span { overflow: hidden; font-size: 12px; font-weight: 800; text-overflow: ellipsis; }
     .rhythm-picker b { font-size: 30px; line-height: 1; }
     .rhythm-picker small { color: #756e67; font-size: 10px; }
@@ -312,8 +312,36 @@
 
     .time-pop-enter-active,
     .time-pop-leave-active { transition: opacity 150ms ease, transform 150ms ease; }
-    .time-pop-enter-from { opacity: 0; transform: translateY(8px) rotate(-1deg); }
-    .time-pop-leave-to { opacity: 0; transform: translateY(-5px) rotate(1deg); }
+    .time-pop-enter-from,
+    .time-pop-leave-to { opacity: 0; }
+
+    @media (min-width: 1121px) {
+        .value-section {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            padding-block: clamp(48px, 5.2vh, 64px);
+        }
+
+        .value-copy h2 { margin-block: 16px; font-size: clamp(42px, 4.4vw, 66px); }
+        .value-copy > p { font-size: 15px; line-height: 1.58; }
+        .rhythm-picker { margin-top: 22px; }
+        .rhythm-picker button { min-height: 90px; padding-block: 10px; }
+        .calculation-note { margin-top: 24px; padding: 16px 18px; }
+        .value-note { margin-top: 14px; }
+        .time-stage { padding: 28px 30px; }
+        .time-stage > header { padding-bottom: 14px; }
+        .workflow-steps { gap: 9px; margin-top: 17px; }
+        .workflow-steps > button { min-height: 96px; padding: 11px 12px; }
+        .workflow-steps > button > span { gap: 4px; }
+        .route-summary { gap: 9px; margin-top: 17px; padding: 15px 18px; }
+        .route-summary div > i { height: 11px; }
+        .result-slot { min-height: 198px; }
+        .calculation-result { margin-top: 24px; padding: 17px 21px; }
+        .formula { margin-bottom: 10px; }
+        .calculation-result > strong { font-size: clamp(44px, 4.2vw, 62px); }
+        .time-stage > footer { margin-top: 12px; }
+    }
 
     @media (max-width: 1120px) {
         .value-grid { grid-template-columns: 1fr; }
