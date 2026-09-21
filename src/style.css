@@ -6674,13 +6674,72 @@ svg {
 }
 
 .landing-page--workshop .hero::after {
-    content: "KLICK!";
+    content: none;
+}
+
+.landing-page--workshop main > section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.landing-page--workshop main > section > .shell {
+    position: relative;
+    z-index: 1;
+}
+
+.landing-page--workshop .section-watermark {
     position: absolute;
-    right: 1.5vw;
-    bottom: 20px;
-    color: rgba(33, 28, 26, 0.08);
-    font: 900 clamp(90px, 17vw, 260px)/0.7 Arial, sans-serif;
+    z-index: 0;
+    color: rgb(255 157 0 / 0.09);
+    font: 700 clamp(180px, 24vw, 420px)/0.72 Caveat, cursive;
+    letter-spacing: -0.055em;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.landing-page--workshop main > section:nth-of-type(1) > .section-watermark {
+    right: 10%;
+    bottom: 4%;
+    color: rgb(33 28 26 / 0.045);
     transform: rotate(-8deg);
+}
+
+.landing-page--workshop main > section:nth-of-type(2) > .section-watermark {
+    top: 5%;
+    right: 2%;
+    transform: rotate(7deg);
+}
+
+.landing-page--workshop main > section:nth-of-type(3) > .section-watermark {
+    right: 2%;
+    top: 5%;
+    transform: rotate(-6deg);
+}
+
+.landing-page--workshop main > section:nth-of-type(4) > .section-watermark {
+    bottom: -1%;
+    left: 4%;
+    color: rgb(33 28 26 / 0.045);
+    transform: rotate(4deg);
+}
+
+.landing-page--workshop main > section:nth-of-type(7) > .section-watermark {
+    top: 5%;
+    right: 2%;
+    transform: rotate(-4deg);
+}
+
+.landing-page--workshop main > section:nth-of-type(8) > .section-watermark {
+    bottom: 3%;
+    left: 20%;
+    color: rgb(33 28 26 / 0.04);
+    transform: rotate(5deg);
+}
+
+.landing-page--workshop .features-section::before {
+    content: none;
 }
 
 .landing-page--workshop .hero__content {

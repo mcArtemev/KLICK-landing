@@ -1,5 +1,6 @@
 <template>
     <section id="lesson-journey" class="journey-section section-pad">
+        <span class="section-watermark" aria-hidden="true">klick</span>
         <div class="shell">
             <div class="journey-heading">
                 <span class="section-kicker">Один урок — один процесс</span>

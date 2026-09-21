@@ -22,6 +22,7 @@
 
         <main>
             <section id="hero" class="hero section-pad">
+                <span class="section-watermark" aria-hidden="true">klick</span>
                 <div class="hero-orb hero-orb--left"></div>
                 <div class="hero-orb hero-orb--right"></div>
                 <div class="hero-ink-splat" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -105,6 +106,7 @@
             <IntegrationTangle />
 
             <section id="possibilities" class="section-pad features-section">
+                <span class="section-watermark" aria-hidden="true">klick</span>
                 <div class="shell">
                     <div class="section-heading">
                         <div>
@@ -145,6 +147,7 @@
             <ValueCalculator />
 
             <section id="start" class="section-pad start-section">
+                <span class="section-watermark" aria-hidden="true">klick</span>
                 <div class="shell">
                     <div class="start-heading">
                         <span class="section-kicker">Перейти проще, чем кажется</span>
@@ -161,6 +164,7 @@
             <!-- <FutureRoadmap /> -->
 
             <section id="final" class="final-cta section-pad">
+                <!-- <span class="section-watermark" aria-hidden="true">klick</span> -->
                 <div class="shell final-cta__card">
                     <div class="final-cta__spark final-cta__spark--one"></div>
                     <div class="final-cta__spark final-cta__spark--two"></div>

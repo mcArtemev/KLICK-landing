@@ -1,5 +1,6 @@
 <template>
     <section id="time-savings" class="value-section section-pad">
+        <span class="section-watermark" aria-hidden="true">klick</span>
         <div class="shell value-grid">
             <div class="value-copy">
                 <span class="section-kicker">Сколько стоит переключение между сервисами</span>

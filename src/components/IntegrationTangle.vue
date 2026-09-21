@@ -1,5 +1,6 @@
 <template>
     <section id="connections" class="tangle-section section-pad">
+        <span class="section-watermark" aria-hidden="true">klick</span>
         <div class="shell">
             <div class="tangle-heading">
                 <div>
