@@ -5964,20 +5964,29 @@ svg {
 .demo-gateway > footer {
     position: relative;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border-top: 2px solid var(--brand-ink);
     background: white;
-    padding: 0 28px 0 46px;
     font-size: 14px;
     font-weight: 750;
 }
 
-.demo-gateway > footer a {
+.demo-gateway__footer-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px 0 46px;
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+.demo-gateway__footer-icon {
     display: grid;
     width: 42px;
     height: 42px;
+    flex: 0 0 auto;
     place-items: center;
     border-radius: 50%;
     background: var(--brand-ink);
@@ -5985,15 +5994,19 @@ svg {
     transition: transform 160ms ease, background-color 160ms ease;
 }
 
-.demo-gateway > footer a:hover {
-    background: var(--workshop-orange);
-    color: var(--workshop-ink);
-    transform: translateX(2px);
+.demo-gateway__footer-link:hover {
+    background: #fff4d8;
 }
 
-.demo-gateway > footer a:focus-visible {
-    outline: 3px solid var(--workshop-lilac);
-    outline-offset: 3px;
+.demo-gateway__footer-link:hover .demo-gateway__footer-icon {
+    background: var(--workshop-orange);
+    color: var(--workshop-ink);
+    transform: translateX(4px) rotate(-4deg);
+}
+
+.demo-gateway__footer-link:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 3px var(--workshop-lilac);
 }
 
 .demo-gateway__drop { position: absolute; z-index: 2; border-radius: 50%; background: var(--brand-orange); pointer-events: none; }

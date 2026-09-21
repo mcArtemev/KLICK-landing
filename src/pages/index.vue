@@ -76,8 +76,16 @@
                                 </ul>
                             </div>
                             <footer>
-                                <span>Перейти в демо-пространство Klick </span>
-                                <a :href="demoUrl" aria-label="Открыть демо Klick"><IconArrowRight :size="18" /></a>
+                                <a
+                                    class="demo-gateway__footer-link"
+                                    :href="demoUrl"
+                                    aria-label="Перейти в демо-пространство Klick"
+                                >
+                                    <span>Перейти в демо-пространство Klick</span>
+                                    <span class="demo-gateway__footer-icon" aria-hidden="true">
+                                        <IconArrowRight :size="18" />
+                                    </span>
+                                </a>
                             </footer>
                         </article>
                     </div>
