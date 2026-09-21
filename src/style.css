@@ -6767,8 +6767,6 @@ svg {
     width: 104px;
     height: 32px;
     background: rgba(183, 165, 255, 0.72);
-    border-left: 1px solid rgba(33, 28, 26, 0.18);
-    border-right: 1px solid rgba(33, 28, 26, 0.18);
     transform: translateX(-50%) rotate(2deg);
 }
 
@@ -7534,7 +7532,9 @@ svg {
 .landing-page--workshop .capability-browser {
     position: relative;
     display: flex;
+    height: 640px;
     min-width: 0;
+    min-height: 640px;
     flex-direction: column;
     overflow: hidden;
     border: 2px solid var(--workshop-ink);
@@ -7572,6 +7572,11 @@ svg {
     padding: 10px;
 }
 
+.landing-page--workshop .capability-group-row {
+    display: grid;
+    min-width: 0;
+}
+
 .landing-page--workshop .capability-group {
     display: grid;
     width: 100%;
@@ -7592,7 +7597,10 @@ svg {
 
 .landing-page--workshop .capability-group:hover { background: #f7f2e8; }
 .landing-page--workshop .capability-group--active {
+    position: relative;
+    z-index: 2;
     border-color: var(--workshop-ink);
+    border-radius: 12px 16px 8px 8px;
     background: var(--workshop-lilac);
     box-shadow: 3px 3px 0 var(--workshop-ink);
 }
@@ -7627,38 +7635,39 @@ svg {
 .landing-page--workshop .capability-group--active .capability-group__open { color: var(--workshop-ink); }
 .landing-page--workshop .capability-group--active .capability-group__open svg { transform: rotate(90deg); }
 
-.landing-page--workshop .capability-folder__tray {
-    min-height: 256px;
-    margin: 0 10px 8px;
-    border: 1.5px solid var(--workshop-ink);
-    border-radius: 14px 18px 12px 16px;
-    background: #f8f3ff;
-    padding: 9px;
-}
-
-.landing-page--workshop .capability-folder__tray > header {
+.landing-page--workshop .capability-folder-collapse {
     display: grid;
-    grid-template-columns: 34px 1fr;
-    align-items: center;
-    gap: 8px;
-    padding: 3px 4px 8px;
-    border-bottom: 1.5px dashed rgb(33 28 26 / 0.28);
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: grid-template-rows 220ms ease, opacity 160ms ease, transform 220ms ease;
 }
 
-.landing-page--workshop .capability-folder__tray > header > span {
-    color: #6752c8;
-    font: 700 25px/1 Caveat, cursive;
-    text-align: center;
+.landing-page--workshop .capability-folder-collapse--active {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.landing-page--workshop .capability-folder__tray > header div { display: flex; flex-direction: column; }
-.landing-page--workshop .capability-folder__tray > header small { color: rgb(33 28 26 / 0.55); font-size: 8px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-.landing-page--workshop .capability-folder__tray > header b { margin-top: 1px; font-size: 13px; }
+.landing-page--workshop .capability-folder-collapse__inner {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.landing-page--workshop .capability-folder__tray {
+    overflow: hidden;
+    margin: -2px 7px 6px;
+    border: 1.5px solid var(--workshop-ink);
+    border-top: 0;
+    border-radius: 0 0 12px 16px;
+    background: #f8f3ff;
+    padding: 8px 7px 7px;
+    box-shadow: 3px 3px 0 rgb(33 28 26 / 0.22);
+}
 
 .landing-page--workshop .capability-folder__modules {
     display: grid;
     gap: 5px;
-    padding-top: 7px;
 }
 
 .landing-page--workshop .capability-module {
@@ -7901,7 +7910,7 @@ svg {
 
 @media (max-width: 900px) {
     .landing-page--workshop .capability-showcase { grid-template-columns: 1fr; }
-    .landing-page--workshop .capability-browser { overflow: visible; }
+    .landing-page--workshop .capability-browser { height: auto; min-height: 0; overflow: visible; }
     .landing-page--workshop .principles-grid { grid-template-columns: 1fr 1fr; }
     .landing-page--workshop .start-steps { grid-template-columns: 1fr; }
     .landing-page--workshop .start-steps::before { display: none; }

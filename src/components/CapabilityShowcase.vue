@@ -8,54 +8,63 @@
             </header>
 
             <div class="capability-groups">
-                <button
+                <div
                     v-for="group in capabilityGroups"
                     :key="group.id"
-                    type="button"
-                    class="capability-group"
-                    :class="{ 'capability-group--active' : activeGroup === group.id }"
-                    :aria-pressed="activeGroup === group.id"
-                    aria-controls="capability-group-modules"
-                    @click="selectGroup(group.id)"
-                >
-                    <span class="capability-group__marker">{{ group.marker }}</span>
-                    <span class="capability-group__copy">
-                        <b>{{ group.title }}</b>
-                        <small>{{ group.subtitle }}</small>
-                    </span>
-                    <span class="capability-group__open">
-                        {{ moduleLabel(group.items.length) }}
-                        <IconChevronRight :size="16" />
-                    </span>
-                </button>
-            </div>
-
-            <div class="capability-folder__tray">
-                <header>
-                    <span>{{ activeGroupData.marker }}</span>
-                    <div><small>Инструменты направления</small><b>{{ activeGroupData.title }}</b></div>
-                </header>
-                <div
-                    id="capability-group-modules"
-                    class="capability-folder__modules"
-                    role="tablist"
-                    :aria-label="`Модули направления ${activeGroupData.title}`"
+                    class="capability-group-row"
                 >
                     <button
-                        v-for="item in filteredCapabilities"
-                        :key="item.id"
                         type="button"
-                        role="tab"
-                        class="capability-module"
-                        :class="{ 'capability-module--active' : activeId === item.id }"
-                        :aria-selected="activeId === item.id"
-                        :aria-controls="`capability-${item.id}`"
-                        @click="activeId = item.id"
+                        class="capability-group"
+                        :class="{ 'capability-group--active' : activeGroup === group.id }"
+                        :aria-expanded="activeGroup === group.id"
+                        :aria-controls="`capability-group-${group.id}-modules`"
+                        @click="selectGroup(group.id)"
                     >
-                        <span><component :is="item.icon" :size="18" /></span>
-                        <b>{{ item.title }}</b>
-                        <IconChevronRight :size="15" />
+                        <span class="capability-group__marker">{{ group.marker }}</span>
+                        <span class="capability-group__copy">
+                            <b>{{ group.title }}</b>
+                            <small>{{ group.subtitle }}</small>
+                        </span>
+                        <span class="capability-group__open">
+                            {{ moduleLabel(group.items.length) }}
+                            <IconChevronRight :size="16" />
+                        </span>
                     </button>
+
+                    <div
+                        :id="`capability-group-${group.id}-modules`"
+                        class="capability-folder-collapse"
+                        :class="{ 'capability-folder-collapse--active' : activeGroup === group.id }"
+                        :aria-hidden="activeGroup !== group.id"
+                        :inert="activeGroup !== group.id"
+                    >
+                        <div class="capability-folder-collapse__inner">
+                            <div class="capability-folder__tray">
+                                <div
+                                    class="capability-folder__modules"
+                                    role="tablist"
+                                    :aria-label="`Модули направления ${group.title}`"
+                                >
+                                    <button
+                                        v-for="item in capabilitiesForGroup(group)"
+                                        :key="item.id"
+                                        type="button"
+                                        role="tab"
+                                        class="capability-module"
+                                        :class="{ 'capability-module--active' : activeId === item.id }"
+                                        :aria-selected="activeId === item.id"
+                                        :aria-controls="`capability-${item.id}`"
+                                        @click="activeId = item.id"
+                                    >
+                                        <span><component :is="item.icon" :size="18" /></span>
+                                        <b>{{ item.title }}</b>
+                                        <IconChevronRight :size="15" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -443,11 +452,10 @@
         { id : 'connect', marker : '04', title : 'Общение и финансы', subtitle : 'Урок и оплата', items : ['video-calls', 'messenger', 'payments'] }
     ] as const;
     const activeGroup = ref<(typeof capabilityGroups)[number]['id']>('organize');
-    const activeGroupData = computed(() => capabilityGroups.find(group => group.id === activeGroup.value) ?? capabilityGroups[0]);
-    const filteredCapabilities = computed(() => {
-        const ids = activeGroupData.value.items;
+    const capabilitiesForGroup = (group : (typeof capabilityGroups)[number]) => {
+        const ids = group.items;
         return capabilities.filter(item => (ids as readonly string[]).includes(item.id));
-    });
+    };
     const activeCapability = computed(() => capabilities.find(item => item.id === activeId.value) ?? capabilities[0]);
     const moduleLabel = (count : number) => `${count} модуля`;
     const selectGroup = (groupId : (typeof capabilityGroups)[number]['id']) => {
