@@ -6622,6 +6622,44 @@ svg {
     border-bottom: 2px solid var(--workshop-ink);
 }
 
+.landing-page--workshop .hero__scroll-cue {
+    position: absolute;
+    z-index: 6;
+    bottom: 20px;
+    left: 50%;
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border: 2px solid var(--workshop-ink);
+    border-radius: 50% 46% 52% 44%;
+    background: #fffdf7;
+    box-shadow: 4px 5px 0 var(--workshop-ink);
+    color: var(--workshop-ink);
+    transform: translateX(-50%) rotate(-2deg);
+    transition: background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.landing-page--workshop .hero__scroll-cue > span {
+    animation: hero-scroll-cue-bob 1.45s ease-in-out infinite;
+}
+
+.landing-page--workshop .hero__scroll-cue:hover {
+    background: var(--workshop-yellow);
+    box-shadow: 2px 3px 0 var(--workshop-ink);
+}
+
+.landing-page--workshop .hero__scroll-cue:focus-visible {
+    outline: 3px solid var(--workshop-lilac);
+    outline-offset: 4px;
+}
+
+@keyframes hero-scroll-cue-bob {
+    0%,
+    100% { transform: translateY(-3px); }
+    50% { transform: translateY(4px); }
+}
+
 .landing-page--workshop .hero::before {
     content: "";
     position: absolute;

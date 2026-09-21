@@ -90,6 +90,16 @@
                         </article>
                     </div>
                 </div>
+
+                <a
+                    class="hero__scroll-cue"
+                    href="#connections"
+                    aria-label="Перейти к следующему разделу"
+                >
+                    <span aria-hidden="true">
+                        <IconArrowDown :size="24" />
+                    </span>
+                </a>
             </section>
 
             <IntegrationTangle />
@@ -209,6 +219,7 @@
 <script setup lang="ts">
     import {
         ArrowRight as IconArrowRight,
+        ArrowDown as IconArrowDown,
         ArrowUpRight as IconArrowUpRight,
         Bell as IconBell,
         BookOpen as IconBookOpen,
@@ -239,15 +250,102 @@
     const { appUrl, demoUrl } = useRuntimeConfig().public;
     const currentYear = new Date().getFullYear();
     const isScrolled = ref(false);
+    let sectionScrollLocked = false;
+    let sectionScrollDirection = 0;
+    let sectionScrollUnlockTimer: number | null = null;
+    let accumulatedWheelDelta = 0;
 
     const updateHeader = () => isScrolled.value = window.scrollY > 18;
+
+    const sectionScrollTargets = () => Array.from(document.querySelectorAll<HTMLElement>(
+        '.landing-page--workshop main > section'
+    ));
+
+    const unlockSectionScroll = () => {
+        sectionScrollLocked = false;
+        sectionScrollDirection = 0;
+        accumulatedWheelDelta = 0;
+
+        if(sectionScrollUnlockTimer !== null)
+            window.clearTimeout(sectionScrollUnlockTimer);
+
+        sectionScrollUnlockTimer = null;
+    };
+
+    const handleSectionWheel = (event: WheelEvent) => {
+        if(window.innerWidth <= 900
+            || event.ctrlKey
+            || Math.abs(event.deltaX) > Math.abs(event.deltaY))
+            return;
+
+        const wheelDelta = event.deltaMode === WheelEvent.DOM_DELTA_LINE
+            ? event.deltaY * 16
+            : event.deltaMode === WheelEvent.DOM_DELTA_PAGE
+                ? event.deltaY * window.innerHeight
+                : event.deltaY;
+
+        if(!wheelDelta)
+            return;
+
+        const direction = wheelDelta > 0 ? 1 : -1;
+
+        if(sectionScrollLocked) {
+            event.preventDefault();
+
+            if(direction === sectionScrollDirection)
+                return;
+
+            // A reverse gesture should immediately replace the current transition.
+            unlockSectionScroll();
+        }
+
+        const targets = sectionScrollTargets();
+        const headerOffset = Number.parseFloat(
+            getComputedStyle(document.documentElement).getPropertyValue('--site-header-height')
+        ) || 0;
+        const currentPosition = window.scrollY + headerOffset;
+        const target = direction > 0
+            ? targets.find(section => section.offsetTop > currentPosition + 8)
+            : [...targets].reverse().find(section => section.offsetTop < currentPosition - 8);
+
+        if(!target) {
+            accumulatedWheelDelta = 0;
+
+            return;
+        }
+
+        if(accumulatedWheelDelta && Math.sign(accumulatedWheelDelta) !== direction)
+            accumulatedWheelDelta = 0;
+
+        accumulatedWheelDelta += wheelDelta;
+        event.preventDefault();
+
+        if(Math.abs(accumulatedWheelDelta) < 28)
+            return;
+
+        accumulatedWheelDelta = 0;
+        sectionScrollLocked = true;
+        sectionScrollDirection = direction;
+        target.scrollIntoView({
+            behavior : window.matchMedia('(prefers-reduced-motion: reduce)').matches
+                ? 'auto'
+                : 'smooth',
+            block : 'start'
+        });
+        sectionScrollUnlockTimer = window.setTimeout(unlockSectionScroll, 700);
+    };
 
     onMounted(() => {
         updateHeader();
         window.addEventListener('scroll', updateHeader, { passive : true });
+        window.addEventListener('wheel', handleSectionWheel, { passive : false });
     });
 
-    onBeforeUnmount(() => window.removeEventListener('scroll', updateHeader));
+    onBeforeUnmount(() => {
+        window.removeEventListener('scroll', updateHeader);
+        window.removeEventListener('wheel', handleSectionWheel);
+        unlockSectionScroll();
+    });
 
     const principles = [
         { title : 'Понятно с первого дня', text : 'Знакомые сценарии и спокойный интерфейс без перегруженных панелей.', icon : IconWandSparkles },
