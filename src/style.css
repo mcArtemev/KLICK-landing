@@ -6693,7 +6693,7 @@ svg {
     z-index: 0;
     color: rgb(255 157 0 / 0.09);
     font: 700 clamp(180px, 24vw, 420px)/0.72 Caveat, cursive;
-    letter-spacing: -0.055em;
+    letter-spacing: -0.025em;
     pointer-events: none;
     user-select: none;
     white-space: nowrap;
