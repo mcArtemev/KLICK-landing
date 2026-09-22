@@ -78,6 +78,35 @@
     .tangle-summary{display:flex;justify-content:center;align-items:center;gap:12px;margin:36px 0 0;font:700 1.5rem Caveat,cursive}.tangle-summary i{width:75px;border-top:3px solid var(--workshop-orange);transform:rotate(-2deg)}.tangle-summary b{color:#6752c8}.thread-copy-enter-active,.thread-copy-leave-active{transition:opacity .16s}.thread-copy-enter-from,.thread-copy-leave-to{opacity:0}
     @media(min-width:901px) and (max-height:1080px){.tangle-heading{margin-bottom:22px}.tangle-heading h2{margin-top:12px;font-size:clamp(2.5rem,4vw,3.625rem)}.tangle-heading p{padding:14px 18px;font-size:0.875rem;line-height:1.5}.tangle-board{height:480px}.yarn-ball{width:225px;height:225px}.tangle-result{width:275px;padding:17px 19px}.tangle-result h3{font-size:1.1875rem}.tangle-summary{margin-top:18px;font-size:1.375rem}}
     @media(min-width:901px) and (max-height:850px){.tangle-heading{grid-template-columns:1fr .9fr;margin-bottom:15px}.tangle-heading h2{font-size:2.75rem}.tangle-heading p{padding:11px 15px;font-size:0.8125rem}.tangle-board{height:390px}.yarn-ball{width:190px;height:190px}.yarn-ball__label{min-width:96px;padding:6px 13px 8px}.yarn-ball__label small{font-size:0.9375rem}.yarn-ball__label b{font-size:1.4375rem}.tool-note{padding-block:.7em}.tangle-result{top:25%;width:255px;padding:14px 16px}.tangle-result p{font-size:0.6875rem}.tangle-result strong{margin-top:9px}.tangle-summary{margin-top:12px;font-size:1.25rem}}
-    @media(max-width:900px){.tangle-heading{grid-template-columns:1fr;gap:18px}.tangle-board{height:760px}.tangle-result{top:62%;right:20%;width:60%}.tool-note--calendar{top:8%;left:5%;transform:rotate(-2deg)}.tool-note--video{top:7%;right:5%;left:auto;transform:rotate(2deg)}.tool-note--files{top:auto;bottom:10%;left:4%;transform:rotate(1deg)}.tool-note--chat{top:auto;right:4%;bottom:9%;left:auto;transform:rotate(-2deg)}.tool-note--notes{top:3%;left:38%;transform:rotate(1deg)}.tool-note--pay{top:auto;bottom:3%;left:38%;transform:rotate(-1deg)}}
-    @media(max-width:620px){.tangle-board{height:1000px}.tool-note{width:145px}.tool-note--calendar{top:12%;left:3%}.tool-note--video{top:12%;right:3%}.tool-note--files{left:3%}.tool-note--chat{right:3%}.tool-note--notes{top:4%;left:29%}.tool-note--pay{left:28%}.yarn-ball{top:43%;width:245px;height:245px}.tangle-result{top:56%;right:8%;width:84%}.tangle-summary{font-size:1.1875rem}.tangle-summary i{width:25px}}
+    @media(max-width:1100px){
+        .tangle-heading{margin-bottom:28px}
+        .tangle-board{height:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:22px;overflow:visible;border-radius:25px 18px 29px 17px}
+        .tangle-threads,.yarn-ball{display:none}
+        .tool-note,.tool-note--calendar,.tool-note--video,.tool-note--files,.tool-note--chat,.tool-note--notes,.tool-note--pay{position:relative;inset:auto;width:100%;min-width:0;min-height:64px;justify-content:flex-start;gap:.7em;padding:.85em;font-size:.8125rem;transform:none}
+        .tangle-result{position:relative;inset:auto;width:100%;min-height:205px;grid-column:1/-1;padding:24px}
+        .tangle-result h3{font-size:1.5rem}
+        .tangle-result p{font-size:.875rem}
+        .tangle-result strong{font-size:1.25rem}
+    }
+    @media(max-width:900px){
+        .tangle-heading{grid-template-columns:1fr;gap:18px}
+    }
+    @media(max-width:620px){
+        .tangle-heading{margin-bottom:30px}
+        .tangle-heading h2{margin-top:16px;font-size:clamp(2.75rem,14vw,3.5rem)}
+        .tangle-heading p{padding:18px;font-size:0.9375rem;line-height:1.55}
+        .tangle-board{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:16px 13px 20px}
+        .tool-note{min-height:58px;padding:.75em;font-size:.75rem}
+        .tangle-result{position:relative;inset:auto;width:100%;min-height:230px;grid-column:1/-1;padding:21px}
+        .tangle-result h3{font-size:1.375rem}
+        .tangle-result p{font-size:.8125rem}
+        .tangle-result strong{font-size:1.25rem}
+        .tangle-summary{flex-wrap:wrap;gap:7px;margin-top:28px;font-size:1.1875rem;text-align:center}
+        .tangle-summary i{width:25px}
+    }
+    @media(max-width:360px){
+        .tangle-board{grid-template-columns:1fr;padding-inline:12px}
+        .tangle-result{grid-column:1}
+        .tangle-result{min-height:245px}
+    }
 </style>

@@ -381,27 +381,62 @@
     }
 
     @media (max-width: 1120px) {
-        .value-grid { grid-template-columns: 1fr; }
-        .value-copy { max-width: 48.75rem; }
-        .rhythm-picker { max-width: 38.75rem; }
-        .calculation-note { max-width: 38.75rem; }
-        .value-note { max-width: 38.75rem; }
+        .value-grid { grid-template-columns: 1fr; gap: 34px; }
+        .value-copy { max-width: none; }
+        .value-copy h2 { max-width: 16ch; margin-block: 17px; font-size: clamp(2.75rem, 7vw, 4.5rem); }
+        .value-copy > p { max-width: 68ch; font-size: 1rem; line-height: 1.6; }
+        .rhythm-picker { max-width: 43rem; margin-top: 22px; }
+        .rhythm-picker button { min-height: 86px; padding: 10px 12px; }
+        .calculation-note { max-width: 43rem; margin-top: 20px; padding: 15px 18px; transform: none; }
+        .calculation-note p { font-size: .8125rem; }
+        .value-note { max-width: 43rem; margin-top: 13px; }
+        .time-stage { padding: 26px; border-radius: 21px 15px 24px 16px; box-shadow: 7px 8px 0 var(--workshop-ink); }
+        .tape { display: none; }
+        .time-stage > header { align-items: center; padding-bottom: 15px; }
+        .workflow-steps { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; margin-top: 16px; }
+        .workflow-steps > button { min-height: 82px; grid-template-columns: 34px minmax(0,1fr); gap: 8px; align-items: center; padding: 11px; }
+        .workflow-steps > button.active:nth-child(2n) { transform: none; }
+        .workflow-steps > button > i { width: 32px; height: 32px; }
+        .workflow-steps > button > span { gap: 0; }
+        .workflow-steps > button > span b { font-size: .8125rem; }
+        .workflow-steps > button > span small { display: none; }
+        .workflow-steps > button > em { grid-column: 2; align-items: flex-start; gap: 1px; text-align: left; }
+        .workflow-steps > button > em strong { font-size: .75rem; }
+        .workflow-steps > button > em small { font-size: .5625rem; }
+        .route-summary { margin-top: 18px; padding: 17px 18px; }
+        .result-slot { min-height: 205px; }
+        .calculation-result { margin-top: 24px; padding: 18px 21px; }
+        .time-stage > footer { display: none; }
     }
 
     @media (max-width: 680px) {
-        .rhythm-picker { grid-template-columns: 1fr; }
-        .rhythm-picker button { min-height: 76px; grid-template-columns: 1fr auto; align-items: center; }
-        .rhythm-picker button span { font-size: 0.8125rem; }
-        .rhythm-picker button b { grid-row: 1 / 3; grid-column: 2; font-size: 2.125rem; }
-        .time-stage { padding: 30px 20px; }
+        .value-copy h2 { font-size: clamp(2.75rem, 14vw, 3.5rem); }
+        .rhythm-picker { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+        .rhythm-picker button { min-height: 78px; align-content: center; padding: 9px 7px; box-shadow: 3px 4px 0 var(--workshop-ink); }
+        .rhythm-picker button span { font-size: 0.6875rem; }
+        .rhythm-picker button b { font-size: 1.625rem; }
+        .rhythm-picker button small { font-size: .5625rem; line-height: 1.25; }
+        .calculation-note { margin-top: 20px; padding: 16px; }
+        .value-note { margin-top: 14px; }
+        .time-stage { padding: 20px 15px; }
         .time-stage > header { align-items: flex-start; flex-direction: column; gap: 12px; }
         .workflow-steps { grid-template-columns: 1fr; }
-        .workflow-steps > button { min-height: 104px; }
-        .result-slot { min-height: 285px; }
+        .workflow-steps > button { min-height: 68px; grid-template-columns: 34px minmax(0,1fr) auto; padding: 10px; }
+        .workflow-steps > button > em { grid-column: auto; align-items: flex-end; text-align: right; }
+        .workflow-steps > button > em small { display: none; }
+        .workflow-steps > button.active:nth-child(2n) { transform: none; }
+        .route-summary { padding: 16px 13px; }
+        .route-summary small { display: none; }
+        .result-slot { min-height: 225px; }
+        .calculation-result { padding: 18px 16px; }
         .calculation-result > strong { flex-wrap: wrap; }
-        .time-stage > footer { align-items: flex-start; flex-direction: column; }
-        .time-stage > footer small { text-align: left; }
         .route-summary mark { right: 7px; }
+    }
+
+    @media (max-width: 360px) {
+        .workflow-steps > button { grid-template-columns: 34px minmax(0,1fr); }
+        .workflow-steps > button > em { grid-column: 2; align-items:flex-start; text-align:left; }
+        .result-slot { min-height: 270px; }
     }
 
     @media (prefers-reduced-motion: reduce) {

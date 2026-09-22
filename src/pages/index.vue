@@ -17,6 +17,32 @@
                     Открыть Klick
                     <IconArrowUpRight :size="16" />
                 </a>
+
+                <button
+                    type="button"
+                    class="mobile-menu-toggle"
+                    :class="{ 'mobile-menu-toggle--open' : isMobileMenuOpen }"
+                    :aria-expanded="isMobileMenuOpen"
+                    aria-controls="mobile-site-nav"
+                    :aria-label="isMobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'"
+                    @click="isMobileMenuOpen = !isMobileMenuOpen"
+                >
+                    <IconX v-if="isMobileMenuOpen" :size="22" />
+                    <IconMenu v-else :size="22" />
+                </button>
+
+                <nav
+                    id="mobile-site-nav"
+                    class="mobile-site-nav"
+                    :class="{ 'mobile-site-nav--open' : isMobileMenuOpen }"
+                    aria-label="Мобильная навигация"
+                >
+                    <a href="#connections" @click="closeMobileMenu"><span>01</span>Почему Klick</a>
+                    <a href="#possibilities" @click="closeMobileMenu"><span>02</span>Возможности</a>
+                    <a href="#lesson-journey" @click="closeMobileMenu"><span>03</span>Как это работает</a>
+                    <a href="#student-space" @click="closeMobileMenu"><span>04</span>Для ученика</a>
+                    <a :href="demoUrl" @click="closeMobileMenu"><span>05</span>Демо</a>
+                </nav>
             </div>
         </header>
 
@@ -231,6 +257,7 @@
         FolderOpen as IconFolderOpen,
         Layers3 as IconLayers3,
         MessageSquareText as IconMessageSquareText,
+        Menu as IconMenu,
         Play as IconPlay,
         Video as IconVideo,
         Presentation as IconPresentation,
@@ -238,7 +265,8 @@
         Sparkles as IconSparkles,
         WandSparkles as IconWandSparkles,
         FileCheckCorner as IconFileCheckCorner,
-        ClipboardCheck as IconClipboardCheck
+        ClipboardCheck as IconClipboardCheck,
+        X as IconX
     } from '@lucide/vue';
     import { onBeforeUnmount, onMounted, ref } from 'vue';
 
@@ -254,15 +282,24 @@
     const { appUrl, demoUrl } = useRuntimeConfig().public;
     const currentYear = new Date().getFullYear();
     const isScrolled = ref(false);
+    const isMobileMenuOpen = ref(false);
 
     const updateHeader = () => isScrolled.value = window.scrollY > 18;
+    const closeMobileMenu = () => isMobileMenuOpen.value = false;
+    const closeMobileMenuOnEscape = (event : KeyboardEvent) => {
+        if (event.key === 'Escape') closeMobileMenu();
+    };
 
     onMounted(() => {
         updateHeader();
         window.addEventListener('scroll', updateHeader, { passive : true });
+        window.addEventListener('keydown', closeMobileMenuOnEscape);
     });
 
-    onBeforeUnmount(() => window.removeEventListener('scroll', updateHeader));
+    onBeforeUnmount(() => {
+        window.removeEventListener('scroll', updateHeader);
+        window.removeEventListener('keydown', closeMobileMenuOnEscape);
+    });
 
     const principles = [
         { title : 'Понятно с первого дня', text : 'Знакомые сценарии и спокойный интерфейс без перегруженных панелей.', icon : IconWandSparkles },

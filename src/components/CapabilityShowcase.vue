@@ -1,5 +1,58 @@
 <template>
-    <div class="capability-showcase">
+    <div class="capability-mobile">
+        <header class="capability-mobile__heading">
+            <span>13 модулей</span>
+            <b>Всё необходимое — внутри</b>
+            <small>Выберите направление, затем нужный инструмент</small>
+        </header>
+
+        <div class="capability-mobile__groups" role="tablist" aria-label="Направления Klick">
+            <button
+                v-for="group in capabilityGroups"
+                :key="group.id"
+                type="button"
+                role="tab"
+                :aria-selected="activeGroup === group.id"
+                :class="{ active : activeGroup === group.id }"
+                @click="selectGroup(group.id)"
+            >
+                <span>{{ group.marker }}</span>
+                <b>{{ group.title }}</b>
+                <small>{{ group.subtitle }}</small>
+            </button>
+        </div>
+
+        <div class="capability-mobile__modules" role="tablist" :aria-label="`Модули направления ${activeGroupData.title}`">
+            <button
+                v-for="item in capabilitiesForGroup(activeGroupData)"
+                :key="item.id"
+                type="button"
+                role="tab"
+                :aria-selected="activeId === item.id"
+                :class="{ active : activeId === item.id }"
+                @click="activeId = item.id"
+            >
+                <component :is="item.icon" :size="18" />
+                <span>{{ item.title }}</span>
+            </button>
+        </div>
+
+        <article class="capability-mobile__detail" role="tabpanel">
+            <span class="capability-mobile__detail-icon"><component :is="activeCapability.icon" :size="22" /></span>
+            <div>
+                <small>{{ activeCapability.kicker }}</small>
+                <h3>{{ activeCapability.heading }}</h3>
+                <p>{{ activeCapability.description }}</p>
+                <ul>
+                    <li v-for="point in activeCapability.points" :key="point">
+                        <span class="trust-pin" aria-hidden="true"></span>{{ point }}
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <div class="capability-showcase capability-showcase--desktop">
         <aside class="capability-browser" aria-label="Навигация по возможностям Klick">
             <header class="capability-browser__heading">
                 <span>13 модулей</span>
@@ -452,6 +505,7 @@
         { id : 'connect', marker : '04', title : 'Общение и финансы', subtitle : 'Урок и оплата', items : ['video-calls', 'messenger', 'payments'] }
     ] as const;
     const activeGroup = ref<(typeof capabilityGroups)[number]['id']>('organize');
+    const activeGroupData = computed(() => capabilityGroups.find(group => group.id === activeGroup.value) ?? capabilityGroups[0]);
     const capabilitiesForGroup = (group : (typeof capabilityGroups)[number]) => {
         const ids = group.items;
         return capabilities.filter(item => (ids as readonly string[]).includes(item.id));

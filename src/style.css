@@ -8042,3 +8042,671 @@ svg {
     .landing-page--workshop .trust-note { grid-template-columns: 1fr; padding: 28px 22px; }
     .landing-page--workshop .final-actions { flex-direction: column; }
 }
+
+/* Tablet and mobile composition: preserve the workshop character without
+   squeezing desktop canvases into a narrow viewport. */
+@media (max-width: 900px) {
+    .landing-page--workshop .section-pad,
+    .landing-page--workshop main > section.section-pad:not(.hero) {
+        padding-block: clamp(3.75rem, 8vw, 5rem);
+    }
+
+    .landing-page--workshop main > section:not(.hero) {
+        min-height: auto;
+        align-items: flex-start;
+    }
+
+    .landing-page--workshop .section-heading {
+        gap: 1.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .landing-page--workshop .section-heading h2 {
+        font-size: clamp(2.5rem, 7vw, 3.5rem);
+    }
+
+    .landing-page--workshop .section-heading > p {
+        padding: 1.125rem 1.25rem;
+    }
+
+    .landing-page--workshop .capability-showcase {
+        gap: 2rem;
+    }
+
+    .landing-page--workshop .capability-detail {
+        min-height: 0;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .landing-page--workshop .capability-detail__preview {
+        min-height: 26rem;
+    }
+
+    .landing-page--workshop .principles-grid article {
+        min-height: 13.5rem;
+        padding: 2rem 1.75rem;
+    }
+
+    .landing-page--workshop .start-heading {
+        margin-bottom: 2.625rem;
+    }
+
+    .landing-page--workshop .start-steps {
+        gap: 1.25rem;
+    }
+
+    .landing-page--workshop .start-steps li {
+        padding: 1.5rem;
+    }
+
+    .landing-page--workshop .trust-note {
+        margin-top: 2.5rem;
+    }
+
+    .landing-page--workshop main > section.final-cta {
+        min-height: calc(100svh - var(--site-header-height));
+        align-items: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .landing-page--workshop .section-pad,
+    .landing-page--workshop main > section.section-pad:not(.hero) {
+        padding-block: 3.5rem;
+    }
+
+    .landing-page--workshop .site-header__inner {
+        min-height: var(--site-header-height);
+    }
+
+    .landing-page--workshop .site-header .brand-mark {
+        font-size: 2.65rem;
+    }
+
+    .landing-page--workshop .site-header .button {
+        min-height: 2.75rem;
+        padding-inline: .95rem;
+        font-size: .8125rem;
+    }
+
+    .landing-page--workshop .hero {
+        padding-top: calc(var(--site-header-height) + 2.75rem);
+    }
+
+    .landing-page--workshop .hero__content {
+        gap: 2.25rem;
+        padding-bottom: 4rem;
+    }
+
+    .landing-page--workshop .hero__copy {
+        padding: 2rem 1.375rem 1.75rem;
+    }
+
+    .landing-page--workshop .hero__lead {
+        font-size: .9375rem;
+        line-height: 1.55;
+    }
+
+    .landing-page--workshop .hero__actions {
+        gap: .75rem;
+        margin-top: 1.75rem;
+    }
+
+    .landing-page--workshop .hero__proof {
+        gap: .75rem;
+        margin-top: 1.625rem;
+        font-size: .75rem;
+    }
+
+    .landing-page--workshop .demo-gateway {
+        min-height: 35rem;
+        grid-template-rows: 3.5rem 1fr 4.75rem;
+        transform: none;
+    }
+
+    .landing-page--workshop .demo-gateway > header {
+        padding-inline: 1.5rem;
+        font-size: .6875rem;
+    }
+
+    .landing-page--workshop .demo-gateway__body {
+        padding: 2rem 1.75rem 1.625rem;
+    }
+
+    .landing-page--workshop .demo-gateway__brand {
+        font-size: 2.75rem;
+    }
+
+    .landing-page--workshop .demo-gateway__label {
+        margin-top: 1.5rem;
+    }
+
+    .landing-page--workshop .demo-gateway__body h2 {
+        font-size: clamp(2.125rem, 10vw, 2.625rem);
+    }
+
+    .landing-page--workshop .demo-gateway__footer-link {
+        gap: .75rem;
+        padding: 0 1.25rem 0 1.75rem;
+    }
+
+    .landing-page--workshop .demo-gateway__footer-link > span:first-child {
+        max-width: 14rem;
+        line-height: 1.2;
+    }
+
+    .landing-page--workshop .section-heading h2,
+    .landing-page--workshop .start-heading h2 {
+        font-size: clamp(2.75rem, 14vw, 3.5rem);
+    }
+
+    .landing-page--workshop .section-heading > p {
+        font-size: .9375rem;
+        line-height: 1.55;
+    }
+
+    .landing-page--workshop .capability-showcase {
+        gap: 1.75rem;
+    }
+
+    .landing-page--workshop .capability-group {
+        min-height: 3.25rem;
+        padding: .55em .65em;
+    }
+
+    .landing-page--workshop .capability-detail {
+        gap: 1.5rem;
+        padding: 1.375rem;
+    }
+
+    .landing-page--workshop .capability-detail__copy h3 {
+        font-size: clamp(1.875rem, 10vw, 2.375rem);
+    }
+
+    .landing-page--workshop .capability-detail__preview {
+        min-height: 21rem;
+    }
+
+    .landing-page--workshop .principles-section .section-heading {
+        margin-bottom: 2rem;
+    }
+
+    .landing-page--workshop .principles-section .section-heading h2 {
+        font-size: clamp(2.5rem, 11.5vw, 3rem);
+    }
+
+    .landing-page--workshop .principles-grid {
+        gap: 1rem;
+    }
+
+    .landing-page--workshop .principles-grid article {
+        min-height: 11rem;
+        padding: 1.75rem 1.5rem;
+    }
+
+    .landing-page--workshop .principles-grid article h3 {
+        margin-top: 1.25rem;
+    }
+
+    .landing-page--workshop .start-heading {
+        margin-bottom: 2.25rem;
+    }
+
+    .landing-page--workshop .start-heading p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .landing-page--workshop .start-steps li {
+        grid-template-columns: 3.25rem minmax(0, 1fr);
+        gap: 1rem;
+        padding: 1.5rem 1.25rem;
+    }
+
+    .landing-page--workshop .start-steps li > span {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.125rem;
+    }
+
+    .landing-page--workshop .trust-note {
+        gap: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .landing-page--workshop .final-cta {
+        padding-block: 3rem;
+    }
+
+    .landing-page--workshop .final-cta__card {
+        min-height: min(42rem, calc(100svh - var(--site-header-height) - 6rem));
+        padding: 3.5rem 1.375rem;
+    }
+
+    .landing-page--workshop .final-cta h2 {
+        font-size: clamp(2.25rem, 11vw, 3rem);
+    }
+}
+
+@media (max-width: 420px) {
+    .landing-page--workshop .shell {
+        width: calc(100% - 1.5rem);
+    }
+
+    .landing-page--workshop .hero__copy {
+        padding-inline: 1.125rem;
+        transform: none;
+    }
+
+    .landing-page--workshop .hero h1 {
+        font-size: clamp(1.95rem, 9.8vw, 2.5rem);
+        letter-spacing: -.045em;
+    }
+
+    .landing-page--workshop .hero__title-signature {
+        gap: .5rem;
+    }
+
+    .landing-page--workshop .hero .eyebrow {
+        justify-content: center;
+        font-size: .6875rem;
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    .landing-page--workshop .hero__annotation {
+        font-size: 1.0625rem;
+    }
+
+    .landing-page--workshop .demo-gateway__body {
+        padding-inline: 1.5rem;
+    }
+
+    .landing-page--workshop .demo-gateway__body h2 {
+        font-size: clamp(2rem, 10vw, 2.375rem);
+    }
+
+    .landing-page--workshop .section-kicker {
+        max-width: 100%;
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+
+    .landing-page--workshop .section-heading h2,
+    .landing-page--workshop .start-heading h2 {
+        font-size: clamp(2.5rem, 13vw, 3.25rem);
+    }
+
+    .landing-page--workshop .capability-group__open {
+        font-size: .5625rem;
+    }
+
+    .landing-page--workshop .capability-detail {
+        padding: 1.125rem;
+    }
+
+    .landing-page--workshop .capability-detail__preview {
+        min-height: 19rem;
+    }
+
+    .landing-page--workshop .start-steps li {
+        grid-template-columns: 3rem minmax(0, 1fr);
+        padding-inline: 1rem;
+    }
+
+    .landing-page--workshop .start-steps h3 {
+        font-size: 1.1875rem;
+    }
+
+    .landing-page--workshop .final-cta__card {
+        width: 100%;
+        min-height: 37rem;
+    }
+}
+
+/* Tablet and mobile compositions ----------------------------------------- */
+.mobile-menu-toggle,
+.mobile-site-nav,
+.capability-mobile {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .landing-page--workshop .desktop-nav {
+        display: none;
+    }
+
+    .landing-page--workshop .site-header__inner {
+        gap: .75rem;
+    }
+
+    .landing-page--workshop .site-header__inner > .button {
+        margin-left: auto;
+    }
+
+    .landing-page--workshop .mobile-menu-toggle {
+        display: grid;
+        width: 2.875rem;
+        height: 2.875rem;
+        flex: 0 0 auto;
+        place-items: center;
+        color: var(--workshop-ink);
+        border: 2px solid var(--workshop-ink);
+        border-radius: 12px 16px 11px 14px;
+        background: var(--workshop-yellow);
+        box-shadow: 3px 4px 0 var(--workshop-ink);
+        cursor: pointer;
+        transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+    }
+
+    .landing-page--workshop .mobile-menu-toggle:hover,
+    .landing-page--workshop .mobile-menu-toggle--open {
+        background: var(--workshop-lilac);
+        box-shadow: 1px 2px 0 var(--workshop-ink);
+        transform: translate(2px, 2px);
+    }
+
+    .landing-page--workshop .mobile-site-nav {
+        position: fixed;
+        z-index: 101;
+        top: calc(var(--site-header-height) + .625rem);
+        right: max(1rem, calc((100vw - 96.25rem) / 2));
+        width: min(25rem, calc(100vw - 2rem));
+        display: grid;
+        gap: .5rem;
+        padding: .75rem;
+        visibility: hidden;
+        border: 2px solid var(--workshop-ink);
+        border-radius: 19px 14px 22px 16px;
+        background: #fffdf7;
+        box-shadow: 7px 8px 0 var(--workshop-ink);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-.75rem) rotate(.5deg);
+        transform-origin: top right;
+        transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease;
+    }
+
+    .landing-page--workshop .mobile-site-nav--open {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0) rotate(0);
+    }
+
+    .landing-page--workshop .mobile-site-nav a {
+        display: grid;
+        min-height: 3.25rem;
+        grid-template-columns: 2.25rem 1fr;
+        align-items: center;
+        gap: .75rem;
+        padding: .5rem .75rem;
+        color: var(--workshop-ink);
+        border: 1.5px solid transparent;
+        border-radius: 11px 15px 10px 13px;
+        font-size: .9375rem;
+        font-weight: 750;
+        transition: border-color 150ms ease, background-color 150ms ease;
+    }
+
+    .landing-page--workshop .mobile-site-nav a:hover {
+        border-color: var(--workshop-ink);
+        background: var(--workshop-yellow);
+    }
+
+    .landing-page--workshop .mobile-site-nav a > span {
+        color: #6752c8;
+        font: 700 1.125rem Caveat, cursive;
+    }
+
+    .landing-page--workshop .hero__scroll-cue {
+        display: none;
+    }
+
+    .landing-page--workshop .capability-showcase--desktop {
+        display: none !important;
+    }
+
+    .landing-page--workshop .capability-mobile {
+        display: grid;
+        min-width: 0;
+        gap: 1rem;
+    }
+
+    .landing-page--workshop .capability-mobile__heading {
+        display: grid;
+        gap: .25rem;
+        padding: 1.25rem 1.375rem;
+        border: 2px solid var(--workshop-ink);
+        border-radius: 18px 13px 20px 15px;
+        background: var(--workshop-yellow);
+        box-shadow: 5px 6px 0 var(--workshop-ink);
+    }
+
+    .landing-page--workshop .capability-mobile__heading > span {
+        width: fit-content;
+        padding: .25rem .55rem;
+        border: 1.5px solid var(--workshop-ink);
+        border-radius: 99px;
+        background: #fffdf7;
+        font-size: .625rem;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
+
+    .landing-page--workshop .capability-mobile__heading b {
+        margin-top: .25rem;
+        font-size: 1.25rem;
+    }
+
+    .landing-page--workshop .capability-mobile__heading small {
+        color: rgb(33 28 26 / .68);
+        font-size: .8125rem;
+    }
+
+    .landing-page--workshop .capability-mobile__groups {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: .625rem;
+    }
+
+    .landing-page--workshop .capability-mobile__groups button {
+        min-width: 0;
+        min-height: 6.5rem;
+        display: grid;
+        align-content: center;
+        gap: .2rem;
+        padding: .875rem;
+        color: var(--workshop-ink);
+        border: 2px solid var(--workshop-ink);
+        border-radius: 14px 19px 12px 16px;
+        background: #fffdf7;
+        box-shadow: 3px 4px 0 var(--workshop-ink);
+        cursor: pointer;
+        text-align: left;
+        transition: background-color 150ms ease, transform 150ms ease;
+    }
+
+    .landing-page--workshop .capability-mobile__groups button.active {
+        background: var(--workshop-lilac);
+        transform: translateY(-.2rem);
+    }
+
+    .landing-page--workshop .capability-mobile__groups button > span {
+        color: #6752c8;
+        font: 700 1.125rem Caveat, cursive;
+    }
+
+    .landing-page--workshop .capability-mobile__groups button > b {
+        overflow-wrap: anywhere;
+        font-size: .875rem;
+        line-height: 1.15;
+    }
+
+    .landing-page--workshop .capability-mobile__groups button > small {
+        color: rgb(33 28 26 / .62);
+        font-size: .625rem;
+        line-height: 1.3;
+    }
+
+    .landing-page--workshop .capability-mobile__modules {
+        display: flex;
+        gap: .5rem;
+        padding: .25rem .125rem .5rem;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .landing-page--workshop .capability-mobile__modules::-webkit-scrollbar {
+        display: none;
+    }
+
+    .landing-page--workshop .capability-mobile__modules button {
+        min-height: 2.875rem;
+        display: inline-flex;
+        flex: 0 0 auto;
+        align-items: center;
+        gap: .5rem;
+        padding: .625rem .8rem;
+        color: var(--workshop-ink);
+        border: 1.5px solid var(--workshop-ink);
+        border-radius: 99px;
+        background: #fffdf7;
+        cursor: pointer;
+        font-size: .75rem;
+        font-weight: 750;
+    }
+
+    .landing-page--workshop .capability-mobile__modules button.active {
+        background: var(--workshop-orange);
+    }
+
+    .landing-page--workshop .capability-mobile__detail {
+        min-height: 19rem;
+        display: grid;
+        grid-template-columns: 3.25rem minmax(0, 1fr);
+        gap: 1rem;
+        padding: 1.75rem;
+        border: 2px solid var(--workshop-ink);
+        border-radius: 23px 16px 26px 18px;
+        background: #fffdf7;
+        box-shadow: 7px 8px 0 var(--workshop-ink);
+    }
+
+    .landing-page--workshop .capability-mobile__detail-icon {
+        width: 3.25rem;
+        height: 3.25rem;
+        display: grid;
+        place-items: center;
+        border: 2px solid var(--workshop-ink);
+        border-radius: 13px 18px 12px 15px;
+        background: var(--workshop-green);
+    }
+
+    .landing-page--workshop .capability-mobile__detail small {
+        color: #6752c8;
+        font: 700 1.125rem Caveat, cursive;
+    }
+
+    .landing-page--workshop .capability-mobile__detail h3 {
+        max-width: 24ch;
+        margin: .5rem 0 .625rem;
+        font-size: clamp(1.75rem, 4vw, 2.375rem);
+        line-height: 1.08;
+    }
+
+    .landing-page--workshop .capability-mobile__detail p {
+        max-width: 62ch;
+        margin: 0;
+        color: rgb(33 28 26 / .7);
+        font-size: .9375rem;
+        line-height: 1.55;
+    }
+
+    .landing-page--workshop .capability-mobile__detail ul {
+        display: grid;
+        gap: .45rem;
+        margin: 1rem 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .landing-page--workshop .capability-mobile__detail li {
+        display: flex;
+        align-items: flex-start;
+        gap: .625rem;
+        font-size: .8125rem;
+        line-height: 1.4;
+    }
+
+    .landing-page--workshop .capability-mobile__detail .trust-pin {
+        margin-top: .35rem;
+        flex: 0 0 auto;
+    }
+
+    .landing-page--workshop .site-footer__bottom::before,
+    .landing-page--workshop .site-footer__bottom::after {
+        display: none;
+    }
+
+    .landing-page--workshop .site-footer__bottom {
+        width: 100%;
+        max-width: none;
+        padding-inline: max(1rem, 3vw);
+    }
+}
+
+@media (max-width: 620px) {
+    .landing-page--workshop .site-header__inner > .button {
+        padding-inline: .8rem;
+    }
+
+    .landing-page--workshop .mobile-menu-toggle {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+
+    .landing-page--workshop .mobile-site-nav {
+        top: calc(var(--site-header-height) + .375rem);
+        right: 1rem;
+    }
+
+    .landing-page--workshop .capability-mobile__groups {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .landing-page--workshop .capability-mobile__groups button {
+        min-height: 6rem;
+    }
+
+    .landing-page--workshop .capability-mobile__detail {
+        min-height: 25rem;
+        grid-template-columns: 1fr;
+        align-content: start;
+        padding: 1.375rem;
+    }
+
+    .landing-page--workshop .capability-mobile__detail h3 {
+        font-size: clamp(1.75rem, 8vw, 2.125rem);
+    }
+
+    .landing-page--workshop .site-footer__bottom { padding-inline: 1rem; }
+}
+
+@media (max-width: 390px) {
+    .landing-page--workshop .site-header .brand-mark {
+        font-size: 2.35rem;
+    }
+
+    .landing-page--workshop .site-header__inner > .button {
+        min-height: 2.5rem;
+        padding-inline: .65rem;
+        font-size: .75rem;
+    }
+
+    .landing-page--workshop .capability-mobile__groups button {
+        padding: .75rem;
+    }
+}
