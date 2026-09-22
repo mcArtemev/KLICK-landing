@@ -8656,11 +8656,39 @@ svg {
         max-width: none;
         padding-inline: max(1rem, 3vw);
     }
+
+    .landing-page--workshop .site-footer__demo-card {
+        display: none;
+    }
 }
 
 @media (max-width: 620px) {
     .landing-page--workshop .site-header__inner > .button {
         padding-inline: .8rem;
+    }
+
+    .landing-page--workshop .hero__actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .5rem;
+    }
+
+    .landing-page--workshop .hero__actions .button {
+        min-width: 0;
+        min-height: 2.75rem;
+        gap: .4rem;
+        padding-inline: .5rem;
+        font-size: clamp(.6875rem, 2.8vw, .75rem);
+        white-space: nowrap;
+    }
+
+    .landing-page--workshop .hero__proof {
+        width: 100%;
+        display: grid;
+        justify-content: start;
+        justify-items: start;
+        text-align: left;
     }
 
     .landing-page--workshop .mobile-menu-toggle {
@@ -8693,6 +8721,40 @@ svg {
     }
 
     .landing-page--workshop .site-footer__bottom { padding-inline: 1rem; }
+}
+
+@media (min-width: 621px) and (max-width: 1100px) {
+    .landing-page--workshop .hero {
+        padding-top: calc(var(--site-header-height) + 3rem);
+    }
+
+    .landing-page--workshop .hero__copy {
+        text-align: center;
+    }
+
+    .landing-page--workshop .hero .eyebrow {
+        justify-content: center;
+    }
+
+    .landing-page--workshop .hero h1 {
+        text-align: center;
+    }
+
+    .landing-page--workshop .hero__title-signature {
+        justify-content: center;
+    }
+
+    .landing-page--workshop .hero__lead {
+        max-width: 44rem;
+        margin-inline: auto;
+    }
+
+    .landing-page--workshop .hero__annotation {
+        width: fit-content;
+        max-width: 100%;
+        margin: 1rem auto 0;
+        text-align: center;
+    }
 }
 
 @media (max-width: 390px) {

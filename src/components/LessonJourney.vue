@@ -50,7 +50,7 @@
         .journey-heading p{font-size:1rem;line-height:1.55}
         .journey-mobile-hint{display:flex;justify-content:space-between;align-items:center;margin:0 0 16px;color:rgb(33 28 26/.7);font:700 1.125rem Caveat,cursive}
         .journey-mobile-hint span{font-family:Inter,ui-sans-serif,sans-serif}
-        .journey-track{display:flex;gap:12px;margin-inline:calc(var(--shell-pad) * -1);padding:14px var(--shell-pad) 16px;overflow-x:auto;scroll-padding-inline:var(--shell-pad);scroll-snap-type:x proximity;scrollbar-width:none}
+        .journey-track{display:flex;gap:12px;margin-inline:calc(var(--shell-pad) * -1);padding:14px var(--shell-pad) 28px;overflow-x:auto;scroll-padding-inline:var(--shell-pad);scroll-snap-type:x proximity;scrollbar-width:none}
         .journey-track::-webkit-scrollbar{display:none}
         .journey-thread{display:none}
         .journey-track button{min-width:172px;min-height:124px;flex:0 0 172px;padding:17px 14px;scroll-snap-align:start;box-shadow:3px 4px 0 var(--workshop-ink)}
@@ -65,10 +65,14 @@
         .journey-card>div p{max-width:58ch;font-size:1rem}
         .journey-card aside{display:none}
     }
+    @media(min-width:621px) and (max-width:1100px){
+        .journey-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-inline:0;padding:18px 0 22px;overflow:visible}
+        .journey-track button{width:100%;min-width:0;min-height:132px;flex:none}
+    }
     @media(max-width:620px){
         .journey-heading h2{font-size:clamp(2.5rem,12vw,3.5rem)}
         .journey-mobile-hint{margin-bottom:22px}
-        .journey-track{padding-top:18px}
+        .journey-track{padding-top:18px;padding-bottom:28px}
         .journey-track button{min-width:150px;min-height:116px;flex-basis:150px;padding:15px 12px}
         .journey-card-slot{min-height:315px}
         .journey-card{min-height:285px;padding:23px 20px}

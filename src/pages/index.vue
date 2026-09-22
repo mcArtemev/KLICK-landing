@@ -62,7 +62,7 @@
                         <p class="hero__lead">
                             Все для учебы и обучения — в одном рабочем пространстве.
                         </p>
-                        <p class="hero__annotation" aria-hidden="true">одна линия от первого урока до результата ↗</p>
+                        <p class="hero__annotation" aria-hidden="true">прямой путь от первого урока до результата</p>
                         <div class="hero__actions">
                             <a class="button button--accent" :href="appUrl">
                                 Начать работу
