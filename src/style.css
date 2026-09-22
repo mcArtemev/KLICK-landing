@@ -75,12 +75,12 @@ svg {
 }
 
 .shell {
-    width: min(1180px, calc(100% - 48px));
+    width: min(73.75rem, calc(100% - 3rem));
     margin-inline: auto;
 }
 
 .section-pad {
-    padding-block: 116px;
+    padding-block: 7.25rem;
 }
 
 .site-header {
@@ -102,10 +102,10 @@ svg {
 
 .site-header__inner {
     display: flex;
-    min-height: 76px;
+    min-height: 4.75rem;
     align-items: center;
     justify-content: space-between;
-    gap: 28px;
+    gap: 1.75rem;
 }
 
 .brand-logo {
@@ -119,7 +119,7 @@ svg {
     position: relative;
     display: inline-block;
     color: #f59e0b;
-    font: 700 42px/0.82 Caveat, cursive;
+    font: 700 2.625rem/0.82 Caveat, cursive;
     letter-spacing: -0.055em;
     transform: rotate(-2deg);
 }
@@ -149,13 +149,13 @@ svg {
 .desktop-nav {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 2.125rem;
     margin-left: auto;
 }
 
 .desktop-nav a {
     color: var(--stone-600);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     transition: color 160ms ease;
 }
@@ -166,14 +166,14 @@ svg {
 
 .button {
     display: inline-flex;
-    min-height: 48px;
+    min-height: 3rem;
     align-items: center;
     justify-content: center;
-    gap: 9px;
+    gap: 0.65em;
     border: 1px solid transparent;
     border-radius: 14px;
-    padding: 0 21px;
-    font-size: 14px;
+    padding: 0 1.5em;
+    font-size: 0.875rem;
     font-weight: 650;
     transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
@@ -183,15 +183,15 @@ svg {
 }
 
 .button--small {
-    min-height: 42px;
+    min-height: 2.625rem;
     border-radius: 12px;
-    padding-inline: 17px;
-    font-size: 13px;
+    padding-inline: 1.3em;
+    font-size: 0.8125rem;
 }
 
 .button--large {
-    min-height: 54px;
-    padding-inline: 26px;
+    min-height: 3.375rem;
+    padding-inline: 1.85em;
 }
 
 .button--dark {
@@ -276,7 +276,7 @@ svg {
     align-items: center;
     gap: 8px;
     color: var(--accent-700);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 750;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -298,7 +298,7 @@ svg {
 .hero h1 {
     margin: 25px 0 22px;
     color: var(--stone-900);
-    font-size: clamp(50px, 4.35vw, 68px);
+    font-size: clamp(3.125rem, 4.35vw, 4.25rem);
     font-weight: 760;
     letter-spacing: -0.064em;
     line-height: 0.99;
@@ -311,7 +311,7 @@ svg {
 .hero__lead {
     margin: 0;
     color: var(--stone-600);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.72;
 }
 
@@ -330,7 +330,7 @@ svg {
     margin: 27px 0 0;
     padding: 0;
     color: var(--stone-500);
-    font-size: 12px;
+    font-size: 0.75rem;
     list-style: none;
 }
 
@@ -419,7 +419,7 @@ svg {
     border-radius: 8px;
     padding: 0 9px;
     color: var(--stone-500);
-    font-size: 8px;
+    font-size: 0.5rem;
     font-weight: 550;
     width: 100%;
     border: 0;
@@ -479,13 +479,13 @@ svg {
 
 .product-profile b {
     color: var(--stone-700);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .product-profile small {
     margin-top: 2px;
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .product-avatar {
@@ -498,7 +498,7 @@ svg {
     border-radius: 9px;
     background: var(--accent-50);
     color: var(--accent-700);
-    font-size: 8px;
+    font-size: 0.5rem;
     font-weight: 700;
 }
 
@@ -515,13 +515,13 @@ svg {
 
 .product-heading small {
     color: var(--stone-400);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .product-heading h3 {
     margin: 5px 0 0;
     color: var(--stone-900);
-    font-size: 17px;
+    font-size: 1.0625rem;
     letter-spacing: -0.035em;
 }
 
@@ -623,12 +623,12 @@ svg {
 
 .product-stats small {
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .product-stats b {
     color: var(--stone-800);
-    font-size: 8px;
+    font-size: 0.5rem;
     line-height: 1.3;
     white-space: normal;
 }
@@ -659,12 +659,12 @@ svg {
 
 .card-heading b {
     color: var(--stone-800);
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .card-heading span {
     color: var(--accent-600);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: 600;
 }
 
@@ -672,7 +672,7 @@ svg {
     border: 0;
     background: transparent;
     color: var(--accent-600);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: 600;
 }
 
@@ -716,7 +716,7 @@ svg {
     border-radius: 999px;
     background: var(--stone-50);
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .lesson-line {
@@ -744,13 +744,13 @@ svg {
 
 .lesson b {
     color: var(--stone-700);
-    font-size: 7.5px;
+    font-size: 0.4688rem;
 }
 
 .lesson small {
     margin-top: 3px;
     color: var(--stone-400);
-    font-size: 6.5px;
+    font-size: 0.4063rem;
 }
 
 .lesson button {
@@ -759,7 +759,7 @@ svg {
     background: var(--accent-500);
     padding: 6px 7px;
     color: white;
-    font-size: 6.5px;
+    font-size: 0.4063rem;
     font-weight: 600;
 }
 
@@ -823,8 +823,8 @@ svg {
 
 .review-reminder b,
 .review-reminder small { display: block; }
-.review-reminder b { font-size: 7px; }
-.review-reminder small { margin-top: 3px; color: #d97706; font-size: 6px; }
+.review-reminder b { font-size: 0.4375rem; }
+.review-reminder small { margin-top: 3px; color: #d97706; font-size: 0.375rem; }
 
 .review-card article b,
 .review-card article small,
@@ -839,7 +839,7 @@ svg {
 .review-card article b,
 .review-card > button b {
     color: var(--stone-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .review-card article small,
@@ -847,13 +847,13 @@ svg {
 .review-card > button small,
 .review-card > button time {
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .review-card article strong,
 .review-card > button strong {
     color: #059669;
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .review-progress {
@@ -879,13 +879,13 @@ svg {
 
 .review-progress b {
     color: var(--stone-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .review-progress small,
 .review-progress em {
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -944,7 +944,7 @@ svg {
 
 .product-notifications > header b {
     color: var(--stone-800);
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .product-notifications > header button {
@@ -953,7 +953,7 @@ svg {
     border: 0;
     background: transparent;
     color: var(--stone-400);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .product-notifications > button {
@@ -984,8 +984,8 @@ svg {
 .product-notifications > button > i.is-blue { background: #eff6ff; color: #2563eb; }
 .product-notifications > button b,
 .product-notifications > button small { display: block; }
-.product-notifications > button b { color: var(--stone-700); font-size: 7px; }
-.product-notifications > button small { margin-top: 3px; color: var(--stone-400); font-size: 6px; }
+.product-notifications > button b { color: var(--stone-700); font-size: 0.4375rem; }
+.product-notifications > button small { margin-top: 3px; color: var(--stone-400); font-size: 0.375rem; }
 
 .scene-toolbar {
     display: flex;
@@ -1013,12 +1013,12 @@ svg {
     background: white;
     padding: 0 9px;
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .scene-toolbar button:hover { border-color: var(--accent-300); background: var(--accent-50); color: var(--accent-700); }
 .scene-toolbar button.is-primary { border-color: var(--accent-500); background: var(--accent-500); color: white; }
-.scene-toolbar > b { color: var(--stone-800); font-size: 9px; }
+.scene-toolbar > b { color: var(--stone-800); font-size: 0.5625rem; }
 .scene-search { min-width: 155px; color: var(--stone-400); }
 
 .scene-calendar {
@@ -1046,20 +1046,20 @@ svg {
     justify-items: center;
     border-left: 1px solid var(--stone-100);
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
-.scene-calendar > header b { margin-top: 2px; color: var(--stone-700); font-size: 9px; }
+.scene-calendar > header b { margin-top: 2px; color: var(--stone-700); font-size: 0.5625rem; }
 .scene-calendar > header .is-today { border-bottom: 2px solid var(--accent-500); background: var(--accent-50); color: var(--accent-700); }
-.scene-calendar > aside { display: flex; align-items: flex-end; flex-direction: column; justify-content: space-around; padding: 7px 6px 7px 0; color: var(--stone-400); font-size: 6px; }
+.scene-calendar > aside { display: flex; align-items: flex-end; flex-direction: column; justify-content: space-around; padding: 7px 6px 7px 0; color: var(--stone-400); font-size: 0.375rem; }
 .scene-calendar > section { position: relative; overflow: hidden; background-image: linear-gradient(var(--stone-100) 1px, transparent 1px), linear-gradient(90deg, var(--stone-100) 1px, transparent 1px); background-size: 100% 70px, 20% 100%; }
 .scene-calendar > section > i { position: absolute; inset: 0 auto 0 20%; width: 20%; background: rgb(255 251 235 / 0.62); }
-.scene-calendar > section > em { position: absolute; right: 0; bottom: 0; left: 0; height: 33px; background: repeating-linear-gradient(135deg, #fafaf9, #fafaf9 5px, #e7e5e4 5px, #e7e5e4 8px); padding: 7px; color: var(--stone-500); font-size: 6px; font-style: normal; }
+.scene-calendar > section > em { position: absolute; right: 0; bottom: 0; left: 0; height: 33px; background: repeating-linear-gradient(135deg, #fafaf9, #fafaf9 5px, #e7e5e4 5px, #e7e5e4 8px); padding: 7px; color: var(--stone-500); font-size: 0.375rem; font-style: normal; }
 .scene-calendar > section > button { position: absolute; display: grid; width: 18%; min-height: 48px; align-content: center; gap: 3px; overflow: hidden; border: 1px solid var(--accent-300); border-radius: 8px; background: var(--accent-50); padding: 6px; color: var(--accent-800); text-align: left; }
 .scene-calendar > section > button:hover { box-shadow: var(--shadow-soft); transform: translateY(-1px); }
 .scene-calendar > section > button b,
-.scene-calendar > section > button small { overflow: hidden; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
-.scene-calendar > section > button small { font-size: 6px; font-weight: 500; }
+.scene-calendar > section > button small { overflow: hidden; font-size: 0.4375rem; text-overflow: ellipsis; white-space: nowrap; }
+.scene-calendar > section > button small { font-size: 0.375rem; font-weight: 500; }
 .scene-calendar .event-a { top: 58px; left: 21%; }
 .scene-calendar .event-b { top: 142px; left: 61%; border-color: #c4b5fd; background: #f5f3ff; color: #6d28d9; }
 
@@ -1084,12 +1084,12 @@ svg {
 }
 
 .scene-students > button:hover { border-color: var(--accent-300); transform: translateY(-1px); }
-.scene-students > button > i { display: grid; width: 39px; height: 39px; place-items: center; border: 1px solid var(--accent-200); border-radius: 99px; background: var(--accent-50); color: var(--accent-700); font-size: 8px; font-style: normal; font-weight: 700; }
+.scene-students > button > i { display: grid; width: 39px; height: 39px; place-items: center; border: 1px solid var(--accent-200); border-radius: 99px; background: var(--accent-50); color: var(--accent-700); font-size: 0.5rem; font-style: normal; font-weight: 700; }
 .scene-students b,
 .scene-students small { display: block; }
-.scene-students b { color: var(--stone-800); font-size: 9px; }
-.scene-students small { margin-top: 4px; color: var(--stone-400); font-size: 7px; }
-.scene-students em { border: 1px solid #a7f3d0; border-radius: 99px; background: #ecfdf5; padding: 5px 8px; color: #047857; font-size: 6px; font-style: normal; }
+.scene-students b { color: var(--stone-800); font-size: 0.5625rem; }
+.scene-students small { margin-top: 4px; color: var(--stone-400); font-size: 0.4375rem; }
+.scene-students em { border: 1px solid #a7f3d0; border-radius: 99px; background: #ecfdf5; padding: 5px 8px; color: #047857; font-size: 0.375rem; font-style: normal; }
 .scene-students strong { color: var(--stone-300); }
 
 .scene-homework {
@@ -1118,12 +1118,12 @@ svg {
 .scene-materials > button:hover { border-color: var(--accent-300); box-shadow: var(--shadow-soft); transform: translateY(-2px); }
 .scene-homework header { display: flex; align-items: center; justify-content: space-between; gap: 7px; width: 100%; }
 .scene-homework header span,
-.scene-homework header em { border-radius: 99px; background: #eff6ff; padding: 5px 7px; color: #2563eb; font-size: 7px; font-style: normal; }
+.scene-homework header em { border-radius: 99px; background: #eff6ff; padding: 5px 7px; color: #2563eb; font-size: 0.4375rem; font-style: normal; }
 .scene-homework header em { background: #fff7ed; color: #c2410c; }
 .scene-homework header em.is-success { background: #ecfdf5; color: #047857; }
-.scene-homework > button > b { margin-top: 23px; color: var(--stone-800); font-size: 12px; }
-.scene-homework > button > small { margin-top: 7px; color: var(--stone-400); font-size: 8px; }
-.scene-homework footer { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: auto; border-top: 1px solid var(--stone-100); padding-top: 13px; color: var(--stone-500); font-size: 7px; }
+.scene-homework > button > b { margin-top: 23px; color: var(--stone-800); font-size: 0.75rem; }
+.scene-homework > button > small { margin-top: 7px; color: var(--stone-400); font-size: 0.5rem; }
+.scene-homework footer { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: auto; border-top: 1px solid var(--stone-100); padding-top: 13px; color: var(--stone-500); font-size: 0.4375rem; }
 .scene-homework footer strong { color: var(--accent-700); }
 
 .scene-plan {
@@ -1135,22 +1135,22 @@ svg {
 }
 
 .scene-plan > header { display: grid; align-items: center; gap: 10px; padding: 12px 14px; grid-template-columns: 39px 1fr auto; }
-.scene-plan > header > i { display: grid; width: 39px; height: 39px; place-items: center; border: 1px solid var(--accent-200); border-radius: 11px; background: var(--accent-50); color: var(--accent-700); font-size: 8px; font-style: normal; font-weight: 700; }
+.scene-plan > header > i { display: grid; width: 39px; height: 39px; place-items: center; border: 1px solid var(--accent-200); border-radius: 11px; background: var(--accent-50); color: var(--accent-700); font-size: 0.5rem; font-style: normal; font-weight: 700; }
 .scene-plan > header b,
 .scene-plan > header small { display: block; }
-.scene-plan > header b { color: var(--stone-800); font-size: 10px; }
-.scene-plan > header small { margin-top: 4px; color: var(--stone-400); font-size: 7px; }
+.scene-plan > header b { color: var(--stone-800); font-size: 0.625rem; }
+.scene-plan > header small { margin-top: 4px; color: var(--stone-400); font-size: 0.4375rem; }
 .scene-plan > header em { color: var(--stone-400); font-style: normal; }
 .scene-plan > section { display: grid; gap: 8px; border-top: 1px solid var(--stone-100); background: var(--stone-50); padding: 12px 17px; }
 .scene-plan > section > button { display: grid; min-height: 64px; align-items: center; gap: 10px; margin-left: 15px; border: 1px solid var(--stone-200); border-radius: 10px; background: white; padding: 9px 11px; text-align: left; grid-template-columns: 27px 1fr auto; }
 .scene-plan > section > button:hover { border-color: var(--accent-300); }
-.scene-plan > section > button > i { display: grid; width: 27px; height: 27px; place-items: center; margin-left: -27px; border: 1px solid var(--stone-200); border-radius: 99px; background: white; color: var(--stone-500); font-size: 7px; font-style: normal; }
+.scene-plan > section > button > i { display: grid; width: 27px; height: 27px; place-items: center; margin-left: -27px; border: 1px solid var(--stone-200); border-radius: 99px; background: white; color: var(--stone-500); font-size: 0.4375rem; font-style: normal; }
 .scene-plan > section b,
 .scene-plan > section small,
 .scene-plan > section em { display: block; }
-.scene-plan > section b { color: var(--stone-800); font-size: 8px; }
-.scene-plan > section small { margin-top: 5px; color: var(--stone-400); font-size: 6px; }
-.scene-plan > section em { color: #7c3aed; font-size: 6px; font-style: normal; font-weight: 700; }
+.scene-plan > section b { color: var(--stone-800); font-size: 0.5rem; }
+.scene-plan > section small { margin-top: 5px; color: var(--stone-400); font-size: 0.375rem; }
+.scene-plan > section em { color: #7c3aed; font-size: 0.375rem; font-style: normal; font-weight: 700; }
 .scene-plan > section strong { color: var(--stone-300); }
 .scene-plan > section > button.is-test { border-color: #ddd6fe; background: #f5f3ff; }
 .scene-plan > section > button.is-test > i { border-color: #ddd6fe; background: #f5f3ff; color: #7c3aed; }
@@ -1168,11 +1168,11 @@ svg {
 .scene-materials header > i.is-red { background: #fef2f2; color: #ef4444; }
 .scene-materials header > i.is-blue { background: #eff6ff; color: #2563eb; }
 .scene-materials header > i.is-orange { background: #fff7ed; color: #f97316; }
-.scene-materials header > span { color: var(--stone-300); font-size: 8px; }
-.scene-materials > button > b { overflow: hidden; margin-top: 17px; color: var(--stone-800); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
-.scene-materials > button > small { overflow: hidden; margin-top: 7px; color: var(--stone-400); font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
-.scene-materials > button > em { align-self: flex-start; margin-top: 14px; border: 1px solid var(--stone-200); border-radius: 99px; background: var(--stone-50); padding: 5px 7px; color: var(--stone-500); font-size: 6px; font-style: normal; }
-.scene-materials > button > footer { width: 100%; margin-top: auto; border-top: 1px solid var(--stone-100); padding-top: 12px; color: var(--stone-400); font-size: 7px; }
+.scene-materials header > span { color: var(--stone-300); font-size: 0.5rem; }
+.scene-materials > button > b { overflow: hidden; margin-top: 17px; color: var(--stone-800); font-size: 0.5625rem; text-overflow: ellipsis; white-space: nowrap; }
+.scene-materials > button > small { overflow: hidden; margin-top: 7px; color: var(--stone-400); font-size: 0.4375rem; text-overflow: ellipsis; white-space: nowrap; }
+.scene-materials > button > em { align-self: flex-start; margin-top: 14px; border: 1px solid var(--stone-200); border-radius: 99px; background: var(--stone-50); padding: 5px 7px; color: var(--stone-500); font-size: 0.375rem; font-style: normal; }
+.scene-materials > button > footer { width: 100%; margin-top: auto; border-top: 1px solid var(--stone-100); padding-top: 12px; color: var(--stone-400); font-size: 0.4375rem; }
 
 .scene-review-workspace {
     display: grid;
@@ -1210,9 +1210,9 @@ svg {
 .scene-review-workspace > header button:hover { border-color: var(--stone-200); background: var(--stone-50); }
 .scene-review-workspace > header b,
 .scene-review-workspace > header small { display: block; }
-.scene-review-workspace > header b { color: var(--stone-800); font-size: 9px; }
-.scene-review-workspace > header small { margin-top: 2px; color: var(--stone-400); font-size: 6px; }
-.scene-review-workspace > header em { border-radius: 999px; background: #fff7ed; padding: 5px 8px; color: #c2410c; font-size: 6px; font-style: normal; }
+.scene-review-workspace > header b { color: var(--stone-800); font-size: 0.5625rem; }
+.scene-review-workspace > header small { margin-top: 2px; color: var(--stone-400); font-size: 0.375rem; }
+.scene-review-workspace > header em { border-radius: 999px; background: #fff7ed; padding: 5px 8px; color: #c2410c; font-size: 0.375rem; font-style: normal; }
 
 .scene-review-document {
     min-width: 0;
@@ -1232,17 +1232,17 @@ svg {
     padding: 5px 7px;
 }
 
-.document-toolbar button { min-width: 24px; height: 24px; border: 0; border-radius: 6px; background: transparent; color: var(--stone-500); font-size: 7px; }
+.document-toolbar button { min-width: 24px; height: 24px; border: 0; border-radius: 6px; background: transparent; color: var(--stone-500); font-size: 0.4375rem; }
 .document-toolbar button:hover { background: var(--stone-100); }
 .document-toolbar span { flex: 1; }
 .scene-review-document article { min-height: 270px; border: 1px solid var(--stone-200); border-radius: 0 0 9px 9px; background: white; padding: 22px 27px; color: var(--stone-700); }
-.scene-review-document article h4 { margin: 0 0 17px; font-family: Georgia, serif; font-size: 13px; }
-.scene-review-document article p { font-family: Georgia, serif; font-size: 8px; line-height: 1.8; }
+.scene-review-document article h4 { margin: 0 0 17px; font-family: Georgia, serif; font-size: 0.8125rem; }
+.scene-review-document article p { font-family: Georgia, serif; font-size: 0.5rem; line-height: 1.8; }
 .scene-review-document article mark { border-bottom: 2px solid #60a5fa; background: #dbeafe; color: inherit; cursor: pointer; }
 
 .scene-review-workspace > aside { border-left: 1px solid var(--stone-200); padding: 12px; }
-.scene-review-workspace > aside > b { display: block; margin-bottom: 12px; color: var(--stone-800); font-size: 9px; }
-.scene-review-workspace > aside label { display: grid; gap: 5px; margin-top: 10px; color: var(--stone-500); font-size: 6px; }
+.scene-review-workspace > aside > b { display: block; margin-bottom: 12px; color: var(--stone-800); font-size: 0.5625rem; }
+.scene-review-workspace > aside label { display: grid; gap: 5px; margin-top: 10px; color: var(--stone-500); font-size: 0.375rem; }
 .scene-review-workspace > aside input,
 .scene-review-workspace > aside textarea { width: 100%; border: 1px solid var(--stone-200); border-radius: 8px; background: white; padding: 7px 8px; color: var(--stone-700); font: inherit; outline: none; }
 .scene-review-workspace > aside textarea { min-height: 60px; resize: none; }
@@ -1251,9 +1251,9 @@ svg {
 .scene-review-workspace > aside > button:not(.review-submit) { width: 100%; margin-top: 10px; border: 1px solid var(--stone-200); border-radius: 8px; background: white; padding: 8px; color: var(--stone-600); text-align: left; }
 .scene-review-workspace > aside > button.active { border-color: #93c5fd; background: #eff6ff; }
 .scene-review-workspace > aside > button span,
-.scene-review-workspace > aside > button small { display: block; font-size: 6px; }
+.scene-review-workspace > aside > button small { display: block; font-size: 0.375rem; }
 .scene-review-workspace > aside > button small { margin-top: 4px; color: var(--stone-400); line-height: 1.4; }
-.scene-review-workspace > aside .review-submit { width: 100%; margin-top: 10px; border: 0; border-radius: 8px; background: var(--accent-500); padding: 8px; color: white; font-size: 7px; font-weight: 700; }
+.scene-review-workspace > aside .review-submit { width: 100%; margin-top: 10px; border: 0; border-radius: 8px; background: var(--accent-500); padding: 8px; color: white; font-size: 0.4375rem; font-weight: 700; }
 
 .scene-builder,
 .scene-chat {
@@ -1270,54 +1270,54 @@ svg {
 .scene-builder > aside,
 .scene-chat > aside { border-right: 1px solid var(--stone-200); background: #fafaf9; padding: 10px; }
 .scene-builder > aside header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; padding: 2px 3px; }
-.scene-builder > aside header b { color: var(--stone-700); font-size: 8px; }
+.scene-builder > aside header b { color: var(--stone-700); font-size: 0.5rem; }
 .scene-builder > aside header button { display: grid; width: 23px; height: 23px; place-items: center; border: 1px solid var(--stone-200); border-radius: 7px; background: white; color: var(--accent-700); }
 .scene-builder > aside > button { display: grid; width: 100%; align-items: center; gap: 7px; margin-top: 5px; border: 1px solid transparent; border-radius: 9px; background: transparent; padding: 8px; color: var(--stone-600); text-align: left; grid-template-columns: 22px 1fr; }
 .scene-builder > aside > button.active { border-color: var(--accent-200); background: var(--accent-50); }
-.scene-builder > aside > button > span { display: grid; width: 21px; height: 21px; place-items: center; border-radius: 6px; background: white; color: var(--stone-500); font-size: 7px; }
+.scene-builder > aside > button > span { display: grid; width: 21px; height: 21px; place-items: center; border-radius: 6px; background: white; color: var(--stone-500); font-size: 0.4375rem; }
 .scene-builder > aside b,
 .scene-builder > aside small { display: block; }
-.scene-builder > aside b { font-size: 7px; }
-.scene-builder > aside small { margin-top: 2px; color: var(--stone-400); font-size: 5.5px; }
+.scene-builder > aside b { font-size: 0.4375rem; }
+.scene-builder > aside small { margin-top: 2px; color: var(--stone-400); font-size: 0.3438rem; }
 .scene-builder > section { display: flex; min-width: 0; flex-direction: column; padding: 13px 16px; }
-.scene-builder > section > header { display: flex; align-items: center; justify-content: space-between; color: var(--stone-500); font-size: 7px; }
+.scene-builder > section > header { display: flex; align-items: center; justify-content: space-between; color: var(--stone-500); font-size: 0.4375rem; }
 .scene-builder > section > header button { border: 0; background: transparent; color: var(--stone-400); }
-.scene-builder > section label { display: grid; gap: 5px; margin-top: 15px; color: var(--stone-500); font-size: 6px; }
+.scene-builder > section label { display: grid; gap: 5px; margin-top: 15px; color: var(--stone-500); font-size: 0.375rem; }
 .scene-builder > section label input { border: 1px solid var(--stone-200); border-radius: 9px; padding: 9px 10px; color: var(--stone-800); font: inherit; }
 .builder-answers { display: grid; gap: 7px; margin-top: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.builder-answers button { display: flex; align-items: center; gap: 7px; min-height: 38px; border: 1px solid var(--stone-200); border-radius: 9px; background: white; padding: 7px 9px; color: var(--stone-600); font-size: 7px; text-align: left; }
-.builder-answers button i { display: grid; width: 17px; height: 17px; place-items: center; border: 1px solid var(--stone-300); border-radius: 999px; font-size: 6px; font-style: normal; }
+.builder-answers button { display: flex; align-items: center; gap: 7px; min-height: 38px; border: 1px solid var(--stone-200); border-radius: 9px; background: white; padding: 7px 9px; color: var(--stone-600); font-size: 0.4375rem; text-align: left; }
+.builder-answers button i { display: grid; width: 17px; height: 17px; place-items: center; border: 1px solid var(--stone-300); border-radius: 999px; font-size: 0.375rem; font-style: normal; }
 .builder-answers button.correct { border-color: #6ee7b7; background: #ecfdf5; color: #047857; }
 .builder-answers button.correct i { border-color: #10b981; background: #10b981; color: white; }
 .builder-answers button.add-answer { border-style: dashed; color: var(--accent-700); }
-.scene-builder > section > footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; border-top: 1px solid var(--stone-100); padding-top: 11px; color: var(--stone-500); font-size: 7px; }
+.scene-builder > section > footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; border-top: 1px solid var(--stone-100); padding-top: 11px; color: var(--stone-500); font-size: 0.4375rem; }
 .scene-builder > section > footer b { color: var(--stone-800); }
-.scene-builder > section > footer button { border: 0; border-radius: 8px; background: var(--accent-500); padding: 8px 11px; color: white; font-size: 7px; font-weight: 700; }
+.scene-builder > section > footer button { border: 0; border-radius: 8px; background: var(--accent-500); padding: 8px 11px; color: white; font-size: 0.4375rem; font-weight: 700; }
 
 .scene-chat { grid-template-columns: 190px minmax(0, 1fr); }
 .scene-chat > aside .scene-search { min-width: 0; margin-bottom: 8px; }
 .scene-chat > aside > button { display: grid; width: 100%; align-items: center; gap: 8px; border: 0; border-radius: 9px; background: transparent; padding: 8px; color: var(--stone-600); text-align: left; grid-template-columns: 28px 1fr auto; }
 .scene-chat > aside > button.active { background: var(--accent-50); }
 .scene-chat > aside > button i,
-.scene-chat > section > header i { display: grid; width: 28px; height: 28px; place-items: center; border-radius: 999px; background: #e0f2fe; color: #0369a1; font-size: 7px; font-style: normal; font-weight: 700; }
+.scene-chat > section > header i { display: grid; width: 28px; height: 28px; place-items: center; border-radius: 999px; background: #e0f2fe; color: #0369a1; font-size: 0.4375rem; font-style: normal; font-weight: 700; }
 .scene-chat > aside b,
 .scene-chat > aside small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.scene-chat > aside b { font-size: 7px; }
-.scene-chat > aside small { margin-top: 3px; color: var(--stone-400); font-size: 5.5px; }
-.scene-chat > aside em { display: grid; min-width: 17px; height: 17px; place-items: center; border-radius: 999px; background: var(--accent-500); color: white; font-size: 6px; font-style: normal; }
+.scene-chat > aside b { font-size: 0.4375rem; }
+.scene-chat > aside small { margin-top: 3px; color: var(--stone-400); font-size: 0.3438rem; }
+.scene-chat > aside em { display: grid; min-width: 17px; height: 17px; place-items: center; border-radius: 999px; background: var(--accent-500); color: white; font-size: 0.375rem; font-style: normal; }
 .scene-chat > section { display: grid; min-width: 0; grid-template-rows: 48px 1fr 47px; }
 .scene-chat > section > header { display: grid; align-items: center; gap: 8px; border-bottom: 1px solid var(--stone-100); padding: 8px 12px; grid-template-columns: 28px 1fr auto; }
 .scene-chat > section > header b,
 .scene-chat > section > header small { display: block; }
-.scene-chat > section > header b { color: var(--stone-800); font-size: 8px; }
-.scene-chat > section > header small { margin-top: 2px; color: #059669; font-size: 5.5px; }
+.scene-chat > section > header b { color: var(--stone-800); font-size: 0.5rem; }
+.scene-chat > section > header small { margin-top: 2px; color: #059669; font-size: 0.3438rem; }
 .scene-chat > section > header button { display: grid; width: 28px; height: 28px; place-items: center; border: 1px solid var(--stone-200); border-radius: 8px; background: white; color: var(--stone-500); }
 .chat-messages { display: flex; overflow: hidden; flex-direction: column; gap: 7px; padding: 12px; background: #fafaf9; }
-.chat-messages > span { align-self: center; color: var(--stone-400); font-size: 5.5px; }
-.chat-messages p { max-width: 72%; margin: 0; border: 1px solid var(--stone-200); border-radius: 3px 10px 10px 10px; background: white; padding: 8px 10px; color: var(--stone-600); font-size: 7px; line-height: 1.4; }
+.chat-messages > span { align-self: center; color: var(--stone-400); font-size: 0.3438rem; }
+.chat-messages p { max-width: 72%; margin: 0; border: 1px solid var(--stone-200); border-radius: 3px 10px 10px 10px; background: white; padding: 8px 10px; color: var(--stone-600); font-size: 0.4375rem; line-height: 1.4; }
 .chat-messages p.is-own { align-self: flex-end; border-color: var(--accent-200); border-radius: 10px 3px 10px 10px; background: var(--accent-50); }
 .scene-chat form { display: grid; gap: 7px; border-top: 1px solid var(--stone-100); padding: 8px 10px; grid-template-columns: 1fr 29px; }
-.scene-chat form input { min-width: 0; border: 1px solid var(--stone-200); border-radius: 8px; padding: 0 9px; color: var(--stone-700); font-size: 7px; outline: none; }
+.scene-chat form input { min-width: 0; border: 1px solid var(--stone-200); border-radius: 8px; padding: 0 9px; color: var(--stone-700); font-size: 0.4375rem; outline: none; }
 .scene-chat form input:focus { border-color: var(--accent-400); }
 .scene-chat form button { display: grid; place-items: center; border: 0; border-radius: 8px; background: var(--accent-500); color: white; }
 
@@ -1331,14 +1331,14 @@ svg {
 }
 
 .video-stage { position: absolute; inset: 0; background: radial-gradient(circle at 50% 20%, #44403c, #1c1917 64%); }
-.video-stage > small { position: absolute; top: 13px; left: 14px; border-radius: 999px; background: rgb(0 0 0 / 0.35); padding: 6px 9px; color: white; font-size: 6px; }
+.video-stage > small { position: absolute; top: 13px; left: 14px; border-radius: 999px; background: rgb(0 0 0 / 0.35); padding: 6px 9px; color: white; font-size: 0.375rem; }
 .video-participant { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 10px; color: white; }
-.video-participant span { display: grid; width: 74px; height: 74px; place-items: center; border-radius: 999px; background: linear-gradient(145deg, #38bdf8, #2563eb); font-size: 20px; font-weight: 700; }
-.video-participant b { font-size: 9px; }
+.video-participant span { display: grid; width: 74px; height: 74px; place-items: center; border-radius: 999px; background: linear-gradient(145deg, #38bdf8, #2563eb); font-size: 1.25rem; font-weight: 700; }
+.video-participant b { font-size: 0.5625rem; }
 .video-self { position: absolute; right: 13px; bottom: 66px; display: grid; width: 122px; height: 82px; place-content: center; justify-items: center; gap: 4px; border: 1px solid rgb(255 255 255 / 0.2); border-radius: 10px; background: linear-gradient(145deg, #fed7aa, #fb923c); color: white; }
 .video-self.camera-off { background: #292524; }
-.video-self span { font-size: 10px; font-weight: 700; }
-.video-self b { font-size: 6px; }
+.video-self span { font-size: 0.625rem; font-weight: 700; }
+.video-self b { font-size: 0.375rem; }
 .scene-video-call > footer { position: absolute; right: 0; bottom: 0; left: 0; display: flex; height: 56px; align-items: center; justify-content: center; gap: 8px; background: rgb(0 0 0 / 0.35); backdrop-filter: blur(10px); }
 .scene-video-call > footer button { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid rgb(255 255 255 / 0.18); border-radius: 999px; background: #44403c; color: white; }
 .scene-video-call > footer button.disabled,
@@ -1364,19 +1364,19 @@ svg {
 .board-title { position: absolute; top: 17px; left: 20px; }
 .board-title b,
 .board-title small { display: block; }
-.board-title b { color: var(--stone-800); font-size: 12px; }
-.board-title small { margin-top: 4px; color: var(--stone-400); font-size: 6px; }
+.board-title b { color: var(--stone-800); font-size: 0.75rem; }
+.board-title small { margin-top: 4px; color: var(--stone-400); font-size: 0.375rem; }
 .board-card { position: absolute; width: 155px; border: 1px solid var(--stone-200); border-radius: 10px; background: white; padding: 12px; box-shadow: var(--shadow-soft); }
 .board-card b,
 .board-card small { display: block; }
-.board-card b { color: var(--stone-800); font-size: 9px; }
-.board-card small { margin-top: 6px; color: var(--stone-500); font-size: 6px; }
+.board-card b { color: var(--stone-800); font-size: 0.5625rem; }
+.board-card small { margin-top: 6px; color: var(--stone-500); font-size: 0.375rem; }
 .board-card--rule { top: 92px; left: 50px; border-color: #fde68a; background: #fffbeb; }
 .board-card--example { right: 48px; bottom: 55px; border-color: #bfdbfe; background: #eff6ff; }
-.board-note { position: absolute; width: 72px; transform: translate(-50%, -50%) rotate(-2deg); background: #fef08a; padding: 11px 7px; color: #854d0e; font-size: 6px; box-shadow: var(--shadow-soft); }
+.board-note { position: absolute; width: 72px; transform: translate(-50%, -50%) rotate(-2deg); background: #fef08a; padding: 11px 7px; color: #854d0e; font-size: 0.375rem; box-shadow: var(--shadow-soft); }
 .scene-whiteboard > footer { display: flex; align-items: center; gap: 7px; border-top: 1px solid var(--stone-200); padding: 7px 9px; grid-column: 1 / -1; }
-.scene-whiteboard > footer span { flex: 1; color: var(--stone-400); font-size: 6px; }
-.scene-whiteboard > footer button { border: 1px solid var(--stone-200); border-radius: 7px; background: white; padding: 6px 9px; color: var(--stone-600); font-size: 6px; }
+.scene-whiteboard > footer span { flex: 1; color: var(--stone-400); font-size: 0.375rem; }
+.scene-whiteboard > footer button { border: 1px solid var(--stone-200); border-radius: 7px; background: white; padding: 6px 9px; color: var(--stone-600); font-size: 0.375rem; }
 .scene-whiteboard > footer button:last-child { border-color: var(--accent-500); background: var(--accent-500); color: white; }
 
 .product-event-panel {
@@ -1396,17 +1396,17 @@ svg {
 .product-event-panel > header > span { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 10px; background: var(--accent-50); color: var(--accent-700); }
 .product-event-panel header b,
 .product-event-panel header small { display: block; }
-.product-event-panel header b { color: var(--stone-800); font-size: 9px; }
-.product-event-panel header small { margin-top: 4px; color: var(--stone-400); font-size: 7px; }
-.product-event-panel header button { border: 0; background: transparent; color: var(--stone-400); font-size: 15px; }
+.product-event-panel header b { color: var(--stone-800); font-size: 0.5625rem; }
+.product-event-panel header small { margin-top: 4px; color: var(--stone-400); font-size: 0.4375rem; }
+.product-event-panel header button { border: 0; background: transparent; color: var(--stone-400); font-size: 0.9375rem; }
 .product-event-panel > div { margin: 16px 0; border: 1px solid var(--accent-200); border-radius: 11px; background: var(--accent-50); padding: 13px; }
 .product-event-panel > div small,
 .product-event-panel > div b,
 .product-event-panel > div em { display: block; }
-.product-event-panel > div small { color: var(--stone-400); font-size: 7px; }
-.product-event-panel > div b { margin-top: 6px; color: var(--stone-800); font-size: 10px; }
-.product-event-panel > div em { margin-top: 5px; color: var(--stone-500); font-size: 7px; font-style: normal; }
-.product-event-panel > button { width: 100%; margin-top: 8px; border: 1px solid var(--accent-500); border-radius: 9px; background: var(--accent-500); padding: 9px; color: white; font-size: 8px; font-weight: 700; }
+.product-event-panel > div small { color: var(--stone-400); font-size: 0.4375rem; }
+.product-event-panel > div b { margin-top: 6px; color: var(--stone-800); font-size: 0.625rem; }
+.product-event-panel > div em { margin-top: 5px; color: var(--stone-500); font-size: 0.4375rem; font-style: normal; }
+.product-event-panel > button { width: 100%; margin-top: 8px; border: 1px solid var(--accent-500); border-radius: 9px; background: var(--accent-500); padding: 9px; color: white; font-size: 0.5rem; font-weight: 700; }
 .product-event-panel > button.is-outline { border-color: var(--stone-200); background: white; color: var(--stone-600); }
 
 .scene-pop-enter-active,
@@ -1450,13 +1450,13 @@ svg {
 
 .floating-note b {
     color: var(--stone-700);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .floating-note small {
     margin-top: 3px;
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .floating-note--top {
@@ -1497,7 +1497,7 @@ svg {
 .context-strip p,
 .context-strip strong {
     margin: 0;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .context-strip p {
@@ -1520,7 +1520,7 @@ svg {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .context-strip__inner > div i {
@@ -1537,8 +1537,8 @@ svg {
 .section-heading {
     display: grid;
     align-items: end;
-    gap: 72px;
-    margin-bottom: 54px;
+    gap: 4.5rem;
+    margin-bottom: 3.375rem;
     grid-template-columns: 1.15fr 0.85fr;
 }
 
@@ -1546,9 +1546,9 @@ svg {
 .workflow-copy h2,
 .student-copy h2,
 .final-cta h2 {
-    margin: 14px 0 0;
+    margin: 0.875rem 0 0;
     color: var(--stone-900);
-    font-size: clamp(36px, 4.2vw, 56px);
+    font-size: clamp(2.25rem, 4.2vw, 3.5rem);
     font-weight: 720;
     letter-spacing: -0.05em;
     line-height: 1.08;
@@ -1559,20 +1559,20 @@ svg {
 .student-copy > p {
     margin: 0;
     color: var(--stone-500);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.75;
 }
 
 .section-heading--center {
     display: block;
-    max-width: 740px;
+    max-width: 46.25rem;
     margin-inline: auto;
     text-align: center;
 }
 
 .feature-grid {
     display: grid;
-    gap: 16px;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -1610,7 +1610,7 @@ svg {
 .feature-card__number {
     display: block;
     color: var(--stone-300);
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 700;
     letter-spacing: 0.08em;
 }
@@ -1618,7 +1618,7 @@ svg {
 .feature-card h3 {
     margin: 8px 0 10px;
     color: var(--stone-900);
-    font-size: 21px;
+    font-size: 1.3125rem;
     letter-spacing: -0.025em;
 }
 
@@ -1626,7 +1626,7 @@ svg {
     max-width: 420px;
     margin: 0;
     color: var(--stone-500);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.65;
 }
 
@@ -1666,7 +1666,7 @@ svg {
     place-items: center;
     border-right: 1px solid var(--stone-100);
     color: var(--stone-400);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .mini-calendar > div:nth-child(2) { left: 20%; }
@@ -1684,7 +1684,7 @@ svg {
     background: var(--accent-50);
     padding: 0 7px;
     color: var(--accent-800);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: 600;
 }
 
@@ -1725,13 +1725,13 @@ svg {
     justify-items: center;
     border-left: 1px solid var(--stone-100);
     color: var(--stone-400);
-    font-size: 4.5px;
+    font-size: 0.2813rem;
 }
 
 .mini-calendar > header span b {
     margin-top: 2px;
     color: var(--stone-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .mini-calendar > header span.is-today {
@@ -1747,7 +1747,7 @@ svg {
     justify-content: space-around;
     padding: 7px 5px 7px 0;
     color: var(--stone-400);
-    font-size: 4.5px;
+    font-size: 0.2813rem;
     grid-row: 2;
 }
 
@@ -1779,7 +1779,7 @@ svg {
     background: repeating-linear-gradient(135deg, #fafaf9, #fafaf9 5px, #e7e5e4 5px, #e7e5e4 8px);
     padding: 4px 6px;
     color: var(--stone-500);
-    font-size: 4.5px;
+    font-size: 0.2813rem;
     font-style: normal;
 }
 
@@ -1799,8 +1799,8 @@ svg {
     white-space: nowrap;
 }
 
-.mini-calendar > section .mini-event b { font-size: 5.5px; }
-.mini-calendar > section .mini-event small { font-size: 4.5px; font-weight: 500; opacity: 0.78; }
+.mini-calendar > section .mini-event b { font-size: 0.3438rem; }
+.mini-calendar > section .mini-event small { font-size: 0.2813rem; font-weight: 500; opacity: 0.78; }
 .mini-calendar > section .mini-event--one { top: 45px; left: 21%; width: 18%; }
 .mini-calendar > section .mini-event--two { top: 97px; left: 61%; width: 18%; }
 
@@ -1841,7 +1841,7 @@ svg {
 
 .mini-homework b {
     color: var(--stone-700);
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .mini-homework em {
@@ -1849,7 +1849,7 @@ svg {
     background: var(--stone-100);
     padding: 4px 7px;
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
@@ -1889,7 +1889,7 @@ svg {
     border-radius: 7px;
     background: white;
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
@@ -1901,7 +1901,7 @@ svg {
 
 .mini-plan b {
     color: var(--stone-600);
-    font-size: 8.5px;
+    font-size: 0.5313rem;
 }
 
 .mini-student {
@@ -1922,7 +1922,7 @@ svg {
     border-radius: 14px;
     background: var(--accent-50);
     color: var(--accent-700);
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 700;
 }
 
@@ -1934,7 +1934,7 @@ svg {
 .mini-student b {
     overflow: hidden;
     color: var(--stone-700);
-    font-size: 9px;
+    font-size: 0.5625rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -1942,7 +1942,7 @@ svg {
 .mini-student small {
     margin-top: 4px;
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .mini-student > div {
@@ -1969,7 +1969,7 @@ svg {
 
 .mini-student > div em {
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
@@ -2007,7 +2007,7 @@ svg {
     background: #eff6ff;
     padding: 4px 6px;
     color: #2563eb;
-    font-size: 5.5px;
+    font-size: 0.3438rem;
     font-style: normal;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -2032,7 +2032,7 @@ svg {
     overflow: hidden;
     margin-top: 14px;
     color: var(--stone-800);
-    font-size: 8px;
+    font-size: 0.5rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -2041,7 +2041,7 @@ svg {
     overflow: hidden;
     margin-top: 7px;
     color: var(--stone-400);
-    font-size: 5.5px;
+    font-size: 0.3438rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -2054,7 +2054,7 @@ svg {
     border-top: 1px solid var(--stone-100);
     padding-top: 9px;
     color: var(--stone-400);
-    font-size: 5px;
+    font-size: 0.3125rem;
 }
 
 .mini-homework article footer i {
@@ -2093,7 +2093,7 @@ svg {
     border-radius: 9px;
     background: var(--accent-50);
     color: var(--accent-700);
-    font-size: 6.5px;
+    font-size: 0.4063rem;
     font-weight: 700;
 }
 
@@ -2105,9 +2105,9 @@ svg {
     white-space: nowrap;
 }
 
-.mini-plan > header b { color: var(--stone-800); font-size: 7px; }
-.mini-plan > header small { margin-top: 3px; color: var(--stone-400); font-size: 5px; }
-.mini-plan > header em { color: var(--stone-400); font-size: 8px; font-style: normal; }
+.mini-plan > header b { color: var(--stone-800); font-size: 0.4375rem; }
+.mini-plan > header small { margin-top: 3px; color: var(--stone-400); font-size: 0.3125rem; }
+.mini-plan > header em { color: var(--stone-400); font-size: 0.5rem; font-style: normal; }
 
 .mini-plan > section {
     display: grid;
@@ -2151,16 +2151,16 @@ svg {
     border-radius: 99px;
     background: white;
     color: var(--stone-500);
-    font-size: 5.5px;
+    font-size: 0.3438rem;
     font-style: normal;
 }
 
 .mini-plan > section article b,
 .mini-plan > section article small,
 .mini-plan > section article em { display: block; }
-.mini-plan > section article b { overflow: hidden; color: var(--stone-700); font-size: 6px; text-overflow: ellipsis; white-space: nowrap; }
-.mini-plan > section article small { margin-top: 2px; color: var(--stone-400); font-size: 4.5px; }
-.mini-plan > section article > span { color: var(--stone-300); font-size: 8px; }
+.mini-plan > section article b { overflow: hidden; color: var(--stone-700); font-size: 0.375rem; text-overflow: ellipsis; white-space: nowrap; }
+.mini-plan > section article small { margin-top: 2px; color: var(--stone-400); font-size: 0.2813rem; }
+.mini-plan > section article > span { color: var(--stone-300); font-size: 0.5rem; }
 
 .mini-plan > section .mini-plan__test {
     border-color: #ddd6fe;
@@ -2173,7 +2173,7 @@ svg {
     color: #7c3aed;
 }
 
-.mini-plan__test em { color: #7c3aed; font-size: 4px; font-style: normal; font-weight: 700; }
+.mini-plan__test em { color: #7c3aed; font-size: 0.25rem; font-style: normal; font-weight: 700; }
 
 .mini-student {
     display: block;
@@ -2198,7 +2198,7 @@ svg {
     border-radius: 99px;
     background: white;
     color: var(--stone-600);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .mini-student > header b,
@@ -2209,9 +2209,9 @@ svg {
     white-space: nowrap;
 }
 
-.mini-student > header b { color: var(--stone-800); font-size: 7px; }
-.mini-student > header small { margin-top: 3px; color: var(--stone-400); font-size: 4.5px; }
-.mini-student > header em { border: 1px solid #a7f3d0; border-radius: 99px; background: #ecfdf5; padding: 4px 6px; color: #047857; font-size: 4.5px; font-style: normal; }
+.mini-student > header b { color: var(--stone-800); font-size: 0.4375rem; }
+.mini-student > header small { margin-top: 3px; color: var(--stone-400); font-size: 0.2813rem; }
+.mini-student > header em { border: 1px solid #a7f3d0; border-radius: 99px; background: #ecfdf5; padding: 4px 6px; color: #047857; font-size: 0.2813rem; font-style: normal; }
 
 .mini-student > section {
     display: grid;
@@ -2246,13 +2246,13 @@ svg {
 .mini-student > section article small,
 .mini-student > section article b,
 .mini-student > section article em { display: block; }
-.mini-student > section article small { color: var(--stone-400); font-size: 4px; font-weight: 700; }
-.mini-student > section article b { margin-top: 5px; color: var(--stone-800); font-size: 6px; }
-.mini-student > section article em { margin-top: 4px; color: var(--stone-400); font-size: 4.5px; font-style: normal; }
+.mini-student > section article small { color: var(--stone-400); font-size: 0.25rem; font-weight: 700; }
+.mini-student > section article b { margin-top: 5px; color: var(--stone-800); font-size: 0.375rem; }
+.mini-student > section article em { margin-top: 4px; color: var(--stone-400); font-size: 0.2813rem; font-style: normal; }
 .mini-student > section article strong { margin-left: auto; color: var(--stone-300); }
 .mini-student > section article:last-child > span { width: 100%; }
-.mini-student > section article:last-child b { font-size: 17px; }
-.mini-student > section article:last-child b em { display: inline; font-size: 5px; font-weight: 500; }
+.mini-student > section article:last-child b { font-size: 1.0625rem; }
+.mini-student > section article:last-child b em { display: inline; font-size: 0.3125rem; font-weight: 500; }
 .mini-student > section article:last-child i { display: block; width: 100%; height: 5px; margin-top: 9px; overflow: hidden; border-radius: 99px; background: var(--stone-100); }
 .mini-student > section article:last-child i u { display: block; width: 75%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #34d399 0 65%, var(--accent-400) 65% 85%, white 85%); }
 
@@ -2321,14 +2321,14 @@ svg {
 
 .capability-tab b {
     color: var(--stone-700);
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.3;
 }
 
 .capability-tab small {
     margin-top: 5px;
     color: var(--stone-400);
-    font-size: 10px;
+    font-size: 0.625rem;
     line-height: 1.35;
 }
 
@@ -2365,7 +2365,7 @@ svg {
     max-width: 410px;
     margin: 12px 0 15px;
     color: var(--stone-900);
-    font-size: clamp(28px, 3vw, 40px);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
     letter-spacing: -0.045em;
     line-height: 1.08;
 }
@@ -2374,7 +2374,7 @@ svg {
     max-width: 420px;
     margin: 0;
     color: var(--stone-500);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.7;
 }
 
@@ -2391,7 +2391,7 @@ svg {
     align-items: center;
     gap: 9px;
     color: var(--stone-600);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .capability-detail__copy li svg {
@@ -2435,7 +2435,7 @@ svg {
 .showcase-window__bar small {
     margin-left: 7px;
     color: var(--stone-400);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .showcase-tests,
@@ -2456,7 +2456,7 @@ svg {
 .showcase-toolbar b {
     margin-right: auto;
     color: var(--stone-800);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .showcase-toolbar span,
@@ -2465,7 +2465,7 @@ svg {
     border-radius: 9px;
     padding: 7px 10px;
     color: var(--stone-400);
-    font-size: 8px;
+    font-size: 0.5rem;
     font-style: normal;
 }
 
@@ -2498,12 +2498,12 @@ svg {
 .showcase-stat-row small,
 .showcase-folder-row small {
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .showcase-stat-row b {
     color: var(--stone-800);
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 .showcase-list,
@@ -2528,7 +2528,7 @@ svg {
 .showcase-payment b,
 .showcase-notice b {
     color: var(--stone-700);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .showcase-list small,
@@ -2536,7 +2536,7 @@ svg {
 .showcase-payment small,
 .showcase-notice small {
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .showcase-list em,
@@ -2545,7 +2545,7 @@ svg {
     background: var(--stone-100);
     padding: 4px 7px;
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
@@ -2574,7 +2574,7 @@ svg {
 .showcase-folder-row b {
     overflow: hidden;
     color: var(--stone-700);
-    font-size: 8px;
+    font-size: 0.5rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -2614,13 +2614,13 @@ svg {
 .showcase-package small,
 .showcase-package em {
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
 .showcase-package b {
     color: var(--stone-700);
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .showcase-package > div {
@@ -2648,7 +2648,7 @@ svg {
 
 .showcase-payment strong {
     color: var(--stone-700);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .showcase-notice {
@@ -2681,7 +2681,7 @@ svg {
 .showcase-notice p {
     margin: 4px 0 0;
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .showcase-builder {
@@ -2702,7 +2702,7 @@ svg {
 .showcase-builder > aside > b {
     margin: 2px 5px 6px;
     color: var(--stone-700);
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .showcase-builder > aside span {
@@ -2712,7 +2712,7 @@ svg {
     border-radius: 9px;
     padding: 9px;
     color: var(--stone-500);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .showcase-builder > aside span.active {
@@ -2722,13 +2722,13 @@ svg {
 }
 
 .showcase-builder > aside small {
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .showcase-builder > aside em {
     margin-top: 5px;
     color: var(--accent-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
     text-align: center;
 }
@@ -2745,13 +2745,13 @@ svg {
 
 .showcase-builder > section small {
     color: var(--accent-600);
-    font-size: 7px;
+    font-size: 0.4375rem;
     grid-column: 1 / -1;
 }
 
 .showcase-builder > section b {
     color: var(--stone-800);
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .showcase-builder > section em {
@@ -2759,14 +2759,14 @@ svg {
     background: var(--accent-50);
     padding: 4px 7px;
     color: var(--accent-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
 .showcase-builder > section p {
     margin: 22px 0 12px;
     color: var(--stone-700);
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .showcase-builder label {
@@ -2779,7 +2779,7 @@ svg {
     border-radius: 9px;
     padding: 0 10px;
     color: var(--stone-500);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .showcase-builder label:first-of-type {
@@ -2814,7 +2814,7 @@ svg {
     place-items: center;
     border-radius: 7px;
     color: var(--stone-400);
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .showcase-review__tools span.active {
@@ -2843,20 +2843,20 @@ svg {
 .showcase-document small {
     display: block;
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .showcase-document b {
     display: block;
     margin-top: 12px;
     color: var(--stone-800);
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .showcase-document p {
     margin: 13px 0;
     color: var(--stone-500);
-    font-size: 8px;
+    font-size: 0.5rem;
     line-height: 1.8;
 }
 
@@ -2885,7 +2885,7 @@ svg {
 
 .showcase-review > section > aside > b {
     color: var(--stone-700);
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .showcase-review > section > aside > div {
@@ -2907,7 +2907,7 @@ svg {
     border-radius: 8px;
     background: white;
     color: var(--accent-700);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-weight: 700;
 }
 
@@ -2915,7 +2915,7 @@ svg {
 .showcase-review aside p b {
     margin: 0;
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
     line-height: 1.45;
 }
 
@@ -2927,7 +2927,7 @@ svg {
 
 .showcase-review aside label {
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .showcase-review aside em {
@@ -2937,7 +2937,7 @@ svg {
     border-radius: 8px;
     padding: 10px;
     color: var(--stone-300);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
@@ -2981,7 +2981,7 @@ svg {
 .showcase-entity-grid header span,
 .showcase-material-grid header span {
     color: var(--stone-300);
-    font-size: 8px;
+    font-size: 0.5rem;
     letter-spacing: 1px;
 }
 
@@ -2989,7 +2989,7 @@ svg {
     overflow: hidden;
     margin-top: 13px;
     color: var(--stone-800);
-    font-size: 10px;
+    font-size: 0.625rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -2997,7 +2997,7 @@ svg {
 .showcase-entity-grid article > small {
     margin-top: 5px;
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .showcase-entity-grid article > em {
@@ -3007,7 +3007,7 @@ svg {
     background: #fff7ed;
     padding: 4px 7px;
     color: #c2410c;
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -3024,7 +3024,7 @@ svg {
     border-top: 1px solid var(--stone-100);
     padding-top: 11px;
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .showcase-material-grid {
@@ -3052,7 +3052,7 @@ svg {
     overflow: hidden;
     margin-top: 12px;
     color: var(--stone-800);
-    font-size: 8px;
+    font-size: 0.5rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -3061,7 +3061,7 @@ svg {
     overflow: hidden;
     margin-top: 6px;
     color: var(--stone-400);
-    font-size: 5.5px;
+    font-size: 0.3438rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -3079,7 +3079,7 @@ svg {
     background: var(--stone-50);
     padding: 4px 5px;
     color: var(--stone-500);
-    font-size: 5px;
+    font-size: 0.3125rem;
     font-style: normal;
 }
 
@@ -3088,7 +3088,7 @@ svg {
     border-top: 1px solid var(--stone-100);
     padding-top: 9px;
     color: var(--stone-400);
-    font-size: 5.5px;
+    font-size: 0.3438rem;
 }
 
 .showcase-tuition-summary {
@@ -3111,9 +3111,9 @@ svg {
 
 .showcase-tuition-summary > span.is-due { border-color: var(--accent-200); background: var(--accent-50); }
 .showcase-tuition-summary > span.is-advance { border-color: #a7f3d0; background: #ecfdf5; }
-.showcase-tuition-summary small { color: var(--stone-500); font-size: 5.5px; }
-.showcase-tuition-summary b { margin-top: 5px; color: var(--stone-800); font-size: 11px; }
-.showcase-tuition-summary em { margin-top: 3px; overflow: hidden; color: var(--stone-400); font-size: 4.5px; font-style: normal; text-overflow: ellipsis; white-space: nowrap; }
+.showcase-tuition-summary small { color: var(--stone-500); font-size: 0.3438rem; }
+.showcase-tuition-summary b { margin-top: 5px; color: var(--stone-800); font-size: 0.6875rem; }
+.showcase-tuition-summary em { margin-top: 3px; overflow: hidden; color: var(--stone-400); font-size: 0.2813rem; font-style: normal; text-overflow: ellipsis; white-space: nowrap; }
 
 .showcase-payments .showcase-payment:last-child {
     display: none;
@@ -3148,7 +3148,7 @@ svg {
     background: var(--stone-100);
     padding: 3px 5px;
     color: var(--stone-500);
-    font-size: 5px;
+    font-size: 0.3125rem;
     font-style: normal;
     font-weight: 500;
 }
@@ -3160,7 +3160,7 @@ svg {
     background: white;
     padding: 5px 7px;
     color: var(--accent-700);
-    font-size: 5.5px;
+    font-size: 0.3438rem;
 }
 
 .showcase-builder-shell > header {
@@ -3175,12 +3175,12 @@ svg {
 
 .showcase-builder-shell > header > span {
     color: var(--stone-500);
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .showcase-builder-shell > header > b {
     color: var(--stone-800);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .showcase-builder-shell > header > em,
@@ -3188,7 +3188,7 @@ svg {
     border-radius: 6px;
     padding: 5px 7px;
     color: var(--stone-500);
-    font-size: 5.5px;
+    font-size: 0.3438rem;
     font-style: normal;
 }
 
@@ -3203,7 +3203,7 @@ svg {
     background: var(--accent-500);
     padding: 6px 8px;
     color: white;
-    font-size: 5.5px;
+    font-size: 0.3438rem;
 }
 
 .showcase-builder-shell .showcase-builder {
@@ -3240,7 +3240,7 @@ svg {
     display: block;
     margin: 2px 4px 9px;
     color: var(--stone-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .showcase-review > section > nav > span {
@@ -3254,7 +3254,7 @@ svg {
     border-radius: 7px;
     padding: 7px;
     color: var(--stone-500);
-    font-size: 5.5px;
+    font-size: 0.3438rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -3272,7 +3272,7 @@ svg {
     border-radius: 7px;
     padding: 7px 3px;
     color: var(--stone-400);
-    font-size: 5px;
+    font-size: 0.3125rem;
     font-style: normal;
     text-align: center;
 }
@@ -3311,13 +3311,13 @@ svg {
     justify-items: center;
     border-left: 1px solid var(--stone-100);
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .showcase-core-calendar__grid > header span b {
     margin-top: 3px;
     color: var(--stone-700);
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .showcase-core-calendar__grid > header span.is-today {
@@ -3333,7 +3333,7 @@ svg {
     justify-content: space-around;
     padding: 8px 7px 8px 0;
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .showcase-core-calendar__grid > section {
@@ -3360,7 +3360,7 @@ svg {
     background: repeating-linear-gradient(135deg, #fafaf9, #fafaf9 5px, #e7e5e4 5px, #e7e5e4 8px);
     padding: 7px;
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
@@ -3382,12 +3382,12 @@ svg {
 .showcase-core-calendar__grid article b,
 .showcase-core-calendar__grid article small {
     overflow: hidden;
-    font-size: 8px;
+    font-size: 0.5rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.showcase-core-calendar__grid article small { font-size: 7px; font-weight: 500; }
+.showcase-core-calendar__grid article small { font-size: 0.4375rem; font-weight: 500; }
 .showcase-core-calendar__grid .event-one { top: 52px; left: 21%; }
 .showcase-core-calendar__grid .event-two { top: 126px; left: 61%; border-color: #c4b5fd; background: #f5f3ff; color: #6d28d9; }
 
@@ -3422,15 +3422,15 @@ svg {
     background: #eff6ff;
     padding: 5px 8px;
     color: #2563eb;
-    font-size: 8px;
+    font-size: 0.5rem;
     font-style: normal;
 }
 
 .showcase-homework-grid header em { background: #fff7ed; color: #c2410c; }
 .showcase-homework-grid header em.tone-success { background: #ecfdf5; color: #047857; }
-.showcase-homework-grid article > b { margin-top: 25px; color: var(--stone-800); font-size: 13px; }
-.showcase-homework-grid article > small { margin-top: 9px; color: var(--stone-400); font-size: 9px; }
-.showcase-homework-grid footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; border-top: 1px solid var(--stone-100); padding-top: 14px; font-size: 8px; }
+.showcase-homework-grid article > b { margin-top: 25px; color: var(--stone-800); font-size: 0.8125rem; }
+.showcase-homework-grid article > small { margin-top: 9px; color: var(--stone-400); font-size: 0.5625rem; }
+.showcase-homework-grid footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; border-top: 1px solid var(--stone-100); padding-top: 14px; font-size: 0.5rem; }
 .showcase-homework-grid footer span { display: flex; align-items: center; gap: 5px; color: var(--stone-500); }
 .showcase-homework-grid footer strong { color: var(--accent-700); font-weight: 600; }
 
@@ -3459,29 +3459,29 @@ svg {
     border-radius: 11px;
     background: var(--accent-50);
     color: var(--accent-700);
-    font-size: 8px;
+    font-size: 0.5rem;
     font-weight: 700;
 }
 
 .showcase-plan-card > header b,
 .showcase-plan-card > header small { display: block; }
-.showcase-plan-card > header b { color: var(--stone-800); font-size: 10px; }
-.showcase-plan-card > header small { margin-top: 4px; color: var(--stone-400); font-size: 7px; }
-.showcase-plan-card > header em { color: var(--stone-400); font-size: 11px; font-style: normal; }
+.showcase-plan-card > header b { color: var(--stone-800); font-size: 0.625rem; }
+.showcase-plan-card > header small { margin-top: 4px; color: var(--stone-400); font-size: 0.4375rem; }
+.showcase-plan-card > header em { color: var(--stone-400); font-size: 0.6875rem; font-style: normal; }
 .showcase-plan-card > section { display: grid; gap: 7px; border-top: 1px solid var(--stone-100); background: var(--stone-50); padding: 10px 15px; }
 .showcase-plan-card > section article { display: grid; min-height: 54px; align-items: center; gap: 10px; margin-left: 16px; border: 1px solid var(--stone-200); border-radius: 9px; background: white; padding: 8px 10px; grid-template-columns: 25px 1fr auto; }
-.showcase-plan-card > section article > i { display: grid; width: 25px; height: 25px; place-items: center; margin-left: -26px; border: 1px solid var(--stone-200); border-radius: 99px; background: white; color: var(--stone-500); font-size: 7px; font-style: normal; }
+.showcase-plan-card > section article > i { display: grid; width: 25px; height: 25px; place-items: center; margin-left: -26px; border: 1px solid var(--stone-200); border-radius: 99px; background: white; color: var(--stone-500); font-size: 0.4375rem; font-style: normal; }
 .showcase-plan-card > section article b,
 .showcase-plan-card > section article p,
 .showcase-plan-card > section article small,
 .showcase-plan-card > section article em { display: block; overflow: hidden; margin: 0; text-overflow: ellipsis; white-space: nowrap; }
-.showcase-plan-card > section article b { color: var(--stone-800); font-size: 8px; }
-.showcase-plan-card > section article p { margin-top: 3px; color: var(--stone-500); font-size: 6.5px; }
-.showcase-plan-card > section article small { margin-top: 5px; color: var(--stone-400); font-size: 6px; }
+.showcase-plan-card > section article b { color: var(--stone-800); font-size: 0.5rem; }
+.showcase-plan-card > section article p { margin-top: 3px; color: var(--stone-500); font-size: 0.4063rem; }
+.showcase-plan-card > section article small { margin-top: 5px; color: var(--stone-400); font-size: 0.375rem; }
 .showcase-plan-card > section article > span { color: var(--stone-300); }
 .showcase-plan-card > section article.is-final { border-color: #ddd6fe; background: #f5f3ff; }
 .showcase-plan-card > section article.is-final > i { border-color: #ddd6fe; background: #f5f3ff; color: #7c3aed; }
-.showcase-plan-card > section article.is-final em { color: #7c3aed; font-size: 6px; font-style: normal; font-weight: 700; }
+.showcase-plan-card > section article.is-final em { color: #7c3aed; font-size: 0.375rem; font-style: normal; font-weight: 700; }
 
 .showcase-core-profile {
     padding: 20px;
@@ -3502,16 +3502,16 @@ svg {
     border: 1px solid var(--stone-200);
     border-radius: 99px;
     color: var(--stone-600);
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .showcase-core-profile > header b,
 .showcase-core-profile > header small { display: block; }
-.showcase-core-profile > header b { color: var(--stone-800); font-size: 12px; }
-.showcase-core-profile > header b em { margin-left: 6px; border: 1px solid #a7f3d0; border-radius: 99px; background: #ecfdf5; padding: 3px 6px; color: #047857; font-size: 7px; font-style: normal; }
-.showcase-core-profile > header small { margin-top: 5px; color: var(--stone-400); font-size: 7px; }
-.showcase-core-profile > header > i { color: var(--stone-300); font-size: 8px; font-style: normal; }
-.showcase-core-profile > nav { display: flex; gap: 14px; margin-top: 17px; border-bottom: 1px solid var(--stone-200); color: var(--stone-400); font-size: 7px; }
+.showcase-core-profile > header b { color: var(--stone-800); font-size: 0.75rem; }
+.showcase-core-profile > header b em { margin-left: 6px; border: 1px solid #a7f3d0; border-radius: 99px; background: #ecfdf5; padding: 3px 6px; color: #047857; font-size: 0.4375rem; font-style: normal; }
+.showcase-core-profile > header small { margin-top: 5px; color: var(--stone-400); font-size: 0.4375rem; }
+.showcase-core-profile > header > i { color: var(--stone-300); font-size: 0.5rem; font-style: normal; }
+.showcase-core-profile > nav { display: flex; gap: 14px; margin-top: 17px; border-bottom: 1px solid var(--stone-200); color: var(--stone-400); font-size: 0.4375rem; }
 .showcase-core-profile > nav span { padding-bottom: 8px; }
 .showcase-core-profile > nav span.active { border-bottom: 2px solid var(--accent-500); color: var(--stone-800); font-weight: 700; }
 .showcase-core-profile > section { display: grid; gap: 10px; margin-top: 13px; grid-template-columns: 1fr 170px; }
@@ -3522,15 +3522,15 @@ svg {
 .showcase-core-profile section small,
 .showcase-core-profile section b,
 .showcase-core-profile section em { display: block; }
-.showcase-core-profile section small { color: var(--stone-400); font-size: 6px; font-weight: 700; }
-.showcase-core-profile section b { margin-top: 6px; color: var(--stone-800); font-size: 10px; }
-.showcase-core-profile section em { margin-top: 5px; color: var(--stone-400); font-size: 7px; font-style: normal; }
+.showcase-core-profile section small { color: var(--stone-400); font-size: 0.375rem; font-weight: 700; }
+.showcase-core-profile section b { margin-top: 6px; color: var(--stone-800); font-size: 0.625rem; }
+.showcase-core-profile section em { margin-top: 5px; color: var(--stone-400); font-size: 0.4375rem; font-style: normal; }
 .showcase-core-profile > section > article strong { color: var(--stone-300); }
-.showcase-core-profile > section > aside b { font-size: 21px; }
-.showcase-core-profile > section > aside b em { display: inline; font-size: 7px; }
+.showcase-core-profile > section > aside b { font-size: 1.3125rem; }
+.showcase-core-profile > section > aside b em { display: inline; font-size: 0.4375rem; }
 .showcase-core-profile > section > aside > span { display: block; height: 6px; margin-top: 12px; overflow: hidden; border-radius: 99px; background: var(--stone-100); }
 .showcase-core-profile > section > aside > span i { display: block; width: 75%; height: 100%; border-radius: inherit; background: var(--accent-500); }
-.showcase-core-profile > section > aside button { width: 100%; margin-top: 12px; border: 1px solid var(--stone-200); border-radius: 8px; background: white; padding: 7px; color: var(--stone-600); font-size: 7px; }
+.showcase-core-profile > section > aside button { width: 100%; margin-top: 12px; border: 1px solid var(--stone-200); border-radius: 8px; background: white; padding: 7px; color: var(--stone-600); font-size: 0.4375rem; }
 
 .capability-fade-enter-active,
 .capability-fade-leave-active {
@@ -3579,7 +3579,7 @@ svg {
     gap: 8px;
     margin-top: 30px;
     color: var(--accent-300);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 650;
 }
 
@@ -3614,21 +3614,21 @@ svg {
 
 .workflow-list__number {
     color: var(--stone-500);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
 .workflow-list h3 {
     margin: 0;
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: -0.025em;
 }
 
 .workflow-list p {
     margin: 7px 0 0;
     color: var(--stone-400);
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.6;
 }
 
@@ -3671,7 +3671,7 @@ svg {
     border-bottom: 1px solid var(--stone-200);
     padding: 0 18px;
     color: var(--stone-400);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .student-preview__logo {
@@ -3705,13 +3705,13 @@ svg {
 
 .student-preview__body header small {
     color: var(--stone-400);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .student-preview__body header b {
     margin-top: 5px;
     color: var(--stone-900);
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .student-preview__grid {
@@ -3730,20 +3730,20 @@ svg {
 
 .student-preview__grid article > span {
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .student-preview__grid strong {
     display: block;
     margin-top: 13px;
     color: var(--stone-800);
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .student-preview__grid p {
     margin: 6px 0 0;
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .student-next-lesson {
@@ -3767,7 +3767,7 @@ svg {
     background: var(--accent-500);
     padding: 8px;
     color: white;
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: 650;
 }
 
@@ -3791,7 +3791,7 @@ svg {
 
 .student-task-card > div em {
     color: var(--stone-500);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
@@ -3813,14 +3813,14 @@ svg {
 
 .student-plan-card b {
     color: var(--stone-700);
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .student-plan-card small,
 .student-plan-card em {
     margin-top: 4px;
     color: var(--stone-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
 }
 
@@ -3875,13 +3875,13 @@ svg {
 
 .student-copy li b {
     color: var(--stone-700);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .student-copy li small {
     margin-top: 5px;
     color: var(--stone-500);
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.55;
 }
 
@@ -3915,14 +3915,14 @@ svg {
 .principles-grid h3 {
     margin: 21px 0 9px;
     color: var(--stone-800);
-    font-size: 17px;
+    font-size: 1.0625rem;
     letter-spacing: -0.025em;
 }
 
 .principles-grid p {
     margin: 0;
     color: var(--stone-500);
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.7;
 }
 
@@ -3945,7 +3945,7 @@ svg {
     max-width: 650px;
     margin: 14px 0 0;
     color: var(--stone-900);
-    font-size: clamp(36px, 4.2vw, 56px);
+    font-size: clamp(2.25rem, 4.2vw, 3.5rem);
     font-weight: 720;
     letter-spacing: -0.05em;
     line-height: 1.08;
@@ -3966,7 +3966,7 @@ svg {
     background: #f5f3ff;
     padding: 7px 11px;
     color: #6d28d9;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -3975,7 +3975,7 @@ svg {
 .future-heading p {
     margin: 0;
     color: var(--stone-500);
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.7;
 }
 
@@ -4029,7 +4029,7 @@ svg {
     background: #f5f3ff;
     padding: 6px 8px;
     color: #7c3aed;
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -4040,7 +4040,7 @@ svg {
     min-height: 50px;
     margin: 18px 0 8px;
     color: var(--stone-900);
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: -0.03em;
     line-height: 1.35;
 }
@@ -4049,7 +4049,7 @@ svg {
     min-height: 64px;
     margin: 0;
     color: var(--stone-500);
-    font-size: 11px;
+    font-size: 0.6875rem;
     line-height: 1.65;
 }
 
@@ -4075,7 +4075,7 @@ svg {
     background: white;
     padding: 5px 7px;
     color: var(--stone-500);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -4096,7 +4096,7 @@ svg {
     background: white;
     padding: 0 9px;
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .development-search > div {
@@ -4118,7 +4118,7 @@ svg {
     border-radius: 8px;
     background: var(--accent-50);
     color: var(--accent-700);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
     font-weight: 700;
 }
@@ -4130,18 +4130,18 @@ svg {
 
 .development-search b {
     color: var(--stone-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .development-search small {
     margin-top: 3px;
     color: var(--stone-400);
-    font-size: 5px;
+    font-size: 0.3125rem;
 }
 
 .development-search em {
     color: var(--stone-500);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -4159,7 +4159,7 @@ svg {
     align-items: center;
     gap: 6px;
     color: #6d28d9;
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: 700;
 }
 
@@ -4170,7 +4170,7 @@ svg {
     background: #f5f3ff;
     padding: 9px;
     color: var(--stone-600);
-    font-size: 7px;
+    font-size: 0.4375rem;
     line-height: 1.45;
 }
 
@@ -4197,7 +4197,7 @@ svg {
     align-items: center;
     gap: 4px;
     color: #7c3aed;
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -4215,7 +4215,7 @@ svg {
     justify-content: space-between;
     border-bottom: 1px solid #333;
     padding: 0 10px;
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .development-ide header span { color: #d4d4d4; }
@@ -4234,7 +4234,7 @@ svg {
     padding: 14px 11px;
     color: #d4d4d4;
     font-family: "SFMono-Regular", Consolas, monospace;
-    font-size: 7px;
+    font-size: 0.4375rem;
     line-height: 1.8;
 }
 
@@ -4258,7 +4258,7 @@ svg {
 
 .development-ide footer b {
     color: #86efac;
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .development-mobile {
@@ -4300,13 +4300,13 @@ svg {
 .development-phone small,
 .development-phone > span {
     color: var(--stone-400);
-    font-size: 5px;
+    font-size: 0.3125rem;
 }
 
 .development-phone b {
     margin: 4px 0;
     color: var(--stone-800);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .development-phone button {
@@ -4317,7 +4317,7 @@ svg {
     background: var(--accent-500);
     padding: 6px;
     color: white;
-    font-size: 5px;
+    font-size: 0.3125rem;
 }
 
 .development-mobile > span b,
@@ -4327,13 +4327,13 @@ svg {
 
 .development-mobile > span b {
     color: var(--stone-700);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .development-mobile > span small {
     margin-top: 6px;
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
     line-height: 1.5;
 }
 
@@ -4362,12 +4362,12 @@ svg {
 
 .development-game__level b {
     color: var(--stone-800);
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .development-game__level small {
     color: #7c3aed;
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .development-game > div {
@@ -4393,7 +4393,7 @@ svg {
     display: block;
     margin-top: 5px;
     color: var(--stone-500);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
     text-align: right;
 }
@@ -4410,7 +4410,7 @@ svg {
     background: rgb(255 255 255 / 0.62);
     padding: 8px;
     color: var(--stone-600);
-    font-size: 6px;
+    font-size: 0.375rem;
     text-align: center;
 }
 
@@ -4449,14 +4449,14 @@ svg {
 .development-market article b {
     overflow: hidden;
     color: var(--stone-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .development-market article small {
     color: var(--stone-400);
-    font-size: 5px;
+    font-size: 0.3125rem;
 }
 
 .current-tool-preview > .future-video,
@@ -4527,7 +4527,7 @@ svg {
     background: #f5f3ff;
     padding: 6px 9px;
     color: #7c3aed;
-    font-size: 8px;
+    font-size: 0.5rem;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -4537,7 +4537,7 @@ svg {
 .future-card h3 {
     margin: 19px 0 10px;
     color: var(--stone-900);
-    font-size: 23px;
+    font-size: 1.4375rem;
     letter-spacing: -0.035em;
 }
 
@@ -4545,7 +4545,7 @@ svg {
     max-width: 485px;
     margin: 0;
     color: var(--stone-500);
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.65;
 }
 
@@ -4562,7 +4562,7 @@ svg {
     align-items: center;
     gap: 8px;
     color: var(--stone-600);
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .future-card li svg {
@@ -4582,7 +4582,7 @@ svg {
     border-radius: 10px;
     background: var(--accent-50);
     color: var(--accent-700);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: 700;
 }
 
@@ -4623,20 +4623,20 @@ svg {
     border-radius: 16px;
     background: var(--accent-500);
     color: white;
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .future-video__main b {
     margin-top: 8px;
     color: white;
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .future-video__main small,
 .future-video__students small {
     margin-top: 3px;
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .future-video__students {
@@ -4661,7 +4661,7 @@ svg {
     border-radius: 9px;
     background: #57534e;
     color: white;
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -4714,13 +4714,13 @@ svg {
 
 .future-chat header b {
     color: var(--stone-700);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .future-chat header small {
     margin-top: 3px;
     color: #10b981;
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .future-chat header > svg {
@@ -4742,7 +4742,7 @@ svg {
     background: white;
     padding: 8px 9px;
     color: var(--stone-600);
-    font-size: 7px;
+    font-size: 0.4375rem;
     line-height: 1.45;
 }
 
@@ -4757,7 +4757,7 @@ svg {
     display: block;
     margin-top: 4px;
     color: var(--stone-400);
-    font-size: 5px;
+    font-size: 0.3125rem;
     text-align: right;
 }
 
@@ -4780,7 +4780,7 @@ svg {
 
 .future-chat__file b,
 .future-chat__file small {
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .future-chat__file small { color: var(--stone-400); }
@@ -4796,7 +4796,7 @@ svg {
 }
 
 .future-chat footer span {
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .future-chat footer i {
@@ -4864,7 +4864,7 @@ svg {
     position: absolute;
     display: block;
     color: var(--stone-700);
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .board-note {
@@ -4881,7 +4881,7 @@ svg {
 .board-note small {
     display: block;
     margin-top: 5px;
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: 500;
 }
 
@@ -4907,7 +4907,7 @@ svg {
     border-radius: 5px;
     padding: 3px 5px;
     color: white;
-    font-size: 5px;
+    font-size: 0.3125rem;
     font-style: normal;
 }
 
@@ -4937,7 +4937,7 @@ svg {
     align-items: center;
     gap: 5px;
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -4976,13 +4976,13 @@ svg {
 
 .future-payment header small {
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .future-payment header b {
     margin-top: 3px;
     color: var(--stone-700);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .future-payment header em {
@@ -4990,7 +4990,7 @@ svg {
     background: #fff7ed;
     padding: 5px 7px;
     color: #c2410c;
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -5005,13 +5005,13 @@ svg {
 .future-payment__amount small,
 .future-payment__amount span {
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .future-payment__amount strong {
     margin: 4px 0;
     color: var(--stone-900);
-    font-size: 23px;
+    font-size: 1.4375rem;
     letter-spacing: -0.04em;
 }
 
@@ -5026,7 +5026,7 @@ svg {
     border-radius: 6px;
     padding: 4px 7px;
     color: var(--stone-500);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-weight: 700;
 }
 
@@ -5042,7 +5042,7 @@ svg {
     border-radius: 9px;
     background: var(--accent-500);
     color: white;
-    font-size: 8px;
+    font-size: 0.5rem;
     font-weight: 700;
 }
 
@@ -5053,7 +5053,7 @@ svg {
     gap: 5px;
     margin-top: 8px;
     color: var(--stone-400);
-    font-size: 6px;
+    font-size: 0.375rem;
 }
 
 .roadmap-card {
@@ -5097,14 +5097,14 @@ svg {
 .roadmap-card__heading h3 {
     margin: 11px 0 0;
     color: white;
-    font-size: 34px;
+    font-size: 2.125rem;
     letter-spacing: -0.04em;
 }
 
 .roadmap-card__heading > p {
     margin: 0;
     color: var(--stone-400);
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.65;
 }
 
@@ -5145,13 +5145,13 @@ svg {
 
 .roadmap-list__number {
     color: var(--stone-500);
-    font-size: 9px;
+    font-size: 0.5625rem;
     font-weight: 700;
 }
 
 .roadmap-list em {
     color: var(--accent-400);
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -5162,7 +5162,7 @@ svg {
     min-height: 38px;
     margin: 8px 0;
     color: white;
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.4;
 }
 
@@ -5170,7 +5170,7 @@ svg {
     min-height: 82px;
     margin: 0;
     color: var(--stone-400);
-    font-size: 9px;
+    font-size: 0.5625rem;
     line-height: 1.6;
 }
 
@@ -5186,7 +5186,7 @@ svg {
     border-radius: 99px;
     padding: 5px 7px;
     color: var(--stone-300);
-    font-size: 6px;
+    font-size: 0.375rem;
     font-style: normal;
 }
 
@@ -5198,7 +5198,7 @@ svg {
     border-top: 1px solid #292524;
     padding-top: 18px;
     color: var(--stone-500);
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 
 .final-cta {
@@ -5251,7 +5251,7 @@ svg {
     max-width: 580px;
     margin: 21px auto 29px;
     color: var(--stone-400);
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.7;
 }
 
@@ -5272,7 +5272,7 @@ svg {
     max-width: 330px;
     margin: 15px 0 0;
     color: var(--stone-500);
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.6;
 }
 
@@ -5285,7 +5285,7 @@ svg {
 
 .site-footer nav a {
     color: var(--stone-500);
-    font-size: 12px;
+    font-size: 0.75rem;
     transition: color 150ms ease;
 }
 
@@ -5301,7 +5301,7 @@ svg {
     border-top: 1px solid var(--stone-100);
     padding-block: 18px 26px;
     color: var(--stone-400);
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 /* Readability pass for product previews. */
@@ -5323,13 +5323,13 @@ svg {
     grid-template-rows: 43px 1fr;
 }
 
-.mini-calendar > header span { font-size: 6px; }
-.mini-calendar > header span b { font-size: 9px; }
-.mini-calendar > aside { padding-right: 7px; font-size: 6px; }
-.mini-calendar__offtime { height: 34px; padding: 6px 8px; font-size: 6px; }
+.mini-calendar > header span { font-size: 0.375rem; }
+.mini-calendar > header span b { font-size: 0.5625rem; }
+.mini-calendar > aside { padding-right: 7px; font-size: 0.375rem; }
+.mini-calendar__offtime { height: 34px; padding: 6px 8px; font-size: 0.375rem; }
 .mini-calendar > section .mini-event { height: 47px; padding-inline: 8px; }
-.mini-calendar > section .mini-event b { font-size: 7.5px; }
-.mini-calendar > section .mini-event small { font-size: 6px; }
+.mini-calendar > section .mini-event b { font-size: 0.4688rem; }
+.mini-calendar > section .mini-event small { font-size: 0.375rem; }
 .mini-calendar > section .mini-event--one { top: 55px; }
 .mini-calendar > section .mini-event--two { top: 125px; }
 
@@ -5344,10 +5344,10 @@ svg {
 }
 
 .mini-homework article header > span,
-.mini-homework article header em { padding: 5px 7px; font-size: 7px; }
-.mini-homework article > b { margin-top: 18px; font-size: 10px; }
-.mini-homework article > small { margin-top: 8px; font-size: 7px; }
-.mini-homework article footer { padding-top: 12px; font-size: 6.5px; }
+.mini-homework article header em { padding: 5px 7px; font-size: 0.4375rem; }
+.mini-homework article > b { margin-top: 18px; font-size: 0.625rem; }
+.mini-homework article > small { margin-top: 8px; font-size: 0.4375rem; }
+.mini-homework article footer { padding-top: 12px; font-size: 0.4063rem; }
 
 .mini-plan {
     padding: 12px 14px;
@@ -5359,16 +5359,16 @@ svg {
     grid-template-columns: 36px 1fr auto;
 }
 
-.mini-plan__avatar { width: 36px; height: 36px; font-size: 8px; }
-.mini-plan > header b { font-size: 9px; }
-.mini-plan > header small { font-size: 6.5px; }
-.mini-plan > header em { font-size: 10px; }
+.mini-plan__avatar { width: 36px; height: 36px; font-size: 0.5rem; }
+.mini-plan > header b { font-size: 0.5625rem; }
+.mini-plan > header small { font-size: 0.4063rem; }
+.mini-plan > header em { font-size: 0.625rem; }
 .mini-plan > section { gap: 7px; margin-top: 8px; }
 .mini-plan > section article { min-height: 44px; gap: 9px; grid-template-columns: 23px 1fr auto; }
-.mini-plan > section article > i { width: 23px; height: 23px; margin-left: -23px; font-size: 7px; }
-.mini-plan > section article b { font-size: 7.5px; }
-.mini-plan > section article small { font-size: 5.8px; }
-.mini-plan__test em { font-size: 5.5px; }
+.mini-plan > section article > i { width: 23px; height: 23px; margin-left: -23px; font-size: 0.4375rem; }
+.mini-plan > section article b { font-size: 0.4688rem; }
+.mini-plan > section article small { font-size: 0.3625rem; }
+.mini-plan__test em { font-size: 0.3438rem; }
 
 .mini-student {
     height: 268px;
@@ -5376,25 +5376,25 @@ svg {
 }
 
 .mini-student > header { gap: 10px; padding-bottom: 12px; grid-template-columns: 42px 1fr auto; }
-.mini-student__avatar { width: 42px; height: 42px; font-size: 9px; }
-.mini-student > header b { font-size: 9px; }
-.mini-student > header small { font-size: 6px; }
-.mini-student > header em { padding: 5px 7px; font-size: 6px; }
+.mini-student__avatar { width: 42px; height: 42px; font-size: 0.5625rem; }
+.mini-student > header b { font-size: 0.5625rem; }
+.mini-student > header small { font-size: 0.375rem; }
+.mini-student > header em { padding: 5px 7px; font-size: 0.375rem; }
 .mini-student > section { gap: 9px; margin-top: 12px; }
 .mini-student > section article { min-height: 128px; gap: 9px; padding: 11px; }
 .mini-student > section article > i { width: 34px; height: 34px; }
-.mini-student > section article small { font-size: 5.5px; }
-.mini-student > section article b { font-size: 8px; }
-.mini-student > section article em { font-size: 6px; }
-.mini-student > section article:last-child b { font-size: 21px; }
-.mini-student > section article:last-child b em { font-size: 7px; }
+.mini-student > section article small { font-size: 0.3438rem; }
+.mini-student > section article b { font-size: 0.5rem; }
+.mini-student > section article em { font-size: 0.375rem; }
+.mini-student > section article:last-child b { font-size: 1.3125rem; }
+.mini-student > section article:last-child b em { font-size: 0.4375rem; }
 
 .capability-tab {
     min-height: 98px;
 }
 
-.capability-tab b { font-size: 14px; }
-.capability-tab small { font-size: 11px; }
+.capability-tab b { font-size: 0.875rem; }
+.capability-tab small { font-size: 0.6875rem; }
 
 .capability-detail {
     min-height: 540px;
@@ -5406,102 +5406,102 @@ svg {
 
 .showcase-window__bar { height: 46px; padding-inline: 16px; }
 .showcase-window__bar > span { width: 8px; height: 8px; }
-.showcase-window__bar small { font-size: 10px; }
+.showcase-window__bar small { font-size: 0.625rem; }
 .showcase-tests,
 .showcase-materials,
 .showcase-payments,
 .showcase-notifications { padding: 21px; }
 .showcase-toolbar { min-height: 40px; margin-bottom: 18px; }
-.showcase-toolbar b { font-size: 14px; }
+.showcase-toolbar b { font-size: 0.875rem; }
 .showcase-toolbar span,
-.showcase-toolbar em { padding: 8px 11px; font-size: 9px; }
+.showcase-toolbar em { padding: 8px 11px; font-size: 0.5625rem; }
 
 .showcase-entity-grid article,
 .showcase-material-grid article { min-height: 278px; padding: 16px; }
 .showcase-entity-grid header i,
 .showcase-material-grid header i { width: 41px; height: 41px; }
-.showcase-entity-grid article > b { margin-top: 17px; font-size: 12px; }
-.showcase-entity-grid article > small { font-size: 9px; }
-.showcase-entity-grid article > em { padding: 5px 8px; font-size: 8px; }
-.showcase-entity-grid footer { font-size: 8px; }
+.showcase-entity-grid article > b { margin-top: 17px; font-size: 0.75rem; }
+.showcase-entity-grid article > small { font-size: 0.5625rem; }
+.showcase-entity-grid article > em { padding: 5px 8px; font-size: 0.5rem; }
+.showcase-entity-grid footer { font-size: 0.5rem; }
 
-.showcase-material-grid article > b { margin-top: 15px; font-size: 10px; }
-.showcase-material-grid article > small { font-size: 7px; }
-.showcase-material-grid article > div em { padding: 5px 6px; font-size: 6.5px; }
-.showcase-material-grid article > footer { font-size: 7px; }
+.showcase-material-grid article > b { margin-top: 15px; font-size: 0.625rem; }
+.showcase-material-grid article > small { font-size: 0.4375rem; }
+.showcase-material-grid article > div em { padding: 5px 6px; font-size: 0.4063rem; }
+.showcase-material-grid article > footer { font-size: 0.4375rem; }
 
 .showcase-tuition-summary > span { min-height: 78px; padding: 10px; }
-.showcase-tuition-summary small { font-size: 7px; }
-.showcase-tuition-summary b { font-size: 14px; }
-.showcase-tuition-summary em { font-size: 6px; }
+.showcase-tuition-summary small { font-size: 0.4375rem; }
+.showcase-tuition-summary b { font-size: 0.875rem; }
+.showcase-tuition-summary em { font-size: 0.375rem; }
 .showcase-package small,
-.showcase-package em { font-size: 8px; }
-.showcase-package b { font-size: 12px; }
-.showcase-payment b { font-size: 10px; }
+.showcase-package em { font-size: 0.5rem; }
+.showcase-package b { font-size: 0.75rem; }
+.showcase-payment b { font-size: 0.625rem; }
 .showcase-payment small,
-.showcase-payment strong { font-size: 8px; }
+.showcase-payment strong { font-size: 0.5rem; }
 
 .showcase-notice { min-height: 82px; padding: 12px 14px; grid-template-columns: 5px 42px 1fr auto; }
-.showcase-notice > span { width: 40px; height: 40px; font-size: 9px; }
-.showcase-notice b { font-size: 10px; }
-.showcase-notice small { font-size: 8px; }
-.showcase-notice p { font-size: 8px; }
+.showcase-notice > span { width: 40px; height: 40px; font-size: 0.5625rem; }
+.showcase-notice b { font-size: 0.625rem; }
+.showcase-notice small { font-size: 0.5rem; }
+.showcase-notice p { font-size: 0.5rem; }
 .showcase-notice div > b em,
-.showcase-notice button { font-size: 7px; }
+.showcase-notice button { font-size: 0.4375rem; }
 
 .showcase-builder-shell > header { height: 55px; padding-inline: 16px; }
-.showcase-builder-shell > header > b { font-size: 10px; }
+.showcase-builder-shell > header > b { font-size: 0.625rem; }
 .showcase-builder-shell > header > em,
 .showcase-builder-shell > header > i,
-.showcase-builder-shell > header > button { font-size: 7px; }
+.showcase-builder-shell > header > button { font-size: 0.4375rem; }
 .showcase-builder-shell .showcase-builder { min-height: 309px; grid-template-columns: minmax(0, 1fr) 175px; }
-.showcase-builder > aside > b { font-size: 11px; }
-.showcase-builder > aside span { font-size: 10px; }
-.showcase-builder > aside small { font-size: 8px; }
-.showcase-builder > section small { font-size: 8px; }
-.showcase-builder > section b { font-size: 13px; }
-.showcase-builder > section em { font-size: 8px; }
-.showcase-builder > section p { font-size: 12px; }
-.showcase-builder label { min-height: 41px; font-size: 10px; }
+.showcase-builder > aside > b { font-size: 0.6875rem; }
+.showcase-builder > aside span { font-size: 0.625rem; }
+.showcase-builder > aside small { font-size: 0.5rem; }
+.showcase-builder > section small { font-size: 0.5rem; }
+.showcase-builder > section b { font-size: 0.8125rem; }
+.showcase-builder > section em { font-size: 0.5rem; }
+.showcase-builder > section p { font-size: 0.75rem; }
+.showcase-builder label { min-height: 41px; font-size: 0.625rem; }
 
 .showcase-review__tools { height: 49px; }
-.showcase-review__tools span { width: 32px; height: 32px; font-size: 13px; }
+.showcase-review__tools span { width: 32px; height: 32px; font-size: 0.8125rem; }
 .showcase-review > section { min-height: 315px; grid-template-columns: 125px minmax(0, 1fr) 205px; }
 .showcase-review > section > nav { padding: 14px 10px; }
-.showcase-review > section > nav > b { font-size: 9px; }
-.showcase-review > section > nav > span { padding: 9px; font-size: 7px; }
-.showcase-review > section > nav > em { font-size: 6.5px; }
+.showcase-review > section > nav > b { font-size: 0.5625rem; }
+.showcase-review > section > nav > span { padding: 9px; font-size: 0.4375rem; }
+.showcase-review > section > nav > em { font-size: 0.4063rem; }
 .showcase-document { min-height: 255px; padding: 27px 30px; }
-.showcase-document small { font-size: 8px; }
-.showcase-document b { font-size: 13px; }
-.showcase-document p { font-size: 10px; }
+.showcase-document small { font-size: 0.5rem; }
+.showcase-document b { font-size: 0.8125rem; }
+.showcase-document p { font-size: 0.625rem; }
 .showcase-review > section > aside { padding: 18px; }
-.showcase-review > section > aside > b { font-size: 11px; }
+.showcase-review > section > aside > b { font-size: 0.6875rem; }
 .showcase-review aside p,
 .showcase-review aside p b,
 .showcase-review aside label,
-.showcase-review aside em { font-size: 8px; }
+.showcase-review aside em { font-size: 0.5rem; }
 
 .current-tool-preview > .future-video,
 .current-tool-preview > .future-chat,
 .current-tool-preview > .future-board { height: 364px; }
-.future-video__main b { font-size: 10px; }
+.future-video__main b { font-size: 0.625rem; }
 .future-video__main small,
-.future-video__students small { font-size: 8px; }
-.future-video__students i { width: 32px; height: 32px; font-size: 8px; }
-.future-chat header b { font-size: 10px; }
-.future-chat header small { font-size: 8px; }
-.future-chat__message { font-size: 9px; }
-.future-chat__message small { font-size: 7px; }
+.future-video__students small { font-size: 0.5rem; }
+.future-video__students i { width: 32px; height: 32px; font-size: 0.5rem; }
+.future-chat header b { font-size: 0.625rem; }
+.future-chat header small { font-size: 0.5rem; }
+.future-chat__message { font-size: 0.5625rem; }
+.future-chat__message small { font-size: 0.4375rem; }
 .future-chat__file b,
 .future-chat__file small,
-.future-chat footer span { font-size: 8px; }
+.future-chat footer span { font-size: 0.5rem; }
 .board-note,
-.board-example { font-size: 11px; }
-.board-note small { font-size: 8px; }
-.board-cursor { font-size: 7px; }
+.board-example { font-size: 0.6875rem; }
+.board-note small { font-size: 0.5rem; }
+.board-cursor { font-size: 0.4375rem; }
 .future-board__bottom span,
-.future-board__bottom em { font-size: 8px; }
+.future-board__bottom em { font-size: 0.5rem; }
 
 .development-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5512,36 +5512,36 @@ svg {
     padding: 30px;
 }
 
-.development-card > h3 { min-height: auto; font-size: 22px; }
-.development-card > p { min-height: 68px; font-size: 13px; }
+.development-card > h3 { min-height: auto; font-size: 1.375rem; }
+.development-card > p { min-height: 68px; font-size: 0.8125rem; }
 .development-card__visual { height: 215px; }
-.development-card__tags i { padding: 6px 8px; font-size: 8px; }
+.development-card__tags i { padding: 6px 8px; font-size: 0.5rem; }
 .development-search__field,
-.development-market > span { height: 38px; font-size: 8px; }
-.development-search b { font-size: 9px; }
+.development-market > span { height: 38px; font-size: 0.5rem; }
+.development-search b { font-size: 0.5625rem; }
 .development-search small,
-.development-search em { font-size: 7px; }
-.development-ai > span { font-size: 10px; }
-.development-ai p { font-size: 9px; }
-.development-ai > em { font-size: 8px; }
+.development-search em { font-size: 0.4375rem; }
+.development-ai > span { font-size: 0.625rem; }
+.development-ai p { font-size: 0.5625rem; }
+.development-ai > em { font-size: 0.5rem; }
 .development-ide header,
-.development-ide footer { height: 42px; font-size: 8px; }
-.development-ide pre { height: 128px; font-size: 9px; }
+.development-ide footer { height: 42px; font-size: 0.5rem; }
+.development-ide pre { height: 128px; font-size: 0.5625rem; }
 .development-mobile { grid-template-columns: 120px 1fr; }
 .development-phone { width: 112px; height: 190px; padding: 12px; }
 .development-phone img { width: 32px; }
 .development-phone small,
 .development-phone > span,
-.development-phone button { font-size: 7px; }
-.development-phone b { font-size: 10px; }
-.development-mobile > span b { font-size: 11px; }
-.development-mobile > span small { font-size: 8px; }
-.development-game__level b { font-size: 11px; }
+.development-phone button { font-size: 0.4375rem; }
+.development-phone b { font-size: 0.625rem; }
+.development-mobile > span b { font-size: 0.6875rem; }
+.development-mobile > span small { font-size: 0.5rem; }
+.development-game__level b { font-size: 0.6875rem; }
 .development-game__level small,
 .development-game > div em,
-.development-game section span { font-size: 8px; }
-.development-market article b { font-size: 9px; }
-.development-market article small { font-size: 7px; }
+.development-game section span { font-size: 0.5rem; }
+.development-market article b { font-size: 0.5625rem; }
+.development-market article small { font-size: 0.4375rem; }
 
 .hero {
     display: flex;
@@ -5652,7 +5652,7 @@ svg {
 
 .development-tab > b {
     color: var(--stone-700);
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.35;
 }
 
@@ -5687,7 +5687,7 @@ svg {
     max-width: 430px;
     margin: 16px 0 15px;
     color: var(--stone-900);
-    font-size: clamp(28px, 3vw, 40px);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
     letter-spacing: -0.045em;
     line-height: 1.1;
 }
@@ -5696,7 +5696,7 @@ svg {
     max-width: 440px;
     margin: 0;
     color: var(--stone-500);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.7;
 }
 
@@ -5809,7 +5809,7 @@ svg {
     gap: 6px;
     margin-top: 22px;
     color: white;
-    font-size: clamp(46px, 4.15vw, 65px);
+    font-size: clamp(2.875rem, 4.15vw, 4.0625rem);
     line-height: 0.94;
 }
 
@@ -5844,7 +5844,7 @@ svg {
     margin: 0 0 10px 400px;
     color: #ffc35d;
     font-family: Caveat, cursive;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1;
     transform: rotate(-2deg);
 }
@@ -5886,7 +5886,7 @@ svg {
     border-bottom: 2px solid var(--brand-ink);
     padding: 0 28px;
     color: var(--brand-ink);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 750;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -5903,14 +5903,14 @@ svg {
     width: fit-content;
     align-items: flex-end;
     gap: 7px;
-    font-size: 52px;
+    font-size: 3.25rem;
 }
 
 .demo-gateway__brand > span:last-child {
     margin-bottom: 7px;
     color: var(--brand-ink);
     font-family: Caveat, cursive;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
     line-height: 1;
     transform: rotate(-4deg);
@@ -5924,7 +5924,7 @@ svg {
     background: white;
     padding: 7px 11px;
     font-family: Caveat, cursive;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 1;
     transform: rotate(-2deg);
@@ -5934,7 +5934,7 @@ svg {
     max-width: 560px;
     margin: 19px 0 13px;
     color: var(--brand-ink);
-    font-size: clamp(31px, 3vw, 45px);
+    font-size: clamp(1.9375rem, 3vw, 2.8125rem);
     letter-spacing: -0.055em;
     line-height: 1.03;
 }
@@ -5943,7 +5943,7 @@ svg {
     max-width: 500px;
     margin: 0;
     color: var(--stone-600);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.65;
 }
 
@@ -5954,7 +5954,7 @@ svg {
     margin: 22px 0 0;
     padding: 0;
     color: var(--stone-600);
-    font-size: 11px;
+    font-size: 0.6875rem;
     list-style: none;
 }
 
@@ -5966,7 +5966,7 @@ svg {
     z-index: 1;
     border-top: 2px solid var(--brand-ink);
     background: white;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 750;
 }
 
@@ -6021,7 +6021,7 @@ svg {
 
 .section-kicker {
     font-family: Caveat, cursive;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
     letter-spacing: 0;
     text-transform: none;
@@ -6046,7 +6046,7 @@ svg {
     height: 220px;
     color: var(--brand-orange);
     content: 'klick';
-    font: 700 220px/0.8 Caveat, cursive;
+    font: 700 13.75rem/0.8 Caveat, cursive;
     opacity: 0.055;
     transform: rotate(-8deg);
 }
@@ -6083,7 +6083,7 @@ svg {
 .workflow-section .section-kicker,
 .workflow-section .text-link { color: var(--brand-ink); }
 .workflow-list li { border-color: rgb(25 22 19 / 0.22); }
-.workflow-list__number { color: rgb(25 22 19 / 0.46); font-family: Caveat, cursive; font-size: 22px; }
+.workflow-list__number { color: rgb(25 22 19 / 0.46); font-family: Caveat, cursive; font-size: 1.375rem; }
 .workflow-list__icon { border: 2px solid var(--brand-ink); border-radius: 50% 42% 54% 46%; background: transparent; color: var(--brand-ink); }
 
 .student-section { background: var(--brand-sky); }
@@ -6108,7 +6108,7 @@ svg {
 .development-detail { border: 2px solid var(--brand-ink); background: #fffdf7; box-shadow: 10px 10px 0 var(--brand-ink); }
 
 .roadmap-section { background: var(--brand-ink); }
-.roadmap-section::before { position: absolute; top: 4%; left: -10%; width: 480px; height: 200px; color: #ffc35d; content: 'klick'; font: 700 220px/0.8 Caveat, cursive; opacity: 0.12; transform: rotate(11deg); }
+.roadmap-section::before { position: absolute; top: 4%; left: -10%; width: 480px; height: 200px; color: #ffc35d; content: 'klick'; font: 700 13.75rem/0.8 Caveat, cursive; opacity: 0.12; transform: rotate(11deg); }
 .roadmap-card { border: 0; background: transparent; color: white; box-shadow: none; }
 .roadmap-card::before { display: none; }
 .roadmap-card__heading h3,
@@ -6286,11 +6286,11 @@ svg {
     }
 
     .hero h1 {
-        font-size: clamp(47px, 14.5vw, 64px);
+        font-size: clamp(2.9375rem, 14.5vw, 4rem);
     }
 
     .hero__lead {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.65;
     }
 
@@ -6336,7 +6336,7 @@ svg {
 
     .context-strip p,
     .context-strip strong {
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 
     .section-heading h2,
@@ -6344,7 +6344,7 @@ svg {
     .student-copy h2,
     .future-heading h2,
     .final-cta h2 {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .feature-card {
@@ -6354,7 +6354,7 @@ svg {
     }
 
     .feature-card h3 {
-        font-size: 19px;
+        font-size: 1.1875rem;
     }
 
     .mini-calendar,
@@ -6459,7 +6459,7 @@ svg {
     }
 
     .future-card h3 {
-        font-size: 21px;
+        font-size: 1.3125rem;
     }
 
     .future-video,
@@ -6474,7 +6474,7 @@ svg {
     }
 
     .roadmap-card__heading h3 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     .roadmap-list {
@@ -6567,7 +6567,7 @@ svg {
 }
 
 .landing-page--workshop .shell {
-    width: min(100% - 6vw, 1540px);
+    width: min(94%, 96.25rem);
 }
 
 .landing-page--workshop .site-header {
@@ -6692,7 +6692,7 @@ svg {
     position: absolute;
     z-index: 0;
     color: rgb(255 157 0 / 0.09);
-    font: 700 clamp(180px, 24vw, 420px)/0.72 Caveat, cursive;
+    font: 700 clamp(11.25rem, 24vw, 26.25rem)/0.72 Caveat, cursive;
     letter-spacing: -0.025em;
     pointer-events: none;
     user-select: none;
@@ -6780,7 +6780,7 @@ svg {
 
 .landing-page--workshop .hero h1 {
     color: var(--workshop-ink);
-    font-size: clamp(58px, 5.6vw, 98px);
+    font-size: clamp(3.625rem, 5.6vw, 6.125rem);
 }
 
 .landing-page--workshop .hero__title-main {
@@ -6843,7 +6843,7 @@ svg {
 
 .landing-page--workshop .demo-gateway__body h2 {
     color: var(--workshop-ink);
-    font-size: clamp(38px, 3.5vw, 64px);
+    font-size: clamp(2.375rem, 3.5vw, 4rem);
 }
 
 .landing-page--workshop .demo-gateway__body p,
@@ -6874,7 +6874,7 @@ svg {
     border: 2px solid var(--workshop-ink);
     box-shadow: 4px 4px 0 var(--workshop-ink);
     font-family: "Caveat", cursive;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1;
 }
 
@@ -6961,7 +6961,7 @@ svg {
     border-radius: 14px 19px 13px 17px;
     background: rgb(255 253 247 / 0.82);
     box-shadow: 5px 6px 0 var(--workshop-ink);
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.65;
 }
 
@@ -7192,7 +7192,7 @@ svg {
     top: 37px;
     right: max(28px, calc((100vw - 1540px) / 2));
     color: var(--workshop-yellow);
-    font: 700 23px Caveat, cursive;
+    font: 700 1.4375rem Caveat, cursive;
     transform: rotate(-2deg);
 }
 
@@ -7217,14 +7217,14 @@ svg {
 }
 
 .landing-page--workshop .site-footer__brand-card .brand-mark {
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 .landing-page--workshop .site-footer__brand-card > p {
-    max-width: 280px;
+    max-width: 32ch;
     margin: 22px 0 0;
     color: rgb(33 28 26 / 0.72);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.6;
 }
 
@@ -7232,7 +7232,7 @@ svg {
     display: block;
     margin-top: 20px;
     color: #6752c8;
-    font: 700 20px Caveat, cursive;
+    font: 700 1.25rem Caveat, cursive;
 }
 
 .landing-page--workshop .site-footer__pin {
@@ -7264,7 +7264,7 @@ svg {
     display: inline-block;
     margin-bottom: 22px;
     color: var(--workshop-yellow);
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 800;
     letter-spacing: 0.13em;
     text-transform: uppercase;
@@ -7284,7 +7284,7 @@ svg {
     padding: 0 4px;
     color: white;
     border-bottom: 1px dashed rgb(255 255 255 / 0.24);
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 650;
     transition: color 150ms ease, transform 150ms ease;
 }
@@ -7296,7 +7296,7 @@ svg {
 
 .landing-page--workshop .site-footer__map nav a small {
     color: var(--workshop-green);
-    font: 700 17px Caveat, cursive;
+    font: 700 1.0625rem Caveat, cursive;
 }
 
 .landing-page--workshop .site-footer__demo-card {
@@ -7317,14 +7317,14 @@ svg {
 
 .landing-page--workshop .site-footer__demo-card h3 {
     margin: 0;
-    font-size: clamp(22px, 2vw, 29px);
+    font-size: clamp(1.375rem, 2vw, 1.8125rem);
     letter-spacing: -0.035em;
 }
 
 .landing-page--workshop .site-footer__demo-card p {
     margin: 12px 0 21px;
     color: rgb(33 28 26 / 0.72);
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.55;
 }
 
@@ -7340,7 +7340,7 @@ svg {
     border-radius: 10px 13px 9px 12px;
     background: var(--workshop-ink);
     box-shadow: 3px 4px 0 #6752c8;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 800;
     transition: transform 150ms ease, box-shadow 150ms ease;
 }
@@ -7361,7 +7361,7 @@ svg {
     color: var(--workshop-ink);
     border: 0;
     background: var(--workshop-yellow);
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 750;
 }
 
@@ -7381,7 +7381,7 @@ svg {
 }
 
 .landing-page--workshop .site-footer__bottom > span:nth-child(2) {
-    font: 700 20px Caveat, cursive;
+    font: 700 1.25rem Caveat, cursive;
 }
 
 .landing-page--workshop .site-footer__bottom > a {
@@ -7410,14 +7410,14 @@ svg {
 
     .landing-page--workshop .site-footer__demo-card {
         grid-column: 1 / -1;
-        width: min(620px, 100%);
+        width: min(38.75rem, 100%);
         justify-self: center;
     }
 }
 
 @media (max-width: 720px) {
     .landing-page--workshop .shell {
-        width: min(100% - 32px, 1540px);
+        width: min(calc(100% - 2rem), 96.25rem);
     }
 
     .landing-page--workshop .hero__copy {
@@ -7426,7 +7426,7 @@ svg {
     }
 
     .landing-page--workshop .hero h1 {
-        font-size: clamp(38px, 11vw, 48px);
+        font-size: clamp(2.375rem, 11vw, 3rem);
         letter-spacing: -0.055em;
     }
 
@@ -7443,7 +7443,7 @@ svg {
         width: fit-content;
         max-width: 100%;
         margin: 14px auto 0;
-        font-size: 19px;
+        font-size: 1.1875rem;
         line-height: 1.15;
         text-align: center;
         transform: rotate(-1deg);
@@ -7461,7 +7461,7 @@ svg {
     .landing-page--workshop .site-footer__scribble {
         top: 30px;
         right: 24px;
-        font-size: 19px;
+        font-size: 1.1875rem;
     }
 
     .landing-page--workshop .site-footer__main {
@@ -7501,7 +7501,7 @@ svg {
     .landing-page--workshop .site-footer__bottom > span:nth-child(2) {
         grid-row: 2;
         grid-column: 1 / -1;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .landing-page--workshop .demo-gateway {
@@ -7557,14 +7557,14 @@ svg {
     border-radius: 99px;
     background: #fffdf7;
     padding: 3px 8px;
-    font-size: 9px;
+    font-size: 0.5625rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
-.landing-page--workshop .capability-browser__heading b { margin-top: 5px; font-size: 18px; }
-.landing-page--workshop .capability-browser__heading small { color: rgb(33 28 26 / 0.64); font-size: 11px; line-height: 1.4; }
+.landing-page--workshop .capability-browser__heading b { margin-top: 5px; font-size: 1.125rem; }
+.landing-page--workshop .capability-browser__heading small { color: rgb(33 28 26 / 0.64); font-size: 0.6875rem; line-height: 1.4; }
 
 .landing-page--workshop .capability-groups {
     display: grid;
@@ -7583,13 +7583,14 @@ svg {
     min-height: 57px;
     grid-template-columns: 34px minmax(0, 1fr) auto;
     align-items: center;
-    gap: 9px;
+    gap: 0.65em;
     border: 1.5px solid transparent;
     border-radius: 12px 16px 11px 14px;
     background: transparent;
-    padding: 9px 11px;
+    padding: 0.65em 0.8em;
     color: var(--workshop-ink);
-    font: inherit;
+    font-family: inherit;
+    font-size: 0.875rem;
     text-align: left;
     cursor: pointer;
     transition: border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
@@ -7607,7 +7608,7 @@ svg {
 
 .landing-page--workshop .capability-group__marker {
     color: #6752c8;
-    font: 700 24px/1 Caveat, cursive;
+    font: 700 1.5rem/1 Caveat, cursive;
     text-align: center;
 }
 
@@ -7618,15 +7619,15 @@ svg {
     gap: 1px;
 }
 
-.landing-page--workshop .capability-group__copy b { font-size: 14px; line-height: 1.2; }
-.landing-page--workshop .capability-group__copy small { overflow: hidden; color: rgb(33 28 26 / 0.58); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.landing-page--workshop .capability-group__copy b { font-size: 1em; line-height: 1.2; }
+.landing-page--workshop .capability-group__copy small { overflow: hidden; color: rgb(33 28 26 / 0.58); font-size: 0.715em; text-overflow: ellipsis; white-space: nowrap; }
 
 .landing-page--workshop .capability-group__open {
     display: inline-flex;
     align-items: center;
     gap: 3px;
     color: rgb(33 28 26 / 0.58);
-    font-size: 9px;
+    font-size: 0.645em;
     font-weight: 800;
     white-space: nowrap;
 }
@@ -7675,13 +7676,14 @@ svg {
     min-height: 42px;
     grid-template-columns: 29px minmax(0, 1fr) 15px;
     align-items: center;
-    gap: 7px;
+    gap: 0.67em;
     border: 1.5px solid transparent;
     border-radius: 9px 13px 9px 11px;
     background: transparent;
-    padding: 6px 8px;
+    padding: 0.57em 0.76em;
     color: var(--workshop-ink);
-    font: inherit;
+    font-family: inherit;
+    font-size: 0.6563rem;
     text-align: left;
     cursor: pointer;
     transition: 150ms ease;
@@ -7690,7 +7692,7 @@ svg {
 .landing-page--workshop .capability-module:hover { border-color: rgb(33 28 26 / 0.28); background: white; }
 .landing-page--workshop .capability-module--active { border-color: var(--workshop-ink); background: var(--workshop-yellow); }
 .landing-page--workshop .capability-module > span { display: grid; width: 29px; height: 29px; place-items: center; border-radius: 8px; background: white; }
-.landing-page--workshop .capability-module b { overflow: hidden; font-size: 10.5px; line-height: 1.25; text-overflow: ellipsis; }
+.landing-page--workshop .capability-module b { overflow: hidden; font-size: 1em; line-height: 1.25; text-overflow: ellipsis; }
 .landing-page--workshop .capability-module > svg { color: rgb(33 28 26 / 0.46); }
 .landing-page--workshop .capability-module--active > svg { color: var(--workshop-ink); }
 
@@ -7699,7 +7701,7 @@ svg {
     border-top: 1.5px dashed rgb(33 28 26 / 0.28);
     padding: 10px 4px 0;
     color: #6752c8;
-    font: 700 17px/1.15 Caveat, cursive;
+    font: 700 1.0625rem/1.15 Caveat, cursive;
 }
 
 .landing-page--workshop .capability-showcase > .capability-detail { margin-top: 0; }
@@ -7740,21 +7742,21 @@ svg {
 }
 
 .landing-page--workshop .start-heading {
-    max-width: 860px;
+    max-width: 53.75rem;
     margin-bottom: 55px;
 }
 
 .landing-page--workshop .start-heading h2 {
     margin: 22px 0;
-    font-size: clamp(44px, 5vw, 76px);
+    font-size: clamp(2.75rem, 5vw, 4.75rem);
     line-height: 0.96;
     letter-spacing: -0.06em;
 }
 
 .landing-page--workshop .start-heading p {
-    max-width: 680px;
+    max-width: 65ch;
     color: rgb(33 28 26 / 0.7);
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: 1.7;
 }
 
@@ -7802,19 +7804,19 @@ svg {
     border-radius: 50%;
     background: var(--workshop-yellow);
     font-family: Inter, ui-sans-serif, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
     line-height: 1;
 }
 
-.landing-page--workshop .start-steps small { color: #6752c8; font-size: 9px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
-.landing-page--workshop .start-steps h3 { margin: 8px 0; font-size: 21px; }
-.landing-page--workshop .start-steps p { margin: 0; color: rgb(33 28 26 / 0.66); font-size: 12px; line-height: 1.55; }
+.landing-page--workshop .start-steps small { color: #6752c8; font-size: 0.5625rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.landing-page--workshop .start-steps h3 { margin: 8px 0; font-size: 1.3125rem; }
+.landing-page--workshop .start-steps p { margin: 0; color: rgb(33 28 26 / 0.66); font-size: 0.75rem; line-height: 1.55; }
 
 .landing-page--workshop .trust-note {
     position: relative;
     display: grid;
-    max-width: 1060px;
+    max-width: 66.25rem;
     grid-template-columns: 1fr auto;
     gap: 30px;
     align-items: center;
@@ -7839,8 +7841,8 @@ svg {
     transform: translateX(-50%);
 }
 
-.landing-page--workshop .trust-note b { font-size: 15px; }
-.landing-page--workshop .trust-note p { margin: 7px 0 0; color: rgb(33 28 26 / 0.65); font-size: 11px; line-height: 1.55; }
+.landing-page--workshop .trust-note b { font-size: 0.9375rem; }
+.landing-page--workshop .trust-note p { margin: 7px 0 0; color: rgb(33 28 26 / 0.65); font-size: 0.6875rem; line-height: 1.55; }
 .landing-page--workshop .final-actions { display: flex; justify-content: center; gap: 15px; }
 .landing-page--workshop .final-cta .button--ghost { color: var(--workshop-ink); background: #fffdf7; border-color: var(--workshop-ink); }
 
@@ -7868,12 +7870,12 @@ svg {
     }
 
     .landing-page--workshop .features-section .section-heading h2 {
-        font-size: clamp(36px, 3.2vw, 52px);
+        font-size: clamp(2.25rem, 3.2vw, 3.25rem);
     }
 
     .landing-page--workshop .features-section .section-heading > p {
         padding: 14px 18px;
-        font-size: 15px;
+        font-size: 0.9375rem;
         line-height: 1.5;
     }
 
@@ -7896,15 +7898,133 @@ svg {
     }
 
     .landing-page--workshop .features-section .capability-detail__copy h3 {
-        font-size: clamp(29px, 2.5vw, 38px);
+        font-size: clamp(1.8125rem, 2.5vw, 2.375rem);
     }
 
-    .landing-page--workshop .features-section .capability-detail__copy > p { font-size: 15px; }
-    .landing-page--workshop .features-section .capability-detail__copy li { font-size: 13px; }
+    .landing-page--workshop .features-section .capability-detail__copy > p { font-size: 0.9375rem; }
+    .landing-page--workshop .features-section .capability-detail__copy li { font-size: 0.8125rem; }
 
     .landing-page--workshop .features-section .capability-detail__copy ul {
         gap: 7px;
         margin-top: 14px;
+    }
+}
+
+@media (min-width: 901px) and (max-height: 1080px) {
+    .landing-page--workshop main > section.section-pad:not(.hero) {
+        padding-block: 18px;
+    }
+
+    .landing-page--workshop main > section.tangle-section.section-pad,
+    .landing-page--workshop main > section.journey-section.section-pad,
+    .landing-page--workshop main > .features-section {
+        padding-block: 18px;
+    }
+
+    .landing-page--workshop .features-section .section-heading {
+        margin-bottom: 12px;
+    }
+
+    .landing-page--workshop .features-section .section-heading h2 {
+        font-size: clamp(2.25rem, 3vw, 2.875rem);
+    }
+
+    .landing-page--workshop .features-section .section-heading > p {
+        padding: 11px 15px;
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+
+    .landing-page--workshop .capability-browser {
+        height: 540px;
+        min-height: 540px;
+    }
+
+    .landing-page--workshop .capability-browser__heading {
+        padding: 12px 15px 11px;
+    }
+
+    .landing-page--workshop .capability-browser__heading small {
+        font-size: 0.625rem;
+    }
+
+    .landing-page--workshop .capability-groups {
+        gap: 4px;
+        padding: 7px;
+    }
+
+    .landing-page--workshop .capability-group {
+        min-height: 46px;
+        padding: 0.43em 0.65em;
+    }
+
+    .landing-page--workshop .capability-folder__tray {
+        margin-inline: 6px;
+        padding: 6px;
+    }
+
+    .landing-page--workshop .capability-module {
+        min-height: 35px;
+        padding: 0.29em 0.57em;
+    }
+
+    .landing-page--workshop .capability-module > span {
+        width: 27px;
+        height: 27px;
+    }
+
+    .landing-page--workshop .capability-browser__note {
+        display: none;
+    }
+
+    .landing-page--workshop .features-section .capability-detail {
+        height: 540px;
+        min-height: 540px;
+        max-height: 540px;
+        gap: 30px;
+        padding: 27px;
+    }
+
+    .landing-page--workshop .features-section .capability-detail__preview {
+        height: 456px;
+        min-height: 456px;
+        max-height: 456px;
+    }
+}
+
+@media (min-width: 901px) and (max-height: 850px) {
+    .landing-page--workshop main > section.section-pad:not(.hero),
+    .landing-page--workshop main > section.tangle-section.section-pad,
+    .landing-page--workshop main > section.journey-section.section-pad,
+    .landing-page--workshop main > .features-section {
+        padding-block: 12px;
+    }
+
+    .landing-page--workshop .features-section .section-heading h2 {
+        font-size: 2.375rem;
+    }
+
+    .landing-page--workshop .features-section .section-heading > p {
+        padding: 9px 13px;
+        font-size: 0.8125rem;
+    }
+
+    .landing-page--workshop .capability-browser {
+        height: 500px;
+        min-height: 500px;
+    }
+
+    .landing-page--workshop .features-section .capability-detail {
+        height: 500px;
+        min-height: 500px;
+        max-height: 500px;
+        padding: 22px;
+    }
+
+    .landing-page--workshop .features-section .capability-detail__preview {
+        height: 424px;
+        min-height: 424px;
+        max-height: 424px;
     }
 }
 

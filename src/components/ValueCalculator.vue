@@ -171,15 +171,15 @@
 
     .value-copy h2 {
         margin: 22px 0;
-        font-size: clamp(44px, 5vw, 74px);
+        font-size: clamp(2.75rem, 5vw, 4.625rem);
         line-height: 0.96;
         letter-spacing: -0.06em;
     }
 
     .value-copy > p {
-        max-width: 560px;
+        max-width: 58ch;
         color: rgb(33 28 26 / 0.7);
-        font-size: 17px;
+        font-size: 1.0625rem;
         line-height: 1.7;
     }
 
@@ -204,16 +204,14 @@
         box-shadow: 4px 5px 0 var(--workshop-ink);
         cursor: pointer;
         text-align: left;
-        transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+        transition: background-color 160ms ease, box-shadow 160ms ease;
     }
 
-    .rhythm-picker button:nth-child(2) { transform: rotate(-1deg); }
-    .rhythm-picker button:nth-child(3) { transform: rotate(1deg); }
-    .rhythm-picker button:hover { transform: translateY(-3px) rotate(0); }
-    .rhythm-picker button.active { background: rgb(229 223 255 / 0.58); box-shadow: 7px 8px 0 var(--workshop-ink); transform: translateY(-5px); }
-    .rhythm-picker span { overflow: hidden; font-size: 12px; font-weight: 800; text-overflow: ellipsis; }
-    .rhythm-picker b { font-size: 30px; line-height: 1; }
-    .rhythm-picker small { color: #756e67; font-size: 10px; }
+    .rhythm-picker button:hover { box-shadow: 7px 8px 0 var(--workshop-ink); }
+    .rhythm-picker button.active { background: rgb(229 223 255 / 0.58); box-shadow: 7px 8px 0 var(--workshop-ink); }
+    .rhythm-picker span { overflow: hidden; font-size: 0.75rem; font-weight: 800; text-overflow: ellipsis; }
+    .rhythm-picker b { font-size: 1.875rem; line-height: 1; }
+    .rhythm-picker small { color: #756e67; font-size: 0.625rem; }
 
     .calculation-note {
         margin-top: 32px;
@@ -225,14 +223,14 @@
         transform: rotate(-1deg);
     }
 
-    .calculation-note b { font-size: 13px; }
-    .calculation-note p { margin: 8px 0 0; color: #625b55; font-size: 12px; line-height: 1.55; }
+    .calculation-note b { font-size: 0.8125rem; }
+    .calculation-note p { margin: 8px 0 0; color: #625b55; font-size: 0.75rem; line-height: 1.55; }
 
     .value-note {
         display: block;
         margin-top: 20px;
         color: #6752c8;
-        font: 700 21px Caveat, cursive;
+        font: 700 1.3125rem Caveat, cursive;
         text-align: right;
         transform: rotate(-2deg);
     }
@@ -244,7 +242,6 @@
         border-radius: 27px 17px 31px 19px;
         background: #fffdf7;
         box-shadow: 11px 12px 0 var(--workshop-ink);
-        transform: rotate(0.5deg);
     }
 
     .tape {
@@ -267,9 +264,9 @@
     }
 
     .time-stage > header div { display: flex; flex-direction: column; gap: 5px; }
-    .time-stage > header small { font-size: 11px; font-weight: 800; letter-spacing: 0.1em; }
-    .time-stage > header b { font-size: 19px; }
-    .time-stage > header button { padding: 8px 11px; color: var(--workshop-ink); border: 2px solid var(--workshop-ink); border-radius: 99px; background: #fff3a8; cursor: pointer; font-size: 10px; font-weight: 800; }
+    .time-stage > header small { font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.1em; }
+    .time-stage > header b { font-size: 1.1875rem; }
+    .time-stage > header button { padding: 8px 11px; color: var(--workshop-ink); border: 2px solid var(--workshop-ink); border-radius: 99px; background: #fff3a8; cursor: pointer; font-size: 0.625rem; font-weight: 800; }
 
     .workflow-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin-top: 23px; }
     .workflow-steps > button { display: grid; min-height: 126px; grid-template-columns: 38px 1fr auto; gap: 10px; align-items: start; padding: 16px 14px; color: var(--workshop-ink); border: 2px solid var(--workshop-ink); border-radius: 13px 18px 12px 16px; background: #f2eee8; cursor: pointer; text-align: left; opacity: 0.56; transition: opacity 150ms ease, background-color 150ms ease, transform 150ms ease; }
@@ -279,53 +276,53 @@
     .workflow-steps > button > i { display: grid; width: 36px; height: 36px; place-items: center; border: 2px solid var(--workshop-ink); border-radius: 11px 15px 10px 13px; background: var(--workshop-lilac); font-style: normal; }
     .workflow-steps > button.risk > i { background: var(--workshop-orange); }
     .workflow-steps > button > span { display: flex; min-width: 0; flex-direction: column; gap: 6px; }
-    .workflow-steps > button > span b { font-size: 14px; line-height: 1.2; }
-    .workflow-steps > button > span small { color: #756e67; font-size: 11px; line-height: 1.4; }
+    .workflow-steps > button > span b { font-size: 0.875rem; line-height: 1.2; }
+    .workflow-steps > button > span small { color: #756e67; font-size: 0.6875rem; line-height: 1.4; }
     .workflow-steps > button > em { display: flex; align-items: flex-end; flex-direction: column; gap: 5px; font-style: normal; text-align: right; }
-    .workflow-steps > button > em strong { white-space: nowrap; font-size: 13px; }
-    .workflow-steps > button > em small { color: #877f77; font-size: 10px; white-space: nowrap; }
+    .workflow-steps > button > em strong { white-space: nowrap; font-size: 0.8125rem; }
+    .workflow-steps > button > em small { color: #877f77; font-size: 0.625rem; white-space: nowrap; }
 
     .route-summary { position: relative; display: grid; gap: 13px; margin-top: 24px; padding: 21px; border: 2px solid var(--workshop-ink); border-radius: 16px 22px 14px 19px; background: #fff; }
     .route-summary > div { display: grid; grid-template-columns: 1fr auto; gap: 5px 15px; align-items: center; }
     .route-summary span { display: flex; flex-direction: column; }
-    .route-summary b { font-size: 14px; }
-    .route-summary small { color: #837b74; font-size: 11px; }
-    .route-summary strong { font-size: 15px; }
+    .route-summary b { font-size: 0.875rem; }
+    .route-summary small { color: #837b74; font-size: 0.6875rem; }
+    .route-summary strong { font-size: 0.9375rem; }
     .route-summary div > i { grid-column: 1 / 3; height: 14px; overflow: hidden; border: 2px solid var(--workshop-ink); border-radius: 99px; background: #f1ede7; }
     .route-summary div > i em { display: block; width: 100%; height: 100%; border-radius: inherit; background: var(--workshop-orange); transition: width 320ms cubic-bezier(0.2, 0.8, 0.2, 1); }
     .route-summary__klick > i em { background: var(--workshop-green); }
-    .route-summary mark { position: absolute; right: -18px; bottom: -19px; padding: 7px 12px; color: var(--workshop-ink); border: 2px solid var(--workshop-ink); background: var(--workshop-green); font: 700 18px Caveat, cursive; transform: rotate(-3deg); }
+    .route-summary mark { position: absolute; right: -18px; bottom: -19px; padding: 7px 12px; color: var(--workshop-ink); border: 2px solid var(--workshop-ink); background: var(--workshop-green); font: 700 1.125rem Caveat, cursive; transform: rotate(-3deg); }
 
     .result-slot { display: grid; min-height: 252px; align-items: start; }
     .calculation-result { margin-top: 33px; padding: 22px 25px; border: 2px solid var(--workshop-ink); border-radius: 17px 12px 20px 14px; background: #ffd84d; box-shadow: 5px 6px 0 var(--workshop-ink); }
     .formula { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-bottom: 15px; }
-    .formula span { padding: 5px 8px; border: 1px solid var(--workshop-ink); border-radius: 99px; background: #fffdf7; font-size: 10px; font-weight: 800; }
-    .formula > i { font: 700 19px Caveat, cursive; }
-    .calculation-result > small { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
-    .calculation-result > strong { display: flex; align-items: baseline; gap: 8px; margin: 5px 0; font-size: clamp(48px, 5vw, 70px); line-height: 0.95; letter-spacing: -0.06em; }
-    .calculation-result > strong i { font: 700 28px Caveat, cursive; letter-spacing: 0; }
-    .calculation-result > strong em { font-size: 21px; font-style: normal; letter-spacing: -0.03em; }
-    .calculation-result > p { margin: 11px 0 0; color: rgb(33 28 26 / 0.72); font-size: 13px; line-height: 1.5; }
+    .formula span { padding: 5px 8px; border: 1px solid var(--workshop-ink); border-radius: 99px; background: #fffdf7; font-size: 0.625rem; font-weight: 800; }
+    .formula > i { font: 700 1.1875rem Caveat, cursive; }
+    .calculation-result > small { font-size: 0.625rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+    .calculation-result > strong { display: flex; align-items: baseline; gap: 8px; margin: 5px 0; font-size: clamp(3rem, 5vw, 4.375rem); line-height: 0.95; letter-spacing: -0.06em; }
+    .calculation-result > strong i { font: 700 1.75rem Caveat, cursive; letter-spacing: 0; }
+    .calculation-result > strong em { font-size: 1.3125rem; font-style: normal; letter-spacing: -0.03em; }
+    .calculation-result > p { margin: 11px 0 0; color: rgb(33 28 26 / 0.72); font-size: 0.8125rem; line-height: 1.5; }
 
     .time-stage > footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 18px; color: #817970; }
-    .time-stage > footer span { font: 700 17px Caveat, cursive; }
-    .time-stage > footer small { max-width: 380px; font-size: 10px; line-height: 1.45; text-align: right; }
+    .time-stage > footer span { font: 700 1.0625rem Caveat, cursive; }
+    .time-stage > footer small { max-width: 38ch; font-size: 0.625rem; line-height: 1.45; text-align: right; }
 
     .time-pop-enter-active,
-    .time-pop-leave-active { transition: opacity 150ms ease, transform 150ms ease; }
+    .time-pop-leave-active { transition: opacity 150ms ease; }
     .time-pop-enter-from,
     .time-pop-leave-to { opacity: 0; }
 
     @media (min-width: 1121px) {
         .value-section {
             display: flex;
-            min-height: 100vh;
+            min-height: calc(100svh - var(--site-header-height));
             align-items: center;
             padding-block: clamp(48px, 5.2vh, 64px);
         }
 
-        .value-copy h2 { margin-block: 16px; font-size: clamp(42px, 4.4vw, 66px); }
-        .value-copy > p { font-size: 15px; line-height: 1.58; }
+        .value-copy h2 { margin-block: 16px; font-size: clamp(2.625rem, 4.4vw, 4.125rem); }
+        .value-copy > p { font-size: 0.9375rem; line-height: 1.58; }
         .rhythm-picker { margin-top: 22px; }
         .rhythm-picker button { min-height: 90px; padding-block: 10px; }
         .calculation-note { margin-top: 24px; padding: 16px 18px; }
@@ -340,23 +337,62 @@
         .result-slot { min-height: 198px; }
         .calculation-result { margin-top: 24px; padding: 17px 21px; }
         .formula { margin-bottom: 10px; }
-        .calculation-result > strong { font-size: clamp(44px, 4.2vw, 62px); }
+        .calculation-result > strong { font-size: clamp(2.75rem, 4.2vw, 3.875rem); }
         .time-stage > footer { margin-top: 12px; }
+    }
+
+    @media (min-width: 1121px) and (max-height: 1080px) {
+        .value-section { padding-block: 18px; }
+        .value-grid { gap: clamp(42px, 5vw, 76px); }
+        .value-copy h2 { margin-block: 12px; font-size: clamp(2.5rem, 4vw, 3.625rem); }
+        .rhythm-picker { margin-top: 17px; }
+        .rhythm-picker button { min-height: 80px; }
+        .calculation-note { margin-top: 18px; padding: 13px 16px; }
+        .value-note { margin-top: 10px; }
+        .time-stage { padding: 24px 26px; }
+        .workflow-steps { margin-top: 14px; }
+        .workflow-steps > button { min-height: 88px; padding: 9px 11px; }
+        .route-summary { margin-top: 14px; padding: 13px 16px; }
+        .result-slot { min-height: 180px; }
+        .calculation-result { margin-top: 19px; padding: 14px 19px; }
+    }
+
+    @media (min-width: 1121px) and (max-height: 850px) {
+        .value-section { padding-block: 12px; }
+        .value-copy h2 { font-size: 2.875rem; }
+        .value-copy > p { font-size: 0.875rem; }
+        .rhythm-picker button { min-height: 70px; padding: 8px 10px; }
+        .rhythm-picker b { font-size: 1.625rem; }
+        .calculation-note { margin-top: 14px; padding: 10px 14px; }
+        .calculation-note p { margin-top: 5px; }
+        .time-stage { padding: 18px 21px; }
+        .time-stage > header { padding-bottom: 10px; }
+        .workflow-steps { gap: 7px; margin-top: 11px; }
+        .workflow-steps > button { min-height: 76px; padding: 7px 9px; }
+        .workflow-steps > button > i { width: 31px; height: 31px; }
+        .workflow-steps > button > span small { font-size: 0.625rem; line-height: 1.3; }
+        .route-summary { gap: 6px; margin-top: 11px; padding: 10px 14px; }
+        .route-summary small { font-size: 0.625rem; }
+        .result-slot { min-height: 145px; }
+        .calculation-result { margin-top: 15px; padding: 11px 16px; }
+        .calculation-result > strong { font-size: 2.75rem; }
+        .calculation-result > p { margin-top: 7px; font-size: 0.75rem; }
+        .time-stage > footer { margin-top: 8px; }
     }
 
     @media (max-width: 1120px) {
         .value-grid { grid-template-columns: 1fr; }
-        .value-copy { max-width: 780px; }
-        .rhythm-picker { max-width: 620px; }
-        .calculation-note { max-width: 620px; }
-        .value-note { max-width: 620px; }
+        .value-copy { max-width: 48.75rem; }
+        .rhythm-picker { max-width: 38.75rem; }
+        .calculation-note { max-width: 38.75rem; }
+        .value-note { max-width: 38.75rem; }
     }
 
     @media (max-width: 680px) {
         .rhythm-picker { grid-template-columns: 1fr; }
         .rhythm-picker button { min-height: 76px; grid-template-columns: 1fr auto; align-items: center; }
-        .rhythm-picker button span { font-size: 13px; }
-        .rhythm-picker button b { grid-row: 1 / 3; grid-column: 2; font-size: 34px; }
+        .rhythm-picker button span { font-size: 0.8125rem; }
+        .rhythm-picker button b { grid-row: 1 / 3; grid-column: 2; font-size: 2.125rem; }
         .time-stage { padding: 30px 20px; }
         .time-stage > header { align-items: flex-start; flex-direction: column; gap: 12px; }
         .workflow-steps { grid-template-columns: 1fr; }
